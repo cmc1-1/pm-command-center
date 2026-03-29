@@ -1,0 +1,168 @@
+# Meeting: [Title]
+
+## Metadata
+- **date**: YYYY-MM-DD
+- **type**: standup | 1:1 | sprint-planning | sprint-retro | stakeholder-review | customer-interview | design-review
+- **duration**: [X] minutes
+- **attendees**: [Name (Role), Name (Role), ...]
+- **project**: [Related project/PRD if applicable]
+- **recording**: [Link if available]
+- **facilitator**: [Who ran the meeting]
+
+---
+
+## TL;DR
+[3 sentences maximum. What happened, what was decided, what matters. Written so someone who missed the meeting gets the essential picture in 10 seconds.]
+
+---
+
+## Decisions Made
+
+| # | Decision | Rationale | Decided By | Reversible? | Conflicts? |
+|---|----------|-----------|------------|-------------|------------|
+| D-[NNN] | [What was decided] | [Why — the reasoning behind it] | [Who made/approved] | Yes/No | [Flag if conflicts with prior decision — reference D-[NNN]] |
+
+[If no decisions were made, state: "No formal decisions made in this meeting."]
+
+---
+
+## Action Items
+
+| ID | Owner | Action | Deadline | Priority | Source Context |
+|----|-------|--------|----------|----------|---------------|
+| AI-[NNN] | [Name] | [Specific, actionable task] | [Date or "TBD — confirm"] | P0/P1/P2 | [Brief context: what discussion led to this] |
+
+**Carryover items discussed:**
+
+| ID | Owner | Action | Status Update |
+|----|-------|--------|---------------|
+| AI-[existing] | [Name] | [Original action] | [What was said about it — completed? blocked? in progress?] |
+
+[If no action items, state: "No action items from this meeting."]
+
+---
+
+## Stakeholder Sentiment
+
+| Attendee | Tone | Key Concern / Interest | Pattern? |
+|----------|------|----------------------|----------|
+| [Name] | Supportive / Concerned / Neutral / Frustrated / Excited | [One line — what's driving their stance] | [Flag if same concern raised in 2+ consecutive meetings] |
+
+---
+
+## Key Quotes
+
+> "[Verbatim quote that is strategically significant]"
+> — [Name], [Role]
+
+> "[Verbatim quote revealing stakeholder position or constraint]"
+> — [Name], [Role]
+
+[3-5 quotes maximum. Only include quotes that would be useful to reference later — for a PRD, a decision justification, or a stakeholder conversation.]
+
+---
+
+## Discussion Summary
+
+### [Topic 1]
+[2-4 sentences summarizing the discussion. Focus on what was debated, what perspectives were shared, and what conclusion was reached. Do not rehash the entire conversation — capture the essence.]
+
+### [Topic 2]
+[Same format]
+
+[For standups: skip this section entirely. For 1:1s: use "Career & Development" and "Business Topics" as the topic headers.]
+
+---
+
+## Open Questions / Parking Lot
+- [ ] [Question that was raised but not answered — include who should answer it]
+- [ ] [Question that was explicitly deferred to a future meeting]
+
+---
+
+## Context Updates Needed
+[List the specific knowledge base files that should be updated based on this meeting's content. The meeting summarizer skill will process these automatically.]
+
+- [ ] `context/decisions/decision-log.md` — [what to add]
+- [ ] `tracking/action-items.md` — [items to add/update]
+- [ ] `context/team/stakeholder-map.md` — [sentiment updates]
+- [ ] `context/users/feedback-themes.md` — [new themes if applicable]
+- [ ] `context/strategy/current-priorities.md` — [if priorities shifted]
+- [ ] [Other files as needed]
+
+---
+
+## Meeting-Type-Specific Sections
+
+### [For standups only]
+**Blockers:**
+| Who | Blocker | Days Blocked | Needs |
+|-----|---------|-------------|-------|
+| [Name] | [What's blocked] | [How long] | [What would unblock it] |
+
+### [For 1:1s only]
+**Career & Development Themes:**
+- Feedback given: [What you told them]
+- Feedback received: [What they told you]
+- Growth areas discussed: [Topics]
+- Commitments: [Any promises about opportunities, projects, promotions]
+
+**Relationship Notes:**
+[One line on trust level, communication quality, anything to be aware of]
+
+### [For sprint planning only]
+**Sprint Commitment:**
+- Stories committed: [Count]
+- Total points: [X] (velocity target: [Y])
+- Key risks: [What could derail the sprint]
+
+### [For sprint retros only]
+**What went well:**
+- [Item]
+
+**What didn't go well:**
+- [Item]
+
+**Improvement actions:**
+| Action | Owner | Try in Sprint |
+|--------|-------|--------------|
+| [Improvement] | [Who] | Sprint [N] |
+
+### [For customer interviews only]
+**Interviewee Profile:**
+- Role: [Title]
+- Company: [Name, size, industry]
+- Customer status: [Prospect / Trial / Active — duration]
+
+**Pain Points (ranked by intensity):**
+1. 🔴 [Highest intensity pain point] — "[supporting quote]"
+2. 🟡 [Medium intensity] — "[supporting quote]"
+3. [Additional as needed]
+
+**Current Workflow:**
+[How they currently solve the problem — 2-3 sentences]
+
+**Feature Requests:**
+- Explicit: [What they directly asked for]
+- Implied: [What they need but didn't articulate]
+
+**Signals:**
+- Willingness to pay: [High / Medium / Low / Not discussed]
+- Switching likelihood: [High / Medium / Low / Not discussed]
+- Emotional intensity: [Scale description]
+
+### [For design reviews only]
+**Design Decisions:**
+| Decision | Rationale | Alternatives Considered |
+|----------|-----------|------------------------|
+| [What was chosen] | [Why] | [What else was discussed] |
+
+**Open UX Questions:**
+- [ ] [Question needing user validation]
+
+**Accessibility Concerns:**
+- [Any accessibility issues raised]
+
+**Design Status:**
+- Version reviewed: [v1 / v2 / etc.]
+- Next steps: [What design is doing next]

@@ -1,0 +1,205 @@
+# PRD: [Feature Name]
+
+## Metadata
+- **Author**: [Name]
+- **Date created**: YYYY-MM-DD
+- **Last updated**: YYYY-MM-DD
+- **Status**: Draft | In Review | Approved | In Development | Shipped
+- **Reviewers**: [Names]
+- **Epic/Jira**: [Link when available]
+
+---
+
+## 1. Problem Statement
+
+### What problem are we solving?
+[2-3 sentences. Be specific about the pain — who feels it, how often, how severely. Ground in data or user research where possible.]
+
+### Why now?
+[Why this problem is worth solving this quarter, not next. Business urgency, competitive pressure, user churn signal, strategic alignment.]
+
+### What happens if we don't solve it?
+[The cost of inaction. Revenue impact, user experience degradation, competitive risk, or technical debt accumulation.]
+
+---
+
+## 2. Users & Personas
+
+### Primary user
+- **Persona**: [Name from context/users/personas.md]
+- **Role / description**: [One line]
+- **Job to be done**: [In JTBD format: "When [situation], I want to [action], so I can [outcome]"]
+
+### Secondary users
+- **[Persona 2]**: [How they're affected and what they need]
+
+### Non-users / stakeholders
+- [Internal teams affected: CS, Sales, Engineering, etc.]
+
+---
+
+## 3. Goals & Success Metrics
+
+### Product goals
+1. [Goal 1 — what outcome we're trying to achieve]
+2. [Goal 2]
+
+### Success metrics
+
+| Metric | Current Baseline | Target | Measurement Method | Timeframe |
+|--------|-----------------|--------|-------------------|-----------|
+| [Primary metric] | [Current value] | [Target value] | [How we'll measure] | [By when] |
+| [Secondary metric] | [Current] | [Target] | [Method] | [By when] |
+
+### Guardrail metrics
+[Metrics that should NOT get worse as a result of this feature]
+- [Metric]: Should remain above [threshold]
+
+---
+
+## 4. Solution Overview
+
+### Proposed approach
+[High-level description of the solution — 1 paragraph. What will the user experience? How does it solve the problem stated above?]
+
+### Key design principles
+1. [Principle 1 — e.g., "Self-service first, human assist as fallback"]
+2. [Principle 2]
+3. [Principle 3]
+
+---
+
+## 5. Requirements
+
+### P0 — Must have (launch blockers)
+
+| # | User Story | Acceptance Criteria |
+|---|-----------|-------------------|
+| 1 | As a [persona], I want [action], so that [outcome] | - Given [context], when [action], then [result] |
+| | | - Given [edge case], when [action], then [result] |
+| 2 | As a [persona], I want [action], so that [outcome] | - [Criteria] |
+
+### P1 — Should have (target for launch, can slip to fast-follow)
+
+| # | User Story | Acceptance Criteria |
+|---|-----------|-------------------|
+| | | |
+
+### P2 — Nice to have (fast-follow or future iteration)
+
+| # | User Story | Acceptance Criteria |
+|---|-----------|-------------------|
+| | | |
+
+---
+
+## 6. Out of Scope
+[Explicitly list what this PRD does NOT cover. Be specific — this prevents scope creep and aligns expectations.]
+
+- [Thing 1 — and brief reason why it's out]
+- [Thing 2]
+- [Thing 3]
+
+---
+
+## 7. User Flows
+
+### Happy path
+[Step-by-step description of the primary user flow. Can include a link to a prototype or wireframe.]
+
+1. User [action]
+2. System [response]
+3. User [action]
+4. System [response]
+5. [Desired end state]
+
+### Edge cases / error states
+- [Edge case 1]: [How we handle it]
+- [Edge case 2]: [How we handle it]
+
+---
+
+## 8. Technical Considerations
+
+### Dependencies
+- [System/service this depends on]
+- [API or infrastructure prerequisite]
+- [Related decisions from decision log: D-NNN]
+
+### Constraints
+- [Performance requirement]
+- [Security/compliance constraint]
+- [Infrastructure limitation]
+
+### Migration / rollout
+- [Rollout strategy: phased? feature flag? A/B test?]
+- [Data migration needs]
+- [Backwards compatibility requirements]
+
+---
+
+## 9. Analytics & Instrumentation
+
+### Events to track
+| Event | Trigger | Properties |
+|-------|---------|------------|
+| [Event name] | [When it fires] | [What data to capture] |
+
+### Dashboards / reports needed
+- [Dashboard 1 — what it shows]
+
+---
+
+## 10. Launch Plan
+
+### Pre-launch checklist
+- [ ] Engineering: Feature complete and tested
+- [ ] Design: Final assets delivered
+- [ ] QA: Test plan executed, bugs triaged
+- [ ] Docs: Help articles / release notes written
+- [ ] CS: Support team briefed
+- [ ] Marketing: Announcement prepared (if applicable)
+- [ ] Legal: Review complete (if applicable)
+
+### Rollout plan
+- Phase 1: [Scope — e.g., 10% of users, internal only]
+- Phase 2: [Scope — e.g., 50% of users]
+- Phase 3: [Full GA]
+
+### Rollback plan
+[How to revert if something goes wrong]
+
+---
+
+## 11. Open Questions
+[Items that need resolution before or during development]
+
+| # | Question | Owner | Status | Resolution |
+|---|----------|-------|--------|------------|
+| 1 | [Question] | [Who should answer] | Open / Resolved | [Answer when resolved] |
+
+---
+
+## 12. Assumptions to Validate
+[Things we believe to be true but haven't proven. Each assumption is a risk if wrong.]
+
+| # | Assumption | How to Validate | Risk if Wrong |
+|---|-----------|----------------|---------------|
+| 1 | [Assumption] | [Validation method] | [Impact] |
+
+---
+
+## 13. References
+- [Link to user research / interview synthesis]
+- [Link to competitive analysis]
+- [Link to design mockups / prototype]
+- [Related PRDs]
+- [Relevant decision log entries]
+
+---
+
+## Revision History
+
+| Date | Author | Changes |
+|------|--------|---------|
+| YYYY-MM-DD | [Name] | Initial draft |

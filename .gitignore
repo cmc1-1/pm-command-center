@@ -1,0 +1,36 @@
+# Company-specific context (confidential — never commit)
+context/team/directory.md
+context/team/stakeholder-map.md
+context/team/org-context.md
+context/strategy/current-priorities.md
+context/strategy/okrs.md
+context/strategy/active-prds/
+context/strategy/retrospectives/
+context/decisions/decision-log.md
+context/users/
+context/competitors/matrix.md
+context/competitors/teardowns/
+context/metrics/
+
+# Operational tracking (confidential)
+tracking/
+
+# Generated artifacts (confidential)
+artifacts/
+
+# Research data (confidential)
+research/
+
+# Raw inputs (large files, confidential)
+inbox/
+*.mp3
+*.m4a
+*.wav
+*.mp4
+*.zip
+
+# System files
+.DS_Store
+node_modules/
+*.tmp
+__pycache__/
