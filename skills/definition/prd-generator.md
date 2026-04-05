@@ -63,6 +63,8 @@ If answers reveal ambiguity, ask targeted follow-ups. Don't exceed 4 rounds tota
 
 Using the Socratic answers + all auto-loaded context, generate a complete PRD following `templates/prd-template.md`.
 
+**Section 0: Business Case Summary** — Before the Problem Statement, generate a 3-sentence executive framing: (1) What problem costs the business and how much, (2) What investment is needed, (3) What return is expected. This section should survive a VP's 30-second scan.
+
 **Key generation rules:**
 - **User stories must follow INVEST**: Independent, Negotiable, Valuable, Estimable, Small, Testable
 - **Acceptance criteria must be testable**: Use Given/When/Then format
@@ -109,6 +111,7 @@ Present critiques as actionable feedback, not a wall of text. Format:
 - [ ] Open questions have owners assigned
 - [ ] Engineering critique has been run
 - [ ] User research critique has been run
+- [ ] Business case summary would survive a VP's 30-second scan
 
 ## What Makes This Skill Different From Generic PRD Writing
 - It reads your actual user research before asking questions

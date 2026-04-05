@@ -13,9 +13,10 @@ Personal AI-powered product management productivity system.
 ## What's included (committed to Git)
 - `CLAUDE.md` — Master context file (personal section)
 - `INDEX.md` — Knowledge base router
-- `templates/` — 13 PM document templates
-- `skills/` — 6 automated workflow definitions
+- `templates/` — 19 PM document templates
+- `skills/` — 12 automated workflow definitions
 - `context/personal/` — Portable PM frameworks and methodology
+- `GUIDE.md` — Complete user manual and capability reference
 
 ## What's local-only (gitignored)
 - Company-specific context (team, strategy, users, metrics)
@@ -35,3 +36,8 @@ Claude will guide you through filling in the company-specific context files.
 - "critique this strategy" — Red-team any strategy document
 - "weekly status" — Generate stakeholder update
 - "check action items" — Review tracker status
+- "log impact: [what you accomplished]" — Build promotion evidence
+- "end of day" — EOD summary and tomorrow prep
+- "AI research scan" — Stay on top of AI developments
+- "market intel" — Legal tech landscape intelligence
+- "bold idea lab" — Generate and test bold product ideas

@@ -43,6 +43,7 @@ Read the full document before critiquing. Understand the author's intent, not ju
 | **Differentiation** | Does this create a defensible advantage vs. competitors, or could anyone do this? | |
 | **Feasibility** | Can the team actually execute this with available resources and timeline? | |
 | **Ambition** | Is this bold enough to matter? Is it solving a big enough problem? | |
+| **Business Impact Clarity** | Is the business case quantified? Can you tie this to revenue, cost, or competitive advantage with numbers? | |
 
 ### Step 3: Identify strengths (2-3)
 Start with what works. Specific, not generic:
@@ -94,7 +95,8 @@ Flag anything that should be in the document but isn't:
 | Differentiation | X/10 | [One line] |
 | Feasibility | X/10 | [One line] |
 | Ambition | X/10 | [One line] |
-| **Overall** | **X/10** | |
+| Business Impact Clarity | X/10 | [One line] |
+| **Overall** | **X/10** | *7 dimensions* |
 
 ### Top 3 Fixes (do these before presenting)
 1. [Most impactful improvement]

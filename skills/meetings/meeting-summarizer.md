@@ -77,6 +77,13 @@ Preserve verbatim quotes that are:
 - Useful for future reference (customer pain point descriptions, technical constraints)
 - Limit to 3-5 quotes maximum — only the ones that genuinely matter
 
+**Priority 5 — Cross-Org Signal Detection**
+Scan for mentions of other teams' projects, shared platform dependencies, parallel initiatives, or synergy opportunities. For each signal detected:
+- What team is involved
+- What initiative or project was mentioned
+- Potential relevance to our work
+- Suggested action (reach out, track, align, no action needed)
+
 ### Step 4: Apply meeting-type-specific processing
 
 **Standup:**
@@ -133,6 +140,7 @@ After generating the summary, automatically update these files:
 | Customer feedback discussed | `context/users/feedback-themes.md` | New or reinforced themes |
 | Strategy/priority changes | `context/strategy/current-priorities.md` | Updated priorities if changed |
 | New information about product | `context/product-overview.md` | Only if significant new context |
+| Cross-org signals detected | `context/cross-org/initiative-tracker.md` | New initiative entries or updates to existing ones |
 
 ### Step 7: Offer follow-up actions
 After presenting the summary, ask if the user wants to:
@@ -140,6 +148,7 @@ After presenting the summary, ask if the user wants to:
 - Create Jira/Linear tickets from action items (if MCP connected)
 - Post a summary to a Slack channel (if MCP connected)
 - Generate prep notes for the next occurrence of this recurring meeting
+- Log impact from this meeting? (if decisions influenced or outcomes achieved)
 
 ## Output Format
 See `templates/meeting-summary-template.md` for the complete output structure.

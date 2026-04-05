@@ -1,3 +1,5 @@
+> **New here?** Start with [GUIDE.md](GUIDE.md) for the complete user manual.
+
 # Knowledge Base Index
 Last updated: [auto-update on each session]
 
@@ -22,6 +24,11 @@ This is the routing table for the PM Command Center. Claude reads this file firs
 | Writing voice and samples | `context/personal/writing-samples.md` | ✅ Ready |
 | Career goals for this role | `context/personal/career-goals.md` | ✅ Ready |
 | Lessons from previous roles | `context/personal/lessons-learned.md` | ✅ Ready |
+| Impact journal | `context/personal/impact-journal.md` | ⬜ Needs setup |
+| Domain expertise | `context/personal/domain-expertise.md` | ⬜ Needs setup |
+| Innovation pipeline | `context/personal/innovation-pipeline.md` | ⬜ Needs setup |
+| Mentorship tracker | `context/personal/mentorship-tracker.md` | ⬜ Needs setup |
+| Promotion packet | `context/personal/promotion-packet.md` | ⬜ Needs setup |
 
 ### Product & Strategy
 | Topic | File | Status |
@@ -36,6 +43,12 @@ This is the routing table for the PM Command Center. Claude reads this file firs
 | Topic | File | Status |
 |-------|------|--------|
 | Decision log | `context/decisions/decision-log.md` | ⬜ Empty (template ready) |
+
+### Cross-Organizational
+| Topic | File | Status |
+|-------|------|--------|
+| Initiative tracker | `context/cross-org/initiative-tracker.md` | ⬜ Needs setup |
+| Synergy log | `context/cross-org/synergy-log.md` | ⬜ Needs setup |
 
 ### Team & Stakeholders
 | Topic | File | Status |
@@ -85,11 +98,11 @@ This is the routing table for the PM Command Center. Claude reads this file firs
 ### Skills
 | Category | Location | Skills Available |
 |----------|----------|-----------------|
-| Daily routines | `skills/daily/` | morning-briefing, email-triage, end-of-day-rollup |
+| Daily routines | `skills/daily/` | morning-briefing, impact-journal, end-of-day-rollup (built); email-triage |
 | Meetings | `skills/meetings/` | meeting-summarizer, 1on1-processor, meeting-prep |
-| Discovery | `skills/discovery/` | interview-synthesis, feedback-clustering, competitive-scan, market-sizing |
+| Discovery | `skills/discovery/` | ai-research-scout, market-intelligence (available); interview-synthesis, feedback-clustering, competitive-scan, market-sizing |
 | Definition | `skills/definition/` | prd-generator, user-story-generator, spec-reviewer, release-notes |
-| Strategy | `skills/strategy/` | strategy-critique, decision-logger, opportunity-scoring, roadmap-narrative |
+| Strategy | `skills/strategy/` | bold-idea-lab (available); strategy-critique, decision-logger, opportunity-scoring, roadmap-narrative |
 | Execution | `skills/execution/` | action-item-extractor, status-report, blocker-scanner, ticket-generator |
 | Communication | `skills/communication/` | email-drafter, exec-update-writer, stakeholder-faq, deck-builder |
 | Data | `skills/data/` | metric-explorer, funnel-analyzer, nps-analyzer |
@@ -97,7 +110,7 @@ This is the routing table for the PM Command Center. Claude reads this file firs
 ### Templates
 | Template | Location |
 |----------|----------|
-| All 13 templates | `templates/` |
+| All 19 templates | `templates/` |
 
 ---
 
@@ -120,6 +133,9 @@ Track your progress populating the knowledge base:
 - [ ] Action item tracker active (`tracking/action-items.md`)
 - [ ] First decisions logged (`context/decisions/decision-log.md`)
 - [ ] CLAUDE.md company section filled in
+- [ ] Start impact journal (`context/personal/impact-journal.md`)
+- [ ] Identify cross-org stakeholders and log in initiative tracker
+- [ ] Run first AI research scan (`skills/discovery/ai-research-scout`)
 
 ### Week 2 (Important)
 - [ ] OKRs documented (`context/strategy/okrs.md`)

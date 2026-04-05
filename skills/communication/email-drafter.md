@@ -35,6 +35,9 @@ Draft context-aware emails calibrated to the audience, purpose, and tone. Draw o
 | Bad news / delay | Honest, solution-oriented | Medium (10-15 lines) | Situation → impact → what we're doing about it → timeline |
 | Escalation | Factual, neutral | Medium (10-15 lines) | Context → issue → what's been tried → what's needed |
 | FYI / sharing info | Brief, helpful | Short (5-8 lines) | Here's what → why it matters to you → action if any |
+| Executive narrative | Strategic, confident | Medium-long (15-25 lines) | Strategic context → key insight → business implication → recommended action → what I need from you |
+
+**For executive narrative type**: Write at business strategy altitude. Include one concrete data point early. Demonstrate second-order thinking — show you've considered implications beyond the immediate topic. Frame asks in terms of business impact, not task completion.
 
 ### Step 2: Check stakeholder context
 Read `context/team/stakeholder-map.md` for the recipient:
