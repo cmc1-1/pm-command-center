@@ -390,12 +390,28 @@ After 3 months of meeting processing + decision logging, you have more documente
 3. Update INDEX.md
 4. Reference in relevant skills' auto-loaded context so they read it
 
+### Adding a Tool Integration (MCP)
+When a new tool needs to be connected to the PM Command Center:
+
+1. **Check for an MCP server**: Search the [MCP Registry](https://registry.modelcontextprotocol.io/) or run `claude mcp search <tool-name>`
+2. **Connect the MCP**: Run `claude mcp add <server-name> <command>` with the appropriate auth token
+3. **Verify the connection**: Run `claude mcp list` to confirm it's active
+4. **Identify which skills benefit**: Determine which skills should use the new tool (reference `docs/INTEGRATIONS.md` for the pattern)
+5. **Update affected skills**: Add a `**[Tool Name]** (if connected):` block to the "Tool Integrations" section of each relevant skill file. Gate all steps with "(if connected)" checks so skills still work without it
+6. **Update `CLAUDE.md`**: Add the tool to the MCP Connections checklist under the appropriate tier
+7. **Update `docs/INTEGRATIONS.md`**: Add the tool to the tool stack table, connection details, and any context auto-population mappings
+8. **Update this GUIDE.md**: Add to Section 3 (Tool Integrations), Section 4 (skill descriptions if capabilities change), and Section 12 (if new files are created)
+9. **Test end-to-end**: Run a skill that uses the new tool and verify the integration works
+
+**Key rule**: Every MCP step must be gated by availability. Skills must work identically without the MCP — integrations are additive, never required.
+
 ### Modifying a Skill
 Open the `.md` file and edit directly, or say "update the [skill name] skill to [change]" in Claude Code. Changes take effect immediately on the next run. Common modifications:
 - Add/remove auto-loaded context files
 - Add process steps
 - Adjust output format
 - Add integration points
+- Add MCP tool integration steps (gate with "if connected")
 
 ---
 

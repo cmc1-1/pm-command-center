@@ -249,4 +249,63 @@ After connecting each MCP:
 
 ---
 
+## Adding a New Tool Integration
+
+When a new tool joins the Evisort stack (or you want to connect a tool not listed here):
+
+### Step 1: Find the MCP server
+- Search the [MCP Registry](https://registry.modelcontextprotocol.io/)
+- Run `claude mcp search <tool-name>` in Claude Code
+- Check if it's official (maintained by the tool vendor) or community (third-party)
+- Verify read/write capabilities match your needs
+
+### Step 2: Connect and authenticate
+```bash
+claude mcp add <server-name> <command>
+```
+- Provide auth token (API key, OAuth token, or SSO-based)
+- Verify with `claude mcp list`
+- Test with a simple read operation to confirm access
+
+### Step 3: Identify integration points
+Ask: which skills would benefit from this tool? Use this decision matrix:
+
+| If the tool provides... | Update these skills... |
+|------------------------|----------------------|
+| Task/ticket data | morning-briefing, action-item-extractor, end-of-day-rollup |
+| Documentation | prd-generator, meeting-summarizer, decision-logger, onboarding-accelerator |
+| Messaging/communication | meeting-summarizer, email-drafter, action-item-extractor |
+| Analytics/metrics | morning-briefing, prd-generator, strategy-critique, bold-idea-lab |
+| Product/roadmap data | bold-idea-lab, prd-generator, onboarding-accelerator |
+| Design assets | prd-generator, meeting-summarizer (design reviews) |
+| Code/CI/CD | morning-briefing, end-of-day-rollup |
+| Error/monitoring | morning-briefing |
+
+### Step 4: Update skill files
+For each affected skill, add a block to the "Tool Integrations (when MCP connected)" section:
+```markdown
+**[Tool Name]** (if connected):
+- [What to read/pull from the tool]
+- [What to write/push to the tool]
+- [What context file to auto-populate, if any]
+```
+
+**Key rule**: Gate every step with "(if connected)". Skills must work identically without the MCP.
+
+### Step 5: Update documentation
+1. **This file** (`docs/INTEGRATIONS.md`): Add to tool stack table, create a connection section with setup details
+2. **`CLAUDE.md`**: Add to MCP Connections checklist under the appropriate tier
+3. **`GUIDE.md`**: Update Section 3 (Tool Integrations overview), Section 4 (skill capabilities if changed), Section 12 (file inventory if new files)
+4. **`INDEX.md`**: Update onboarding checklist if it should be connected during onboarding
+
+### Step 6: Test end-to-end
+1. Run a skill that uses the new tool
+2. Verify the tool integration steps activate and produce correct output
+3. Verify skills still work correctly if the MCP is disconnected
+
+### Step 7: Document in context auto-population map
+If the new tool can auto-populate any context files, add it to the "Context Auto-Population Map" table above so it's tracked.
+
+---
+
 *Connect progressively. Each MCP makes the system smarter. By Week 3, you'll wonder how you worked without them.*
