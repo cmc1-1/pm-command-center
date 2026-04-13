@@ -98,7 +98,7 @@ This is the routing table for the PM Command Center. Claude reads this file firs
 ### Skills
 | Category | Location | Skills Available |
 |----------|----------|-----------------|
-| Daily routines | `skills/daily/` | morning-briefing, impact-journal, end-of-day-rollup (built); email-triage |
+| Daily routines | `skills/daily/` | morning-briefing, impact-journal, end-of-day-rollup, onboarding-accelerator (built); email-triage |
 | Meetings | `skills/meetings/` | meeting-summarizer, 1on1-processor, meeting-prep |
 | Discovery | `skills/discovery/` | ai-research-scout, market-intelligence (available); interview-synthesis, feedback-clustering, competitive-scan, market-sizing |
 | Definition | `skills/definition/` | prd-generator, user-story-generator, spec-reviewer, release-notes |

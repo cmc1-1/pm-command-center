@@ -11,7 +11,7 @@ The PM Command Center is an AI-powered product management productivity system th
 
 **What it is**:
 - A structured knowledge system built on Markdown files
-- 12 automated workflow skills that read your context before acting
+- 13 automated workflow skills that read your context before acting
 - 19 templates encoding proven PM document structures
 - A persistent context layer that grows with every interaction
 - A career acceleration engine targeting Principal PM promotion
@@ -56,7 +56,7 @@ pm-command-center/
 ├── GUIDE.md               # This file — complete user manual
 ├── README.md              # GitHub readme
 │
-├── skills/                # Workflow definitions (12 skills)
+├── skills/                # Workflow definitions (13 skills)
 │   ├── daily/             # morning-briefing, impact-journal, end-of-day-rollup
 │   ├── meetings/          # meeting-summarizer
 │   ├── discovery/         # ai-research-scout, market-intelligence
