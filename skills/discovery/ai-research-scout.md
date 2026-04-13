@@ -17,7 +17,7 @@ Stay current on AI developments that matter for product strategy, competitive po
   - Time window: last 1 week (default), 2 weeks, or custom
   - Depth: quick scan (headlines + relevance) or deep dive (full analysis + implications)
 - **Auto-loaded context** (read before processing):
-  - `context/strategy/domain-expertise.md` — current AI knowledge base and areas of focus
+  - `context/my/domain-expertise.md` — current AI knowledge base and areas of focus
   - `context/product-overview.md` — product context for relevance filtering
   - `context/strategy/current-priorities.md` — to prioritize findings by strategic relevance
 
@@ -112,8 +112,8 @@ Assemble findings into a report:
 
 ### Step 5: Update knowledge base
 After generating the briefing, offer to:
-- **Append to domain expertise**: Add key insights or new knowledge to `context/strategy/domain-expertise.md`
-- **Flag for innovation pipeline**: If any development suggests a product opportunity, offer to add it to `context/strategy/innovation-pipeline.md` as a raw signal
+- **Append to domain expertise**: Add key insights or new knowledge to `context/my/domain-expertise.md`
+- **Flag for innovation pipeline**: If any development suggests a product opportunity, offer to add it to `context/my/innovation-pipeline.md` as a raw signal
 - **Update competitive context**: If competitor moves were found, offer to update `context/competitors/matrix.md`
 
 ## Output Format
@@ -135,6 +135,6 @@ Save to: `artifacts/reports/YYYY-MM-DD-ai-research-scan.md`
 ## Integration Points
 - **Morning Briefing**: Major AI developments can surface in the Cross-Org Radar section
 - **Bold Idea Lab**: AI research findings feed directly into trend-riding brainstorm mode
-- **Market Intelligence**: AI developments relevant to the legal tech / CLM space are cross-referenced
+- **Market Intelligence**: AI developments relevant to your market space are cross-referenced
 - **Strategy Critique**: New AI capabilities can inform feasibility and differentiation assessments
 - **PRD Generator**: Emerging AI capabilities inform what's technically possible in new product definitions

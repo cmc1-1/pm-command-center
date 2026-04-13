@@ -24,9 +24,9 @@ Creative brainstorming engine that generates bold, grounded product ideas throug
   - `context/strategy/current-priorities.md` — strategic direction and focus areas
   - `context/strategy/okrs.md` — objectives and measurable targets
   - `context/metrics/north-star.md` — what success looks like quantitatively
-  - `context/strategy/domain-expertise.md` — industry knowledge and technology trends
-  - `context/strategy/innovation-pipeline.md` — existing ideas in various stages
-  - `context/strategy/pm-frameworks.md` — mental models and evaluation frameworks
+  - `context/my/domain-expertise.md` — industry knowledge and technology trends
+  - `context/my/innovation-pipeline.md` — existing ideas in various stages
+  - `context/my/pm-frameworks.md` — mental models and evaluation frameworks
   - `context/decisions/decision-log.md` — prior decisions and their rationale
 
 ## Process
@@ -160,7 +160,7 @@ Assemble the session report:
 
 ### Step 7: Update knowledge base
 After generating the report:
-- **Add to innovation pipeline**: Add surviving ideas to `context/strategy/innovation-pipeline.md` as "Raw Signal" (unvalidated) or "Hypothesis" (partially validated through stress testing)
+- **Add to innovation pipeline**: Add surviving ideas to `context/my/innovation-pipeline.md` as "Raw Signal" (unvalidated) or "Hypothesis" (partially validated through stress testing)
 - **Offer downstream skills**: For the top-ranked idea, offer to run an Opportunity Assessment or draft a lean PRD
 - **Log the session**: Note the brainstorm in the decision log if any strategic direction emerges
 

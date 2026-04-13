@@ -107,17 +107,18 @@ This is the routing table for the PM Command Center. Claude reads this file firs
 | Email drafts | `artifacts/emails/` |
 | Prototypes | `artifacts/prototypes/` |
 
-### Skills
-| Category | Location | Skills Available |
-|----------|----------|-----------------|
-| Daily routines | `skills/daily/` | morning-briefing, impact-journal, end-of-day-rollup, onboarding-accelerator (built); email-triage |
-| Meetings | `skills/meetings/` | meeting-summarizer, 1on1-processor, meeting-prep |
-| Discovery | `skills/discovery/` | ai-research-scout, market-intelligence (available); interview-synthesis, feedback-clustering, competitive-scan, market-sizing |
-| Definition | `skills/definition/` | prd-generator, user-story-generator, spec-reviewer, release-notes |
-| Strategy | `skills/strategy/` | bold-idea-lab (available); strategy-critique, decision-logger, opportunity-scoring, roadmap-narrative |
-| Execution | `skills/execution/` | action-item-extractor, status-report, blocker-scanner, ticket-generator |
-| Communication | `skills/communication/` | email-drafter, exec-update-writer, stakeholder-faq, deck-builder |
-| Data | `skills/data/` | metric-explorer, funnel-analyzer, nps-analyzer |
+### Skills (13 built)
+| Category | Location | Built Skills |
+|----------|----------|-------------|
+| Daily routines | `skills/daily/` | morning-briefing, impact-journal, end-of-day-rollup, onboarding-accelerator |
+| Meetings | `skills/meetings/` | meeting-summarizer |
+| Discovery | `skills/discovery/` | ai-research-scout, market-intelligence |
+| Definition | `skills/definition/` | prd-generator |
+| Strategy | `skills/strategy/` | strategy-critique, decision-logger, bold-idea-lab |
+| Execution | `skills/execution/` | action-item-extractor |
+| Communication | `skills/communication/` | email-drafter |
+
+_See GUIDE.md Section 4 for 9 future skills to build as context accumulates._
 
 ### Templates
 | Template | Location |
@@ -161,7 +162,7 @@ Track your progress populating the knowledge base:
 - [ ] Org context notes (`context/team/org-context.md`)
 - [ ] Connect Amplitude MCP
 - [ ] Connect Productboard MCP
-- [ ] Connect GitHub MCP (Evisort + Workday repos)
+- [ ] Connect GitHub MCP
 
 ### Month 1 (Comprehensive)
 - [ ] 20+ context files populated

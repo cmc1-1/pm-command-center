@@ -95,7 +95,7 @@ pm-command-center/
 ```
 
 ### Tool Integrations (MCP)
-When you connect Evisort's tools via MCP (Model Context Protocol), skills automatically upgrade:
+When you connect your team's tools via MCP (Model Context Protocol), skills automatically upgrade:
 - **Slack** → Morning briefing scans channels, meeting summaries auto-post, action item nudges via DM
 - **Jira** → Action items become tickets, sprint data auto-populates, blocker detection
 - **Confluence** → PRDs publish directly, onboarding pulls existing docs into context files
@@ -143,7 +143,7 @@ Skills are smart because they read context first. The Meeting Summarizer reads y
 | Skill | Trigger Phrases | What It Does | MCP Superpowers |
 |-------|----------------|--------------|-----------------|
 | **AI Research Scout** | "AI research scan", "what's new in AI" | Frontier scan: new models, techniques, papers, regulation → structured briefing with product implications | — (web-based research, no MCP needed) |
-| **Market Intelligence** | "market intel", "legal tech scan" | Legal tech landscape: competitor moves, market trends, analyst reports → positioning assessment | — (web-based research, no MCP needed) |
+| **Market Intelligence** | "market intel", "market scan" | Competitive landscape: competitor moves, market trends, analyst reports → positioning assessment | — (web-based research, no MCP needed) |
 
 #### Product Definition
 | Skill | Trigger Phrases | What It Does | MCP Superpowers |
@@ -260,7 +260,7 @@ One-time effort that makes every skill dramatically smarter:
 
 ### Compounds Over Months (long-term accumulation)
 These become your unfair advantage over time:
-- **Domain expertise** — AI + legal tech knowledge grows weekly
+- **Domain expertise** — Industry and technology knowledge grows weekly
 - **Innovation pipeline** — Idea inventory from months of brainstorming
 - **Promotion packet** — Documented evidence across 7 competencies
 - **Mentorship tracker** — Relationships and growth over time
@@ -303,7 +303,7 @@ These become your unfair advantage over time:
 |------|---------|
 | Update promotion packet with month's strongest evidence | Edit `context/my/promotion-packet.md` |
 | Review innovation pipeline — promote/park/kill ideas | Edit `context/my/innovation-pipeline.md` |
-| Market intelligence — full legal tech landscape scan | "market intel" |
+| Market intelligence — full competitive landscape scan | "market intel" |
 | Bold idea lab — creative session seeded from context | "bold idea lab" |
 | Audit domain expertise — add new knowledge | Edit `context/my/domain-expertise.md` |
 | Audit INDEX.md for accuracy | Review `INDEX.md` |
@@ -329,7 +329,7 @@ The system is designed to create Principal PM operating leverage. Here's how eac
 Weekly AI research scans + domain-expertise.md accumulation = you're always the most informed person in the room about AI developments. When leadership asks "what does this mean for us?", you have the answer with context.
 
 ### Market Intelligence
-Bi-weekly legal tech scans ensure you know every competitor move before your leadership does. You spot threats and opportunities first. That's Principal-level pattern recognition.
+Bi-weekly market scans ensure you know every competitor move before your leadership does. You spot threats and opportunities first. That's Principal-level pattern recognition.
 
 ### Bold Thinking
 Monthly bold-idea-lab sessions generate the ideas that become next quarter's roadmap. Principals bring ideas, not just execute them. The system stress-tests your ideas against real context before you pitch them.
@@ -443,15 +443,15 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 | Want to build a future skill early | Check the prerequisites table in Section 4 — if the context exists, build it |
 | Output feels generic or surface-level | Say "think harder" — Claude will use deeper reasoning and challenge assumptions |
 | Context window getting full | Skills only load relevant context, not everything. INDEX.md routes efficiently |
-| MCP server won't connect | Check auth token, verify Zscaler is active for Evisort tools. See `docs/INTEGRATIONS.md` |
+| MCP server won't connect | Check auth token and VPN/SSO requirements. See `docs/INTEGRATIONS.md` |
 | Skills don't show MCP data | Verify MCP is listed in `claude mcp list`. Skills check for connection before attempting MCP steps |
-| How do I connect Evisort tools? | See `docs/INTEGRATIONS.md` — Tier 1 (Slack, Jira, Confluence) first, then Tier 2, then Tier 3 |
+| How do I connect my tools? | See `docs/INTEGRATIONS.md` — Tier 1 (Slack, Jira, Confluence) first, then Tier 2, then Tier 3 |
 
 ---
 
 ## 12. File Inventory
 
-### Root Files (7)
+### Root Files (8)
 | File | Purpose |
 |------|---------|
 | `CLAUDE.md` | Team framework, knowledge base routing, Principal PM directives |
@@ -471,7 +471,7 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 | `skills/daily/onboarding-accelerator.md` | Pull connected tools → auto-populate context files |
 | `skills/meetings/meeting-summarizer.md` | Transcript → structured notes + KB updates |
 | `skills/discovery/ai-research-scout.md` | AI frontier monitoring |
-| `skills/discovery/market-intelligence.md` | Legal tech landscape tracking |
+| `skills/discovery/market-intelligence.md` | Competitive landscape tracking |
 | `skills/definition/prd-generator.md` | Socratic PRD generation |
 | `skills/strategy/strategy-critique.md` | 7-dimension strategy scoring |
 | `skills/strategy/decision-logger.md` | Decision recording with conflict detection |
@@ -565,14 +565,14 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 | `research/` | Interview transcripts, survey data |
 | `inbox/` | Raw inputs (recordings, screenshots) |
 
-### Planning Docs (5 — committed)
+### Docs (5 — committed)
 | File | Purpose |
 |------|---------|
-| `docs/SETUP.md` | Original build instructions |
-| `docs/ARCHITECTURE.md` | System design documentation |
-| `docs/PATTERNS.md` | Skill and template design patterns |
-| `docs/MAINTENANCE.md` | Ongoing maintenance guide |
-| `docs/INTEGRATIONS.md` | Evisort tool stack integration guide |
+| `docs/INTEGRATIONS.md` | Tool stack integration guide (MCP setup, tiers, automation) |
+| `docs/AI_PM_Assistant_Blueprint.md` | Original system design blueprint |
+| `docs/PM_Command_Center_Implementation_Plan.md` | Build plan and implementation log |
+| `docs/PM_Command_Center_Systems_Architecture.md` | System architecture documentation |
+| `docs/PM_Command_Center_Unified_Blueprint_v2.md` | Unified blueprint v2 |
 
 ---
 

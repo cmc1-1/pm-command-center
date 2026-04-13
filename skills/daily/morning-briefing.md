@@ -19,7 +19,7 @@ Generate a daily situational awareness digest that surfaces what needs attention
   - `tracking/action-items.md` — overdue, due today, due this week
   - `context/decisions/decision-log.md` — recent decisions and pending decisions
   - `context/strategy/current-priorities.md` — current strategic priorities
-  - `context/strategy/current-sprint.md` — sprint commitments and status
+  - `tracking/current-sprint.md` — sprint commitments and status
   - `tracking/risks-and-blockers.md` — active risks and blockers
   - `context/metrics/north-star.md` — metric targets and recent performance
   - `context/my/impact-journal.md` — recent entries and logging gaps
