@@ -108,45 +108,45 @@ Skills are smart because they read context first. The Meeting Summarizer reads y
 ### Skills — Ready Now (13 built)
 
 #### Daily Habits
-| Skill | Trigger Phrases | What It Does |
-|-------|----------------|--------------|
-| **Morning Briefing** | "morning briefing", "start my day" | Daily digest: overdue items, today's priorities, metric alerts, cross-org signals, impact opportunities |
-| **Impact Journal** | "log impact", "record win" | Structured win/outcome entry tagged to 10 categories and 7 Principal PM competencies. Feeds promotion packet |
-| **End of Day Rollup** | "end of day", "EOD", "wrap up" | EOD summary: what happened, gaps identified, tomorrow's top 3 priorities |
+| Skill | Trigger Phrases | What It Does | MCP Superpowers |
+|-------|----------------|--------------|-----------------|
+| **Morning Briefing** | "morning briefing", "start my day" | Daily digest: overdue items, today's priorities, metric alerts, cross-org signals, impact opportunities | +Slack: scans channels for overnight @mentions. +Jira: pulls live sprint status. +Amplitude: shows real metric trends. +Grafana/Sentry: surfaces overnight alerts |
+| **Impact Journal** | "log impact", "record win" | Structured win/outcome entry tagged to 10 categories and 7 Principal PM competencies. Feeds promotion packet | — (local-only, no MCP needed) |
+| **End of Day Rollup** | "end of day", "EOD", "wrap up" | EOD summary: what happened, gaps identified, tomorrow's top 3 priorities | +Slack: counts today's messages/threads. +Jira: shows tickets moved today. +GitHub: lists PRs reviewed/merged |
 
 #### Meetings & Tracking
-| Skill | Trigger Phrases | What It Does |
-|-------|----------------|--------------|
-| **Meeting Summarizer** | "summarize this meeting", "process meeting notes" | Transcript → structured notes with decisions, action items, sentiment, quotes, cross-org signals. Auto-updates knowledge base |
-| **Action Item Extractor** | "extract action items from..." | Any text → structured action items in tracker with IDs, owners, deadlines |
-| **Decision Logger** | "log this decision" | Structured decision record with conflict detection against prior decisions |
+| Skill | Trigger Phrases | What It Does | MCP Superpowers |
+|-------|----------------|--------------|-----------------|
+| **Meeting Summarizer** | "summarize this meeting", "process meeting notes" | Transcript → structured notes with decisions, action items, sentiment, quotes, cross-org signals. Auto-updates knowledge base | +Slack: posts summary to channel. +Jira: creates tickets from action items. +Confluence: publishes as team-visible page |
+| **Action Item Extractor** | "extract action items from..." | Any text → structured action items in tracker with IDs, owners, deadlines | +Jira: bulk-creates tickets with assignees/dates. +Slack: sends DM notifications to owners |
+| **Decision Logger** | "log this decision" | Structured decision record with conflict detection against prior decisions | +Confluence: syncs to shared decision log page. +Slack: posts decision announcement. +Jira: creates follow-up tickets |
 
 #### Strategy & Ideation
-| Skill | Trigger Phrases | What It Does |
-|-------|----------------|--------------|
-| **Strategy Critique** | "critique this strategy", "red team this" | 7-dimension scoring (including Business Impact Clarity) + devil's advocate + gaps analysis |
-| **Bold Idea Lab** | "bold idea lab", "brainstorm product ideas", "what if we..." | Generate 5-8 bold ideas, filter to 3-5, stress-test survivors, rank with validation plan |
+| Skill | Trigger Phrases | What It Does | MCP Superpowers |
+|-------|----------------|--------------|-----------------|
+| **Strategy Critique** | "critique this strategy", "red team this" | 7-dimension scoring (including Business Impact Clarity) + devil's advocate + gaps analysis | — (local-only, context-driven) |
+| **Bold Idea Lab** | "bold idea lab", "brainstorm product ideas", "what if we..." | Generate 5-8 bold ideas, filter to 3-5, stress-test survivors, rank with validation plan | +Productboard: checks existing ideas first. +Amplitude: validates with usage data. +Confluence: publishes to innovation space |
 
 #### Discovery & Research
-| Skill | Trigger Phrases | What It Does |
-|-------|----------------|--------------|
-| **AI Research Scout** | "AI research scan", "what's new in AI" | Frontier scan: new models, techniques, papers, regulation → structured briefing with product implications |
-| **Market Intelligence** | "market intel", "legal tech scan" | Legal tech landscape: competitor moves, market trends, analyst reports → positioning assessment |
+| Skill | Trigger Phrases | What It Does | MCP Superpowers |
+|-------|----------------|--------------|-----------------|
+| **AI Research Scout** | "AI research scan", "what's new in AI" | Frontier scan: new models, techniques, papers, regulation → structured briefing with product implications | — (web-based research, no MCP needed) |
+| **Market Intelligence** | "market intel", "legal tech scan" | Legal tech landscape: competitor moves, market trends, analyst reports → positioning assessment | — (web-based research, no MCP needed) |
 
 #### Product Definition
-| Skill | Trigger Phrases | What It Does |
-|-------|----------------|--------------|
-| **PRD Generator** | "create a PRD for...", "help me spec out" | Socratic Q&A (3-4 rounds) → full PRD with business case summary, auto-critique from engineering + UX perspectives |
+| Skill | Trigger Phrases | What It Does | MCP Superpowers |
+|-------|----------------|--------------|-----------------|
+| **PRD Generator** | "create a PRD for...", "help me spec out" | Socratic Q&A (3-4 rounds) → full PRD with business case summary, auto-critique from engineering + UX perspectives | +Confluence: publishes PRD. +Jira: creates epic + stories. +Amplitude: pulls metric baselines. +Productboard: cross-references feature requests |
 
 #### Communication
-| Skill | Trigger Phrases | What It Does |
-|-------|----------------|--------------|
-| **Email Drafter** | "draft an email to...", "write an email" | Context-aware email calibrated to recipient, with 8 types including executive narrative |
+| Skill | Trigger Phrases | What It Does | MCP Superpowers |
+|-------|----------------|--------------|-----------------|
+| **Email Drafter** | "draft an email to...", "write an email" | Context-aware email calibrated to recipient, with 8 types including executive narrative | +Slack: offers to send as DM or channel post instead. +Confluence: publishes longer updates as pages |
 
 #### Onboarding
-| Skill | Trigger Phrases | What It Does |
-|-------|----------------|--------------|
-| **Onboarding Accelerator** | "onboarding accelerator", "pull company context" | Pulls Confluence, Jira, Productboard, Slack, Amplitude data to auto-populate context files. Cuts onboarding from 2 weeks to 2-3 days (requires Tier 1-2 MCPs) |
+| Skill | Trigger Phrases | What It Does | MCP Superpowers |
+|-------|----------------|--------------|-----------------|
+| **Onboarding Accelerator** | "onboarding accelerator", "pull company context" | Pulls from connected tools to auto-populate context files. Cuts onboarding from 2 weeks to 2-3 days | Requires MCPs: Confluence (docs), Jira (sprint/team), Productboard (roadmap), Slack (profiles), Amplitude (metrics) |
 
 ### Skills — Build Later (9 future, documented with prerequisites)
 
