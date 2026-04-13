@@ -17,18 +17,30 @@ This is the routing table for the PM Command Center. Claude reads this file firs
 ### Identity & Preferences
 | Topic | File | Status |
 |-------|------|--------|
-| Who I am, working style, AI instructions | `CLAUDE.md` | ✅ Ready |
-| PM frameworks and methodology | `context/personal/pm-frameworks.md` | ✅ Ready |
-| Interview methodology | `context/personal/interview-playbook.md` | ✅ Ready |
-| Stakeholder management playbook | `context/personal/stakeholder-strategies.md` | ✅ Ready |
-| Writing voice and samples | `context/personal/writing-samples.md` | ✅ Ready |
-| Career goals for this role | `context/personal/career-goals.md` | ✅ Ready |
-| Lessons from previous roles | `context/personal/lessons-learned.md` | ✅ Ready |
-| Impact journal | `context/personal/impact-journal.md` | ⬜ Needs setup |
-| Domain expertise | `context/personal/domain-expertise.md` | ⬜ Needs setup |
-| Innovation pipeline | `context/personal/innovation-pipeline.md` | ⬜ Needs setup |
-| Mentorship tracker | `context/personal/mentorship-tracker.md` | ⬜ Needs setup |
-| Promotion packet | `context/personal/promotion-packet.md` | ⬜ Needs setup |
+| Who I am, working style, AI instructions | `MY_PROFILE.md` | ⬜ Fill from template |
+| PM frameworks and methodology | `context/my/pm-frameworks.md` | ✅ Ready |
+| Interview methodology | `context/my/interview-playbook.md` | ✅ Ready |
+| Stakeholder management playbook | `context/my/stakeholder-strategies.md` | ✅ Ready |
+| Writing voice and samples | `context/my/writing-samples.md` | ✅ Ready |
+| Career goals for this role | `context/my/career-goals.md` | ✅ Ready |
+| Lessons from previous roles | `context/my/lessons-learned.md` | ✅ Ready |
+| Impact journal | `context/my/impact-journal.md` | ⬜ Needs setup |
+| Domain expertise | `context/my/domain-expertise.md` | ⬜ Needs setup |
+| Innovation pipeline | `context/my/innovation-pipeline.md` | ⬜ Needs setup |
+| Mentorship tracker | `context/my/mentorship-tracker.md` | ⬜ Needs setup |
+| Promotion packet | `context/my/promotion-packet.md` | ⬜ Needs setup |
+
+### Shared Company Context
+| Topic | File | Status |
+|-------|------|--------|
+| Product overview (shared) | `context/company/product-overview.md` | ⬜ Admin populates |
+| Team tool stack | `context/company/tool-stack.md` | ⬜ Admin populates |
+| PM team norms & practices | `context/company/pm-team-norms.md` | ⬜ Admin populates |
+
+### Personal Context Templates (for new PMs)
+| Topic | File |
+|-------|------|
+| All 11 blank templates | `context/my.template/` — copied to `context/my/` by setup script |
 
 ### Product & Strategy
 | Topic | File | Status |
@@ -132,11 +144,11 @@ Track your progress populating the knowledge base:
 - [ ] First meeting processed through meeting summarizer
 - [ ] Action item tracker active (`tracking/action-items.md`)
 - [ ] First decisions logged (`context/decisions/decision-log.md`)
-- [ ] CLAUDE.md company section filled in
+- [ ] MY_PROFILE.md filled in with your details
 - [ ] Connect Slack MCP (Dev workspace)
 - [ ] Connect Atlassian MCP (Jira + Confluence)
 - [ ] Run onboarding accelerator to pull Confluence docs → context files
-- [ ] Start impact journal (`context/personal/impact-journal.md`)
+- [ ] Start impact journal (`context/my/impact-journal.md`)
 - [ ] Identify cross-org stakeholders and log in initiative tracker
 - [ ] Run first AI research scan (`skills/discovery/ai-research-scout`)
 

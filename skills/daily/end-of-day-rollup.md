@@ -4,7 +4,7 @@
 - name: end-of-day-rollup
 - trigger: "end of day", "EOD", "wrap up my day", "daily rollup"
 - version: 1.0
-- author: Chetan
+- author: PM Command Center Team
 - category: daily
 
 ## Purpose
@@ -17,7 +17,7 @@ Generate an end-of-day summary that reconstructs what was accomplished, identifi
   - Tomorrow's known commitments or calendar highlights
 - **Auto-loaded context** (read before processing):
   - `tracking/action-items.md` — items created, completed, or updated today
-  - `context/personal/impact-journal.md` — today's entries (filter by today's date)
+  - `context/my/impact-journal.md` — today's entries (filter by today's date)
   - `artifacts/meetings/` — any meeting summaries from today (files matching today's date)
   - `context/strategy/current-priorities.md` — to anchor tomorrow's priorities
 
@@ -34,13 +34,13 @@ Scan the knowledge base for all activity from today:
 | **Action items updated** | `tracking/action-items.md` — items with status changes today | Progress updates, reassignments, deadline changes |
 | **Decisions made** | `context/decisions/decision-log.md` — entries from today | New decisions logged |
 | **Artifacts generated** | `artifacts/` — files created or modified today | PRDs, reports, emails, or other outputs |
-| **Impact logged** | `context/personal/impact-journal.md` — today's entries | Wins and outcomes recorded |
+| **Impact logged** | `context/my/impact-journal.md` — today's entries | Wins and outcomes recorded |
 
 ### Step 1b: Pull today's activity from connected tools (if MCP connected)
 
 **Slack** (if connected):
 - Count messages sent/received today
-- List Slack threads Chetan started or actively participated in
+- List Slack threads the user started or actively participated in
 - Check for unanswered threads or DMs
 
 **Jira** (if connected):

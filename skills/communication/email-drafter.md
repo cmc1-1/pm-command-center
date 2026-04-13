@@ -4,11 +4,11 @@
 - name: email-drafter
 - trigger: "draft an email", "write an email to", "send a follow-up"
 - version: 1.0
-- author: Chetan
+- author: PM Command Center Team
 - category: communication
 
 ## Purpose
-Draft context-aware emails calibrated to the audience, purpose, and tone. Draw on stakeholder relationship context, meeting history, and action items to produce emails that sound like Chetan wrote them — direct, structured, confident.
+Draft context-aware emails calibrated to the audience, purpose, and tone. Draw on stakeholder relationship context, meeting history, and action items to produce emails that sound like the user wrote them (match voice from MY_PROFILE.md) — direct, structured, confident.
 
 ## Inputs
 - **Required**: Who the email is to, and what it's about (can be brief)
@@ -19,7 +19,7 @@ Draft context-aware emails calibrated to the audience, purpose, and tone. Draw o
 - **Auto-loaded context**:
   - `context/team/directory.md` — recipient role and context
   - `context/team/stakeholder-map.md` — relationship notes, communication preferences
-  - `CLAUDE.md` — Chetan's writing style preferences
+  - `CLAUDE.md` — the user's writing style preferences (from MY_PROFILE.md)
   - Recent `artifacts/meetings/` — if email is a meeting follow-up
 
 ## Process
@@ -49,7 +49,7 @@ Read `context/team/stakeholder-map.md` for the recipient:
 Adjust tone and level of detail accordingly.
 
 ### Step 3: Draft the email
-Follow Chetan's writing style (from CLAUDE.md):
+Follow the user's writing style (from MY_PROFILE.md):
 - Lead with the "so what" — never bury the lead
 - Be direct but not blunt
 - Use structure (brief bullets for action items, not walls of text)

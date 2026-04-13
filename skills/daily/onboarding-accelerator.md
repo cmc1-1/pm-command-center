@@ -4,7 +4,7 @@
 - name: onboarding-accelerator
 - trigger: "onboarding accelerator", "pull company context", "bootstrap context", "auto-populate context"
 - version: 1.0
-- author: Chetan
+- author: PM Command Center Team
 - category: daily
 
 ## Purpose

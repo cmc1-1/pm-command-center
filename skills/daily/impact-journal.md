@@ -4,7 +4,7 @@
 - name: impact-journal
 - trigger: "log impact", "record win", "impact entry", "I accomplished"
 - version: 1.0
-- author: Chetan
+- author: PM Command Center Team
 - category: daily
 
 ## Purpose
@@ -18,9 +18,9 @@ Capture wins, outcomes, and accomplishments in a structured format that builds a
   - Stakeholders involved or audience
   - Link to related artifact (PRD, meeting notes, email thread)
 - **Auto-loaded context** (read before processing):
-  - `context/personal/impact-journal.md` — existing entries for deduplication and pattern detection
-  - `context/personal/career-goals.md` — current career objectives and target role
-  - `context/personal/promotion-packet.md` — competency evidence inventory
+  - `context/my/impact-journal.md` — existing entries for deduplication and pattern detection
+  - `context/my/career-goals.md` — current career objectives and target role
+  - `context/my/promotion-packet.md` — competency evidence inventory
 
 ## Process
 
@@ -50,7 +50,7 @@ Based on the entry content and taxonomy tags, map to one or more competencies:
 | **Innovation** | INNOVATION, STRATEGY — introduced new approaches, challenged assumptions, created new value |
 
 ### Step 3: Append to impact journal
-Add the structured entry to `context/personal/impact-journal.md` in this format:
+Add the structured entry to `context/my/impact-journal.md` in this format:
 
 ```
 ### [Date] — [Short title]
@@ -68,7 +68,7 @@ Add the structured entry to `context/personal/impact-journal.md` in this format:
 ```
 
 ### Step 4: Offer promotion packet update
-After logging the entry, evaluate whether it is a strong example for any competency in `context/personal/promotion-packet.md`:
+After logging the entry, evaluate whether it is a strong example for any competency in `context/my/promotion-packet.md`:
 - If the entry is a clear, compelling example — offer to add it to the relevant competency section in the promotion packet
 - If the entry reinforces an existing example — offer to strengthen that section with the new data point
 - If the entry represents a new competency area not yet covered — flag it as a gap-filler and recommend adding it
@@ -97,7 +97,7 @@ Only run this analysis when a new entry is logged, not every time the file is re
 
 > [Full description]
 
-**Saved to**: context/personal/impact-journal.md
+**Saved to**: context/my/impact-journal.md
 
 ### Promotion Packet
 [Recommendation: add to packet / strengthens existing entry / not strong enough yet]

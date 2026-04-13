@@ -4,7 +4,7 @@
 - name: ai-research-scout
 - trigger: "AI research scan", "what's new in AI", "AI landscape update", "frontier scan"
 - version: 1.0
-- author: Chetan
+- author: PM Command Center Team
 - category: discovery
 
 ## Purpose
@@ -52,7 +52,7 @@ Score each finding on four relevance dimensions:
 | **Direct product impact** | Could this change our product roadmap or feature set? | High / Medium / Low / None |
 | **Competitive impact** | Does this affect our competitive position or a competitor's capabilities? | High / Medium / Low / None |
 | **Market impact** | Does this shift buyer expectations, market dynamics, or industry direction? | High / Medium / Low / None |
-| **Thought leadership value** | Could Chetan reference this in talks, blog posts, or stakeholder conversations? | High / Medium / Low / None |
+| **Thought leadership value** | Could the user reference this in talks, blog posts, or stakeholder conversations? | High / Medium / Low / None |
 
 Keep items that score Medium or higher on at least one dimension. Drop the rest.
 
@@ -89,7 +89,7 @@ Assemble findings into a report:
 ---
 
 ## Thought Leadership Angles
-2-3 talking points Chetan can use in conversations, presentations, or writing:
+2-3 talking points the user can share in conversations, presentations, or writing:
 1. [Angle with supporting evidence]
 2. [Angle with supporting evidence]
 3. [Angle with supporting evidence]

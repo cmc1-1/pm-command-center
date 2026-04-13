@@ -28,6 +28,12 @@ The PM Command Center is an AI-powered product management productivity system th
 
 ## 2. Quick Start (First 5 Minutes)
 
+### First-time setup (once)
+1. Clone the repo and run the setup script: `./setup.sh` (Mac/Linux) or `.\setup.ps1` (Windows)
+2. Open `MY_PROFILE.md` and fill in your name, background, working style, and preferences
+3. Review `context/my/` files — customize the ones relevant to you
+
+### Start using it
 1. Open terminal in `pm-command-center/`, run `claude`
 2. Say **"morning briefing"** → get situational awareness (works even with sparse context)
 3. Paste a meeting transcript → **"summarize this meeting"** → structured notes + auto-tracked action items and decisions
@@ -51,13 +57,16 @@ Output saved to artifacts/ → Knowledge base auto-updates (decisions, action it
 ### Directory Map
 ```
 pm-command-center/
-├── CLAUDE.md              # Master identity + AI instructions (always loaded)
+├── CLAUDE.md              # Team framework + AI instructions (always loaded)
+├── MY_PROFILE.md          # Your personal identity + preferences (gitignored)
+├── MY_PROFILE.template.md # Blank profile template (committed)
 ├── INDEX.md               # Knowledge base router (loaded on demand)
 ├── GUIDE.md               # This file — complete user manual
-├── README.md              # GitHub readme
+├── README.md              # GitHub readme + team setup instructions
+├── setup.sh / setup.ps1   # First-time setup scripts
 │
 ├── skills/                # Workflow definitions (13 skills)
-│   ├── daily/             # morning-briefing, impact-journal, end-of-day-rollup
+│   ├── daily/             # morning-briefing, impact-journal, end-of-day-rollup, onboarding-accelerator
 │   ├── meetings/          # meeting-summarizer
 │   ├── discovery/         # ai-research-scout, market-intelligence
 │   ├── definition/        # prd-generator
@@ -67,7 +76,9 @@ pm-command-center/
 │
 ├── templates/             # Document templates (19 templates)
 ├── context/               # Persistent knowledge base
-│   ├── personal/          # Portable PM identity (git-committed)
+│   ├── company/           # Shared company context (committed, admin-managed)
+│   ├── my/                # Your personal context (gitignored, per-PM)
+│   ├── my.template/       # Blank personal context templates (committed)
 │   ├── cross-org/         # Cross-team visibility (gitignored)
 │   ├── team/              # Team & stakeholder info (gitignored)
 │   ├── strategy/          # Priorities, OKRs, PRDs (gitignored)
@@ -80,7 +91,7 @@ pm-command-center/
 ├── artifacts/             # Generated outputs (gitignored)
 ├── research/              # Research data (gitignored)
 ├── inbox/                 # Raw inputs (gitignored)
-└── docs/                  # Planning documents
+└── docs/                  # Integration guide, architecture, patterns
 ```
 
 ### Tool Integrations (MCP)
@@ -97,9 +108,10 @@ All MCP steps are gated by availability — skills work without them, they just 
 ### Key Principle
 Skills are smart because they read context first. The Meeting Summarizer reads your team directory, priorities, action items, and decision log before processing a transcript — so it can flag conflicts, detect carryover items, and map speakers to roles. The richer your context, the smarter every skill becomes.
 
-### What's Committed vs. Gitignored
-- **Committed** (portable across roles): CLAUDE.md, INDEX.md, GUIDE.md, skills/, templates/, context/personal/, docs/
-- **Gitignored** (company-specific): context/team/, context/strategy/, context/users/, context/competitors/, context/metrics/, context/decisions/, context/cross-org/, tracking/, artifacts/, research/, inbox/
+### Three-Layer Architecture
+- **Shared (committed)** — Admin-managed, flows to all PMs: CLAUDE.md, INDEX.md, GUIDE.md, skills/, templates/, context/company/, context/my.template/, MY_PROFILE.template.md, setup scripts, docs/
+- **Personal (gitignored)** — Per-PM, never conflicts on pull: MY_PROFILE.md, context/my/ (career goals, impact journal, promotion packet, frameworks)
+- **Confidential (gitignored)** — Company-specific, local only: context/team/, context/strategy/, context/users/, context/competitors/, context/metrics/, context/decisions/, context/cross-org/, tracking/, artifacts/, research/, inbox/
 
 ---
 
@@ -236,7 +248,7 @@ These files get richer with every skill you run — no manual effort needed:
 
 ### You Populate During Onboarding (Week 1-2)
 One-time effort that makes every skill dramatically smarter:
-- `CLAUDE.md` — Company section (product, users, business model, team)
+- `MY_PROFILE.md` — Your identity, product context, team context, preferences
 - `context/product-overview.md` — What you build, for whom, why
 - `context/team/directory.md` — Names, roles, reporting lines
 - `context/team/stakeholder-map.md` — Relationships, preferences, influence
@@ -283,17 +295,17 @@ These become your unfair advantage over time:
 | Monday | Review action items, update priorities if shifted | "check action items" |
 | Friday | Action item cleanup — archive completed, flag stale | Manual review |
 | Friday | AI research scan — stay at the frontier | "AI research scan" |
-| Anytime | Skim impact journal entries for the week | Read `context/personal/impact-journal.md` |
+| Anytime | Skim impact journal entries for the week | Read `context/my/impact-journal.md` |
 
 ### Monthly (~90 minutes)
 
 | What | Trigger |
 |------|---------|
-| Update promotion packet with month's strongest evidence | Edit `context/personal/promotion-packet.md` |
-| Review innovation pipeline — promote/park/kill ideas | Edit `context/personal/innovation-pipeline.md` |
+| Update promotion packet with month's strongest evidence | Edit `context/my/promotion-packet.md` |
+| Review innovation pipeline — promote/park/kill ideas | Edit `context/my/innovation-pipeline.md` |
 | Market intelligence — full legal tech landscape scan | "market intel" |
 | Bold idea lab — creative session seeded from context | "bold idea lab" |
-| Audit domain expertise — add new knowledge | Edit `context/personal/domain-expertise.md` |
+| Audit domain expertise — add new knowledge | Edit `context/my/domain-expertise.md` |
 | Audit INDEX.md for accuracy | Review `INDEX.md` |
 | Review cross-org tracker for stale entries | Review `context/cross-org/initiative-tracker.md` |
 
@@ -302,8 +314,8 @@ These become your unfair advantage over time:
 | What | Trigger |
 |------|---------|
 | Generate QBR | Use `templates/quarterly-business-review-template.md` |
-| Career goals check-in | Review `context/personal/career-goals.md` |
-| Promotion packet major refresh | Review `context/personal/promotion-packet.md` |
+| Career goals check-in | Review `context/my/career-goals.md` |
+| Promotion packet major refresh | Review `context/my/promotion-packet.md` |
 | Archive old tracking data | Move to `tracking/archive/` |
 | Build a new skill from a workflow you've done 3+ times | Create new skill in `skills/` |
 
@@ -419,11 +431,13 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 
 | Problem | Solution |
 |---------|----------|
-| Claude doesn't know my product | Populate `context/product-overview.md` and the CLAUDE.md company section |
+| Claude doesn't know my product | Populate `context/product-overview.md` and the Product Context section in `MY_PROFILE.md` |
 | Meeting summaries missing speaker names | Populate `context/team/directory.md` with names and roles |
 | System feels overwhelming | Start with just 3 things: morning briefing, meeting summarizer, impact journal |
-| Worried about confidential info | Company-specific data is gitignored. Only `context/personal/` and system files are committed |
-| Switching to a new role | Keep `context/personal/` (portable). Archive everything else. Re-clone, re-populate |
+| Worried about confidential info | Company-specific data is gitignored. Only shared framework files are committed — personal data stays local |
+| Switching to a new role | Keep `MY_PROFILE.md` and `context/my/` (portable). Archive everything else. Re-clone, re-populate |
+| How do other PMs get updates? | Admin pushes skill/template changes. PMs run `git pull origin main` — zero conflicts since personal files are gitignored |
+| New PM onboarding | Clone repo → run `setup.sh` → fill `MY_PROFILE.md` → connect MCPs → say "onboarding accelerator" |
 | How long until it's fully useful? | Immediately useful → noticeably better at 2 weeks → full stride at 4 weeks |
 | Skills reference files that are empty | Skills handle empty context gracefully — output is thinner but still structured |
 | Want to build a future skill early | Check the prerequisites table in Section 4 — if the context exists, build it |
@@ -437,13 +451,16 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 
 ## 12. File Inventory
 
-### Root Files (4)
+### Root Files (7)
 | File | Purpose |
 |------|---------|
-| `CLAUDE.md` | Master identity, preferences, AI instructions, Principal PM directives |
+| `CLAUDE.md` | Team framework, knowledge base routing, Principal PM directives |
+| `MY_PROFILE.md` | Your personal identity, style, preferences (gitignored) |
+| `MY_PROFILE.template.md` | Blank profile template for new PMs (committed) |
 | `INDEX.md` | Knowledge base router — Claude reads this to find the right context |
 | `GUIDE.md` | This file — complete user manual |
-| `README.md` | GitHub readme with setup instructions |
+| `README.md` | Team setup instructions + daily usage reference |
+| `setup.sh` / `setup.ps1` | First-time setup scripts (Mac/Linux + Windows) |
 
 ### Skills (13 across 7 categories)
 | File | Purpose |
@@ -485,20 +502,32 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 | `templates/quarterly-business-review-template.md` | QBR for leadership |
 | `templates/process-playbook-template.md` | Reusable process documentation |
 
-### Personal Context (11 files — portable, git-committed)
+### Personal Context (11 files — gitignored, per-PM)
 | File | Purpose |
 |------|---------|
-| `context/personal/pm-frameworks.md` | PM methodology and frameworks |
-| `context/personal/interview-playbook.md` | Interview methodology |
-| `context/personal/stakeholder-strategies.md` | Stakeholder management playbook |
-| `context/personal/writing-samples.md` | Writing voice and samples |
-| `context/personal/career-goals.md` | Career goals with Principal PM framework |
-| `context/personal/lessons-learned.md` | Lessons from previous roles |
-| `context/personal/impact-journal.md` | Running log of wins and outcomes |
-| `context/personal/domain-expertise.md` | AI + legal tech knowledge base |
-| `context/personal/innovation-pipeline.md` | Idea inventory (kanban) |
-| `context/personal/mentorship-tracker.md` | Mentorship relationships |
-| `context/personal/promotion-packet.md` | 7-competency promotion evidence |
+| `context/my/pm-frameworks.md` | PM methodology and frameworks |
+| `context/my/interview-playbook.md` | Interview methodology |
+| `context/my/stakeholder-strategies.md` | Stakeholder management playbook |
+| `context/my/writing-samples.md` | Writing voice and samples |
+| `context/my/career-goals.md` | Career goals with Principal PM framework |
+| `context/my/lessons-learned.md` | Lessons from previous roles |
+| `context/my/impact-journal.md` | Running log of wins and outcomes |
+| `context/my/domain-expertise.md` | Domain knowledge base |
+| `context/my/innovation-pipeline.md` | Idea inventory (kanban) |
+| `context/my/mentorship-tracker.md` | Mentorship relationships |
+| `context/my/promotion-packet.md` | 7-competency promotion evidence |
+
+### Personal Context Templates (11 files — committed, copied on setup)
+| Location | Purpose |
+|----------|---------|
+| `context/my.template/*.md` | Blank versions of all 11 personal context files. Copied to `context/my/` by setup script |
+
+### Shared Company Context (3 files — committed, admin-managed)
+| File | Purpose |
+|------|---------|
+| `context/company/product-overview.md` | Shared product overview for the team |
+| `context/company/tool-stack.md` | Team tool inventory reference |
+| `context/company/pm-team-norms.md` | PM team practices and cadences |
 
 ### Cross-Org Context (2 files — gitignored)
 | File | Purpose |

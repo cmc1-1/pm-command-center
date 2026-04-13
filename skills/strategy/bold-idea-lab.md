@@ -4,7 +4,7 @@
 - name: bold-idea-lab
 - trigger: "bold idea lab", "brainstorm product ideas", "what if we...", "let's think big about...", "blue sky session", "innovation brainstorm"
 - version: 1.0
-- author: Chetan
+- author: PM Command Center Team
 - category: strategy
 
 ## Purpose

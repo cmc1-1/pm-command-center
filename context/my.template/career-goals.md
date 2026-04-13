@@ -2,9 +2,9 @@
 
 ## Why I Took This Role
 [TO BE FILLED — once you accept and understand the opportunity]
-- Closer to end users than AWS infrastructure work
-- Faster-paced environment
-- Apply AI product depth to genuinely disrupted markets
+- [Motivation 1]
+- [Motivation 2]
+- [Motivation 3]
 - [Additional motivations specific to the company]
 
 ## Non-Negotiables
@@ -22,7 +22,7 @@
 | **Strategic Thinking** | Ability to see the big picture, connect product decisions to business strategy, and anticipate market shifts before they happen. Thinks in terms of product portfolio, not individual features. |
 | **Cross-Org Influence** | Builds relationships and drives alignment across multiple teams, functions, and business units without direct authority. Identifies synergies and dependencies that others miss. |
 | **Business Impact** | Quantifies the value of product work in terms of revenue, cost savings, and competitive advantage. Ties every initiative to a business outcome with numbers. |
-| **Technical Depth** | Understands system architecture, data flows, and AI/ML capabilities well enough to make informed trade-offs and earn engineering credibility. |
+| **Technical Depth** | Understands system architecture, data flows, and technical capabilities well enough to make informed trade-offs and earn engineering credibility. |
 | **Team Leadership** | Elevates the entire PM team through mentorship, frameworks, and leading by example. Raises the bar for what "good" looks like. |
 | **Executive Communication** | Communicates at the altitude appropriate for the audience — strategic framing for executives, tactical detail for engineering. Can distill complex topics into crisp narratives. |
 | **Innovation** | Identifies and champions bold product bets. Brings outside-in thinking from adjacent industries, emerging technology, and user behavior trends. |
@@ -49,7 +49,7 @@
 ### Technical Depth
 - [ ] Made a technical architecture recommendation that engineering adopted
 - [ ] Identified a technical risk early that saved the team rework
-- [ ] Demonstrated AI/ML product fluency in a stakeholder setting
+- [ ] Demonstrated technical product fluency in a stakeholder setting
 
 ### Team Leadership
 - [ ] Mentored a junior PM or cross-functional partner
@@ -109,7 +109,7 @@
 
 ### Monthly
 - **Impact narrative** — Write a 3-5 sentence summary of the month's biggest contribution and its business impact. Add to impact journal.
-- **Innovation review** — Spend 30 minutes reviewing AI research, competitor moves, or adjacent market trends. Log anything actionable.
+- **Innovation review** — Spend 30 minutes reviewing industry research, competitor moves, or adjacent market trends. Log anything actionable.
 
 ### Quarterly
 - **Promotion packet refresh** — Update evidence checklist, add new artifacts, refine the narrative. Don't wait for review season.

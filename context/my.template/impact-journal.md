@@ -46,4 +46,4 @@ _Auto-generated after 4+ weeks of entries. Shows which competencies are getting 
 ---
 
 ## Archive Reference
-Entries older than 3 months stay here but are also summarized in `context/personal/promotion-packet.md`.
+Entries older than 3 months stay here but are also summarized in `context/my/promotion-packet.md`.

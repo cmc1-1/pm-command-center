@@ -11,7 +11,7 @@ These are the frameworks I reach for most often. When generating PRDs, critiquin
 - **Impact**: How much will it move the target metric per user? (3=massive, 2=high, 1=medium, 0.5=low, 0.25=minimal)
 - **Confidence**: How sure are we about reach and impact estimates? (100%=high, 80%=medium, 50%=low)
 - **Effort**: Person-months of work
-- **Score**: (Reach × Impact × Confidence) / Effort
+- **Score**: (Reach x Impact x Confidence) / Effort
 - **When I use it**: Quarterly roadmap planning, backlog grooming, comparing dissimilar features. Good for removing politics from prioritization because it's transparent and quantified.
 - **Watch out for**: Gaming confidence scores. If I'm not sure, I use 50% not 80%.
 
@@ -145,4 +145,4 @@ Unhealthy signals:
 ### A/B Test Decision Framework
 - **Pre-test**: Define hypothesis, primary metric, sample size, minimum detectable effect, duration
 - **During**: Don't peek. Seriously. Set the duration and wait.
-- **Post-test**: Statistical significance ≥95% for primary metric. Check for novelty effects. Check guardrail metrics. Consider practical significance (statistically significant but tiny effect ≠ ship it)
+- **Post-test**: Statistical significance >=95% for primary metric. Check for novelty effects. Check guardrail metrics. Consider practical significance (statistically significant but tiny effect != ship it)

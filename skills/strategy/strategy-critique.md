@@ -4,7 +4,7 @@
 - name: strategy-critique
 - trigger: "critique this strategy", "review my strategy", "red team this", "poke holes in this"
 - version: 1.0
-- author: Chetan
+- author: PM Command Center Team
 - category: strategy
 
 ## Purpose

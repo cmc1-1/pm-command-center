@@ -1,4 +1,4 @@
-# Promotion Packet: Senior PM → Principal PM
+# Promotion Packet: [Current Level] → [Target Level]
 Last updated: [auto-update timestamp]
 
 ---
@@ -112,10 +112,10 @@ _Introduces new ideas, approaches, or technologies that create step-change value
 _When you're ready to make the case, fill this in:_
 
 ### The Ask
-[One sentence: "I'm requesting promotion to Principal PM based on [X months] of demonstrated Principal-level impact across all 7 competencies."]
+[One sentence: "I'm requesting promotion to [Target Level] based on [X months] of demonstrated [Target Level]-level impact across all 7 competencies."]
 
 ### The Narrative
-[3-paragraph story: where I started → what I delivered → why it's Principal-level work]
+[3-paragraph story: where I started → what I delivered → why it's [Target Level]-level work]
 
 ### The Evidence
 [Link to strongest 2-3 examples per competency above]

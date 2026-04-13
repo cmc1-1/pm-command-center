@@ -1,53 +1,102 @@
 # PM Command Center
 
-Personal AI-powered product management productivity system.
+AI-powered product management productivity system — built for teams, personalized per PM.
 
-## Setup on a new machine
+## For PMs: Getting Started (5 minutes)
 
-1. Clone this repo: `git clone [repo-url]`
-2. Install Claude Code: `curl -fsSL https://claude.ai/install.sh | bash`
-3. Navigate to project: `cd pm-command-center`
-4. Start Claude Code: `claude`
-5. Claude reads CLAUDE.md automatically and is ready to work
+### 1. Clone the repo
+```bash
+git clone <repo-url> pm-command-center
+cd pm-command-center
+```
 
-## What's included (committed to Git)
-- `CLAUDE.md` — Master context file (personal section)
+### 2. Run setup
+```bash
+# Mac/Linux
+chmod +x setup.sh && ./setup.sh
+
+# Windows (PowerShell)
+.\setup.ps1
+```
+
+This copies templates to create your personal files — no merge conflicts on future updates.
+
+### 3. Fill in your profile
+Open `MY_PROFILE.md` and fill in your details: name, background, working style, tool stack. This is how the system personalizes all output for you.
+
+### 4. Install Claude Code and start
+```bash
+curl -fsSL https://claude.ai/install.sh | bash
+claude
+```
+
+### 5. First commands
+- `"morning briefing"` — daily situational awareness
+- `"summarize this meeting"` — paste any transcript
+- `"log impact: [what you did]"` — build promotion evidence
+- `"onboarding accelerator"` — auto-populate context from connected tools
+
+### 6. Connect your tools (MCP)
+See `docs/INTEGRATIONS.md` for setup. Priority order:
+- **Day 1-3**: Slack, Jira, Confluence
+- **Week 2-3**: Amplitude, Productboard, GitHub
+- **Month 1+**: Salesforce, Figma, LaunchDarkly, Grafana, Sentry
+
+## For Admins: Maintaining the System
+
+### Pushing updates
+When you update skills, templates, or shared context:
+```bash
+git add skills/ templates/ context/company/ context/my.template/ CLAUDE.md GUIDE.md INDEX.md
+git commit -m "Update: [description]"
+git push origin main
+```
+
+PMs pull updates with zero conflicts — all personal files are gitignored.
+
+### What's shared (committed to git)
+- `CLAUDE.md` — Team framework + AI instructions
+- `MY_PROFILE.template.md` — Blank profile for new PMs
 - `INDEX.md` — Knowledge base router
-- `templates/` — 19 PM document templates
+- `GUIDE.md` — Complete user manual
 - `skills/` — 13 automated workflow definitions
-- `context/personal/` — Portable PM frameworks and methodology
-- `GUIDE.md` — Complete user manual and capability reference
-- `docs/INTEGRATIONS.md` — Tool integration guide (Evisort stack)
+- `templates/` — 19 PM document templates
+- `context/company/` — Shared product/team context
+- `context/my.template/` — Blank personal context templates
+- `docs/` — Integration guide, architecture, patterns
 
-## What's local-only (gitignored)
-- Company-specific context (team, strategy, users, metrics)
-- Operational tracking (action items, sprint data)
+### What's personal (gitignored, per-PM)
+- `MY_PROFILE.md` — Each PM's identity, style, preferences
+- `context/my/` — Personal context (career goals, impact journal, promotion packet)
+- Company-specific context (team, strategy, users, metrics, competitors)
+- Operational tracking (action items, sprint, risks)
 - Generated artifacts (meeting notes, PRDs, reports)
-- Research data (interviews, surveys)
-- Raw inputs (recordings, screenshots)
 
-## Tool Integrations (Evisort Stack)
-13 of 14 Evisort team tools have MCP servers. Connect them progressively:
-- **Day 1-3**: Slack, Jira, Confluence → auto-post summaries, create tickets, pull onboarding docs
-- **Week 2-3**: Amplitude, Productboard, GitHub → live metrics, roadmap sync, PR context
-- **Month 1+**: Salesforce, Figma, LaunchDarkly, Grafana, Sentry → specialized workflows
+## Getting Updates
+```bash
+git pull origin main
+```
+Only shared files update. Your `MY_PROFILE.md` and `context/my/` are untouched.
 
-See `docs/INTEGRATIONS.md` for full setup guide.
+## What's Included
 
-## First session at a new role
-1. Say: "I'm starting a new role. Help me populate the onboarding checklist in INDEX.md."
-2. Connect Tier 1 MCPs (Slack, Jira, Confluence)
-3. Say: "onboarding accelerator" → auto-populate context files from connected tools
+| Layer | Contents | Count |
+|-------|----------|-------|
+| Skills | Automated PM workflows | 13 |
+| Templates | Document structures | 19 |
+| Personal context templates | Career, frameworks, methodology | 11 |
+| Shared company context | Product overview, tool stack, norms | 3 |
 
-## Daily usage
-- "morning briefing" — Get daily situational awareness
-- "summarize this meeting" — Process any meeting transcript
-- "create a PRD for [feature]" — Generate context-aware PRDs
-- "critique this strategy" — Red-team any strategy document
-- "weekly status" — Generate stakeholder update
-- "check action items" — Review tracker status
-- "log impact: [what you accomplished]" — Build promotion evidence
-- "end of day" — EOD summary and tomorrow prep
-- "AI research scan" — Stay on top of AI developments
-- "market intel" — Legal tech landscape intelligence
-- "bold idea lab" — Generate and test bold product ideas
+## Daily Usage
+- `"morning briefing"` — Situational awareness digest
+- `"summarize this meeting"` — Process any transcript
+- `"create a PRD for [feature]"` — Context-aware PRD generation
+- `"critique this strategy"` — 7-dimension strategy scoring
+- `"log impact: [outcome]"` — Promotion evidence pipeline
+- `"end of day"` — EOD summary + tomorrow prep
+- `"AI research scan"` — Stay on top of AI developments
+- `"market intel"` — Competitive landscape intelligence
+- `"bold idea lab"` — Generate and stress-test product ideas
+- `"onboarding accelerator"` — Bootstrap context from connected tools
+
+Full guide: [GUIDE.md](GUIDE.md)

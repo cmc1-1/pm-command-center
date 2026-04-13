@@ -4,7 +4,7 @@
 - name: action-item-extractor
 - trigger: "extract action items", "what are the action items", "update action tracker"
 - version: 1.0
-- author: Chetan
+- author: PM Command Center Team
 - category: execution
 
 ## Purpose
@@ -101,7 +101,7 @@ Show the user:
 ### New Items Added
 | ID | Owner | Action | Deadline | Priority |
 |----|-------|--------|----------|----------|
-| AI-042 | Chetan | Draft customer impact analysis for API v2 delay | Apr 17 | P0 |
+| AI-042 | PM Name | Draft customer impact analysis for API v2 delay | Apr 17 | P0 |
 | AI-043 | Mike | Share contractor onboarding requirements | Apr 16 | P1 |
 
 ### Duplicates Skipped

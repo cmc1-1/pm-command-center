@@ -4,7 +4,7 @@
 - name: market-intelligence
 - trigger: "market intel", "legal tech scan", "competitive landscape update", "what's happening in CLM", "Evisort market check"
 - version: 1.0
-- author: Chetan
+- author: PM Command Center Team
 - category: discovery
 
 ## Purpose

@@ -4,7 +4,7 @@
 - name: morning-briefing
 - trigger: "morning briefing", "start my day", "what's on today"
 - version: 1.0
-- author: Chetan
+- author: PM Command Center Team
 - category: daily
 
 ## Purpose
@@ -22,7 +22,7 @@ Generate a daily situational awareness digest that surfaces what needs attention
   - `context/strategy/current-sprint.md` — sprint commitments and status
   - `tracking/risks-and-blockers.md` — active risks and blockers
   - `context/metrics/north-star.md` — metric targets and recent performance
-  - `context/personal/impact-journal.md` — recent entries and logging gaps
+  - `context/my/impact-journal.md` — recent entries and logging gaps
 
 ## Process
 
@@ -41,11 +41,11 @@ Review the auto-loaded context files and build a picture of current state:
 **Slack** (if connected):
 - Scan for unread @mentions and DMs since yesterday's EOD
 - Check monitored channels (ask user to configure on first use) for overnight activity
-- Surface any threads where Chetan was mentioned but hasn't responded
+- Surface any threads where the user was mentioned but hasn't responded
 
 **Jira** (if connected):
 - Pull current sprint status: stories in progress, completed, blocked
-- Surface tickets assigned to Chetan with approaching deadlines
+- Surface tickets assigned to the user with approaching deadlines
 - Check for newly assigned tickets since yesterday
 - Auto-update `tracking/current-sprint.md` with latest sprint data
 
@@ -77,7 +77,7 @@ Go beyond operational status and add strategic context:
 Assemble the briefing in the following sections:
 
 ```
-## Good Morning, Chetan
+## Good Morning, [name]
 
 **[Day of week], [Date]** | Sprint [X] Day [Y] | [N] items need attention
 

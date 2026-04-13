@@ -4,7 +4,7 @@
 - name: prd-generator
 - trigger: "create a PRD", "write a PRD for", "help me spec out"
 - version: 1.0
-- author: Chetan
+- author: PM Command Center Team
 - category: definition
 
 ## Purpose

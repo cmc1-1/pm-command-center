@@ -4,7 +4,7 @@
 - name: decision-logger
 - trigger: "log this decision", "record decision", "we decided"
 - version: 1.0
-- author: Chetan
+- author: PM Command Center Team
 - category: strategy
 
 ## Purpose

@@ -4,7 +4,7 @@
 - name: meeting-summarizer
 - trigger: "summarize this meeting", "process meeting notes", "meeting summary"
 - version: 1.0
-- author: Chetan
+- author: PM Command Center Team
 - category: meetings
 
 ## Purpose
@@ -44,7 +44,7 @@ Zoom auto-transcripts have specific quirks to handle:
 - Auto-transcription errors are common with technical terms — use product context to correct obvious errors (e.g., "jeer-uh" → "Jira").
 
 ### Step 3: Extract structured content
-Process the transcript in this priority order (matching Chetan's priorities):
+Process the transcript in this priority order (matching the user's priorities):
 
 **Priority 1 — Decisions & rationale**
 Scan for decision signals:
