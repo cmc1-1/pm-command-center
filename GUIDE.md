@@ -83,6 +83,17 @@ pm-command-center/
 └── docs/                  # Planning documents
 ```
 
+### Tool Integrations (MCP)
+When you connect Evisort's tools via MCP (Model Context Protocol), skills automatically upgrade:
+- **Slack** → Morning briefing scans channels, meeting summaries auto-post, action item nudges via DM
+- **Jira** → Action items become tickets, sprint data auto-populates, blocker detection
+- **Confluence** → PRDs publish directly, onboarding pulls existing docs into context files
+- **Amplitude** → Metrics auto-populate, morning briefing shows real data trends
+- **Productboard** → Roadmap syncs, feature requests feed into PRDs and idea lab
+- **GitHub** → PR context, CI status, technical depth for eng conversations
+
+All MCP steps are gated by availability — skills work without them, they just get superpowers with them. See `docs/INTEGRATIONS.md` for full setup guide and connection priority.
+
 ### Key Principle
 Skills are smart because they read context first. The Meeting Summarizer reads your team directory, priorities, action items, and decision log before processing a transcript — so it can flag conflicts, detect carryover items, and map speakers to roles. The richer your context, the smarter every skill becomes.
 
@@ -94,7 +105,7 @@ Skills are smart because they read context first. The Meeting Summarizer reads y
 
 ## 4. Complete Capability Reference
 
-### Skills — Ready Now (12 built)
+### Skills — Ready Now (13 built)
 
 #### Daily Habits
 | Skill | Trigger Phrases | What It Does |
@@ -131,6 +142,11 @@ Skills are smart because they read context first. The Meeting Summarizer reads y
 | Skill | Trigger Phrases | What It Does |
 |-------|----------------|--------------|
 | **Email Drafter** | "draft an email to...", "write an email" | Context-aware email calibrated to recipient, with 8 types including executive narrative |
+
+#### Onboarding
+| Skill | Trigger Phrases | What It Does |
+|-------|----------------|--------------|
+| **Onboarding Accelerator** | "onboarding accelerator", "pull company context" | Pulls Confluence, Jira, Productboard, Slack, Amplitude data to auto-populate context files. Cuts onboarding from 2 weeks to 2-3 days (requires Tier 1-2 MCPs) |
 
 ### Skills — Build Later (9 future, documented with prerequisites)
 
@@ -397,6 +413,9 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 | Want to build a future skill early | Check the prerequisites table in Section 4 — if the context exists, build it |
 | Output feels generic or surface-level | Say "think harder" — Claude will use deeper reasoning and challenge assumptions |
 | Context window getting full | Skills only load relevant context, not everything. INDEX.md routes efficiently |
+| MCP server won't connect | Check auth token, verify Zscaler is active for Evisort tools. See `docs/INTEGRATIONS.md` |
+| Skills don't show MCP data | Verify MCP is listed in `claude mcp list`. Skills check for connection before attempting MCP steps |
+| How do I connect Evisort tools? | See `docs/INTEGRATIONS.md` — Tier 1 (Slack, Jira, Confluence) first, then Tier 2, then Tier 3 |
 
 ---
 
@@ -410,12 +429,13 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 | `GUIDE.md` | This file — complete user manual |
 | `README.md` | GitHub readme with setup instructions |
 
-### Skills (12 across 7 categories)
+### Skills (13 across 7 categories)
 | File | Purpose |
 |------|---------|
 | `skills/daily/morning-briefing.md` | Daily situational awareness digest |
 | `skills/daily/impact-journal.md` | Log wins for promotion evidence |
 | `skills/daily/end-of-day-rollup.md` | EOD summary + tomorrow prep |
+| `skills/daily/onboarding-accelerator.md` | Pull connected tools → auto-populate context files |
 | `skills/meetings/meeting-summarizer.md` | Transcript → structured notes + KB updates |
 | `skills/discovery/ai-research-scout.md` | AI frontier monitoring |
 | `skills/discovery/market-intelligence.md` | Legal tech landscape tracking |
@@ -500,13 +520,14 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 | `research/` | Interview transcripts, survey data |
 | `inbox/` | Raw inputs (recordings, screenshots) |
 
-### Planning Docs (4 — committed)
+### Planning Docs (5 — committed)
 | File | Purpose |
 |------|---------|
 | `docs/SETUP.md` | Original build instructions |
 | `docs/ARCHITECTURE.md` | System design documentation |
 | `docs/PATTERNS.md` | Skill and template design patterns |
 | `docs/MAINTENANCE.md` | Ongoing maintenance guide |
+| `docs/INTEGRATIONS.md` | Evisort tool stack integration guide |
 
 ---
 

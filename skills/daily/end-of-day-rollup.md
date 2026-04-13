@@ -36,6 +36,22 @@ Scan the knowledge base for all activity from today:
 | **Artifacts generated** | `artifacts/` — files created or modified today | PRDs, reports, emails, or other outputs |
 | **Impact logged** | `context/personal/impact-journal.md` — today's entries | Wins and outcomes recorded |
 
+### Step 1b: Pull today's activity from connected tools (if MCP connected)
+
+**Slack** (if connected):
+- Count messages sent/received today
+- List Slack threads Chetan started or actively participated in
+- Check for unanswered threads or DMs
+
+**Jira** (if connected):
+- List tickets with status changes today
+- List tickets commented on today
+- Check sprint burndown progress vs. yesterday
+
+**GitHub** (if connected):
+- List PRs reviewed or commented on today
+- List any deployments or merges today
+
 ### Step 2: Identify gaps
 Compare what happened today against what a complete day looks like:
 

@@ -153,6 +153,21 @@ After presenting the summary, ask if the user wants to:
 ## Output Format
 See `templates/meeting-summary-template.md` for the complete output structure.
 
+### Tool Integrations (when MCP connected)
+After generating the summary and updating the knowledge base:
+
+**Slack** (if connected):
+- Post a formatted summary to the relevant Slack channel (ask which channel on first use, remember the mapping)
+- Thread replies with the action items list for easy reference
+
+**Jira** (if connected):
+- For each new action item, offer to create a Jira ticket with: summary, assignee, priority, due date, and link back to meeting summary
+- If a Jira ticket is referenced in the transcript, update its comments with the meeting context
+
+**Confluence** (if connected):
+- Publish the meeting summary as a Confluence page under the team's meeting notes space
+- Link related Jira tickets in the Confluence page
+
 ## Quality Checklist (self-verify before presenting)
 - [ ] Every decision has a rationale and a "decided by" attribution
 - [ ] Every action item has an owner (no orphaned items)

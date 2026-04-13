@@ -67,6 +67,19 @@ Show the user:
 3. Files updated
 4. Suggestion: "Should I inform any stakeholders about this decision?"
 
+### Tool Integrations (when MCP connected)
+
+**Confluence** (if connected):
+- Sync the decision record to a shared Confluence "Decision Log" page (team-visible, not just local)
+- Link to related Confluence docs (PRDs, specs) mentioned in the decision context
+
+**Slack** (if connected):
+- Offer to post a decision announcement to the relevant channel: "Decision: [summary]. Rationale: [brief]. See full record: [link]"
+
+**Jira** (if connected):
+- If the decision creates follow-up actions, auto-create Jira tickets
+- If the decision affects a timeline, update related Jira epic/story due dates
+
 ## Integration Points
 - **Meeting Summarizer**: Calls this skill automatically when decisions are extracted
 - **Strategy Critique**: References the decision log when evaluating strategy coherence

@@ -177,6 +177,19 @@ This is the **upstream creative engine** in the skill ecosystem. While other ski
 
 It is not a substitute for those downstream skills. Its job is to produce the raw creative material they work with.
 
+### Tool Integrations (when MCP connected)
+
+**Productboard** (if connected):
+- Before brainstorming: search Productboard for existing feature ideas that relate to the brainstorm topic — avoid reinventing
+- After: offer to add top-rated ideas to Productboard as new feature concepts
+
+**Amplitude** (if connected):
+- Pull usage data to validate desirability signals during first-pass filtering
+- Ground feasibility assessments in actual user behavior patterns
+
+**Confluence** (if connected):
+- Publish bold idea lab report to a team "Innovation" space in Confluence for visibility and feedback
+
 ## Quality Checklist (self-verify before presenting)
 - [ ] Ideas are genuinely bold — not incremental features dressed up with ambitious language
 - [ ] Every idea is grounded in at least one context file (user need, competitive gap, or technology trend)

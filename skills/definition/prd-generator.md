@@ -100,6 +100,25 @@ Present critiques as actionable feedback, not a wall of text. Format:
    - "Draft a one-pager summary for leadership?"
    - "Build a prototype from the P0 requirements?"
 
+### Tool Integrations (when MCP connected)
+
+**Confluence** (if connected):
+- Publish final PRD to Confluence under the team's PRD space
+- Auto-link to related Jira epic if one exists
+
+**Jira** (if connected):
+- Offer to create a Jira epic from the PRD
+- Generate Jira stories from P0 user stories with acceptance criteria as subtasks
+
+**Amplitude** (if connected):
+- Pull current metric baselines when writing success metrics
+- Auto-populate "Baseline TBD" fields with actual Amplitude data
+
+**Productboard** (if connected):
+- Check Productboard for existing feature requests related to the PRD
+- Link the PRD to the corresponding Productboard feature
+- Pull customer request count and top requesters for context
+
 ## Quality Checklist (self-verify before presenting)
 - [ ] Problem statement is grounded in data or research, not assumption
 - [ ] Every P0 user story has testable acceptance criteria

@@ -117,6 +117,18 @@ Show the user:
 Tracker updated: tracking/action-items.md
 ```
 
+### Tool Integrations (when MCP connected)
+
+**Jira** (if connected):
+- After extracting items, offer: "Create Jira tickets for these [N] items?"
+- Auto-populate: Summary (action text), Assignee (owner), Priority, Due date, Description (source context + meeting link)
+- Store Jira ticket key (e.g., EVIS-1234) alongside the AI-NNN ID in the tracker
+- When updating existing items, sync status back to Jira
+
+**Slack** (if connected):
+- For items assigned to others, offer to send a Slack DM: "[Name], FYI — action item from [meeting]: [action]. Due: [date]. Jira: [link]"
+- For overdue items during weekly maintenance, offer nudge DMs
+
 ## Weekly Maintenance Routine
 
 When triggered by "action item cleanup" or "weekly tracker maintenance":

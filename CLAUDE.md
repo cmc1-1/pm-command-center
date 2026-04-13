@@ -104,25 +104,53 @@ When drafting communications, PRDs, or strategy documents for me, reflect these 
 
 ---
 
-## Tools & Integrations
-[TO BE FILLED — based on employer stack]
+## Tools & Integrations — Evisort Product Team Stack
 
-- **Project tracker**: [Jira / Linear / Asana / TBD]
-- **Documentation**: [Confluence / Notion / Google Docs / TBD]
-- **Communication**: [Slack / Teams / TBD]
-- **Design**: [Figma / TBD]
-- **Analytics**: [Amplitude / Mixpanel / Looker / TBD]
-- **Code / repo**: [GitHub / GitLab / TBD]
-- **Meeting platform**: [Zoom / Teams / Google Meet]
+### Business Context
+- **CRM**: Workday Salesforce — customer data
+- **BI/Analytics**: Sigma (Evisort) — data sources combining tool
+- **Product Analytics**: Amplitude — feature & analytics tracking
 
-### MCP Connections Active
-[TO BE FILLED — as you connect integrations]
-- [ ] Gmail
-- [ ] Google Calendar
-- [ ] Jira / Linear
-- [ ] Slack
-- [ ] GitHub
-- [ ] Google Drive
+### Daily Tools
+- **Roadmap & Ideation**: Productboard — feature ideation & roadmap
+- **Task Management**: Jira2 (Workday hosted) — eng task management
+- **Feature Flags**: LaunchDarkly — feature flag configuration
+- **Design**: Figma — design platform
+- **Whiteboarding**: Miro — ideas & dot voting
+- **Documentation (primary)**: Confluence — Workday documentation
+- **Documentation (legacy)**: Notion — historical, used by eng mainly
+- **Communication (primary)**: Slack - Dev — main P&T workspace
+- **Communication (legacy)**: Slack - Evisort — historical workspace
+
+### Eng Context
+- **Error Tracking**: Sentry — eng analytics/dashboard
+- **Monitoring**: Grafana — eng analytics/dashboard
+- **Source Control**: Evisort GitHub + Workday GitHub
+
+### SSO / Access
+- Evisort Okta, Workday Okta, Evisort Zscaler (prod/main env)
+
+### MCP Connections
+_Check off as you connect each integration. See `docs/INTEGRATIONS.md` for setup instructions._
+
+#### Tier 1 — Connect Day 1-3
+- [ ] Slack (Dev workspace) — channel scanning, summary posting, DM nudges
+- [ ] Jira (Atlassian MCP) — ticket creation, sprint reading, blocker detection
+- [ ] Confluence (Atlassian MCP) — doc reading, PRD publishing, onboarding pull
+
+#### Tier 2 — Connect Week 2-3
+- [ ] Amplitude — metric auto-population, trend alerts, data grounding
+- [ ] Productboard — roadmap context, feature request data
+- [ ] GitHub (Evisort + Workday) — PR context, code awareness, CI status
+
+#### Tier 3 — Connect Month 1+
+- [ ] Salesforce — customer data, deal context
+- [ ] Figma — design context, mockup references
+- [ ] LaunchDarkly — feature flag status, rollout monitoring
+- [ ] Grafana — system health dashboards
+- [ ] Sentry — error tracking, incident awareness
+- [ ] Notion — legacy doc access
+- [ ] Miro — board capture
 
 ---
 

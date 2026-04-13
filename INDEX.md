@@ -133,6 +133,9 @@ Track your progress populating the knowledge base:
 - [ ] Action item tracker active (`tracking/action-items.md`)
 - [ ] First decisions logged (`context/decisions/decision-log.md`)
 - [ ] CLAUDE.md company section filled in
+- [ ] Connect Slack MCP (Dev workspace)
+- [ ] Connect Atlassian MCP (Jira + Confluence)
+- [ ] Run onboarding accelerator to pull Confluence docs → context files
 - [ ] Start impact journal (`context/personal/impact-journal.md`)
 - [ ] Identify cross-org stakeholders and log in initiative tracker
 - [ ] Run first AI research scan (`skills/discovery/ai-research-scout`)
@@ -144,8 +147,9 @@ Track your progress populating the knowledge base:
 - [ ] North star metrics defined (`context/metrics/north-star.md`)
 - [ ] Sprint context captured (`tracking/current-sprint.md`)
 - [ ] Org context notes (`context/team/org-context.md`)
-- [ ] Gmail + Calendar MCP connected
-- [ ] Jira/Linear MCP connected
+- [ ] Connect Amplitude MCP
+- [ ] Connect Productboard MCP
+- [ ] Connect GitHub MCP (Evisort + Workday repos)
 
 ### Month 1 (Comprehensive)
 - [ ] 20+ context files populated
@@ -154,4 +158,5 @@ Track your progress populating the knowledge base:
 - [ ] First competitive teardown complete
 - [ ] First weekly status report generated
 - [ ] Feedback themes populated from existing research
-- [ ] All MCP integrations connected
+- [ ] All Tier 1 + Tier 2 MCP integrations connected and verified
+- [ ] Context auto-population working (metrics, sprint, priorities)

@@ -36,6 +36,28 @@ Review the auto-loaded context files and build a picture of current state:
 - **Sprint status**: Current sprint health — are committed items on track?
 - **Active blockers**: Anything in `tracking/risks-and-blockers.md` that is unresolved
 
+### Step 1b: Pull live data from connected tools (if MCP connected)
+
+**Slack** (if connected):
+- Scan for unread @mentions and DMs since yesterday's EOD
+- Check monitored channels (ask user to configure on first use) for overnight activity
+- Surface any threads where Chetan was mentioned but hasn't responded
+
+**Jira** (if connected):
+- Pull current sprint status: stories in progress, completed, blocked
+- Surface tickets assigned to Chetan with approaching deadlines
+- Check for newly assigned tickets since yesterday
+- Auto-update `tracking/current-sprint.md` with latest sprint data
+
+**Amplitude** (if connected):
+- Pull north star metric current value and trend (vs. last week, vs. target)
+- Surface any significant metric changes (>10% swing) or anomalies
+- Auto-update `context/metrics/north-star.md` with latest data
+
+**Grafana/Sentry** (if connected):
+- Check for critical alerts or new error spikes overnight
+- Surface any production incidents that may affect today's priorities
+
 ### Step 2: Identify attention items by priority hierarchy
 Categorize everything surfaced in Step 1 into a priority-ordered list:
 - **Red — Overdue**: Action items past deadline, unresolved blockers persisting 3+ days, metrics significantly off-track

@@ -68,6 +68,16 @@ Show the draft and ask:
 - "Post a shorter version to Slack?" (if Slack MCP connected)
 - "Save to artifacts/emails/ for your records?"
 
+### Tool Integrations (when MCP connected)
+
+**Slack** (if connected):
+- Offer: "Send as Slack DM instead?" (for internal recipients where Slack is more appropriate)
+- For team-wide communications: "Post to [#channel] instead?"
+- Auto-adjust format: Slack messages should be shorter, use emoji reactions for quick acknowledgment asks
+
+**Confluence** (if connected):
+- For longer updates or FYI-type content: "Publish as Confluence page and share the link instead?"
+
 ## Output Format
 
 ```
