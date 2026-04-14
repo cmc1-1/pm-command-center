@@ -30,17 +30,18 @@ This is the routing table for the PM Command Center. Claude reads this file firs
 | Mentorship tracker | `context/my/mentorship-tracker.md` | ⬜ Needs setup |
 | Promotion packet | `context/my/promotion-packet.md` | ⬜ Needs setup |
 
-### Shared Company Context
+### Company Context
 | Topic | File | Status |
 |-------|------|--------|
-| Product overview (shared) | `context/company/product-overview.md` | ⬜ Admin populates |
-| Team tool stack | `context/company/tool-stack.md` | ⬜ Admin populates |
-| PM team norms & practices | `context/company/pm-team-norms.md` | ⬜ Admin populates |
+| Product overview | `context/company/product-overview.md` | ⬜ Fill from template |
+| Team tool stack | `context/company/tool-stack.md` | ⬜ Fill from template |
+| PM team norms & practices | `context/company/pm-team-norms.md` | ⬜ Fill from template |
 
-### Personal Context Templates (for new PMs)
+### Templates (for new PMs — copied by setup script)
 | Topic | File |
 |-------|------|
-| All 11 blank templates | `context/my.template/` — copied to `context/my/` by setup script |
+| Personal context (11 templates) | `context/my.template/` → `context/my/` |
+| Company context (3 templates) | `context/company.template/` → `context/company/` |
 
 ### Product & Strategy
 | Topic | File | Status |

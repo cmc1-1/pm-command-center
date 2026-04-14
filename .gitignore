@@ -36,6 +36,9 @@ MY_PROFILE.md
 # Personal context (each PM has their own)
 context/my/
 
+# Company context (each PM populates locally)
+context/company/
+
 # System files
 .DS_Store
 node_modules/

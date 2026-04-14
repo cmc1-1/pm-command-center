@@ -30,7 +30,19 @@ for file in context/my.template/*.md; do
   fi
 done
 
-# 3. Create gitignored directories
+# 3. Copy context/company.template/* → context/company/ (if not exists)
+mkdir -p context/company
+for file in context/company.template/*.md; do
+  filename=$(basename "$file")
+  if [ -f "context/company/$filename" ]; then
+    echo "[skip] context/company/$filename already exists"
+  else
+    cp "$file" "context/company/$filename"
+    echo "[created] context/company/$filename"
+  fi
+done
+
+# 4. Create gitignored directories
 directories=(
   "context/team"
   "context/strategy"
@@ -65,7 +77,7 @@ for dir in "${directories[@]}"; do
   fi
 done
 
-# 4. Create placeholder files in gitignored directories (if missing)
+# 5. Create placeholder files in gitignored directories (if missing)
 placeholders=(
   "context/product-overview.md"
   "context/team/directory.md"

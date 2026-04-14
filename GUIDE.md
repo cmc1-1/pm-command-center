@@ -76,7 +76,8 @@ pm-command-center/
 │
 ├── templates/             # Document templates (19 templates)
 ├── context/               # Persistent knowledge base
-│   ├── company/           # Shared company context (committed, admin-managed)
+│   ├── company/           # Your company context (gitignored, per-PM)
+│   ├── company.template/  # Blank company context templates (committed)
 │   ├── my/                # Your personal context (gitignored, per-PM)
 │   ├── my.template/       # Blank personal context templates (committed)
 │   ├── cross-org/         # Cross-team visibility (gitignored)
@@ -109,8 +110,8 @@ All MCP steps are gated by availability — skills work without them, they just 
 Skills are smart because they read context first. The Meeting Summarizer reads your team directory, priorities, action items, and decision log before processing a transcript — so it can flag conflicts, detect carryover items, and map speakers to roles. The richer your context, the smarter every skill becomes.
 
 ### Three-Layer Architecture
-- **Shared (committed)** — Admin-managed, flows to all PMs: CLAUDE.md, INDEX.md, GUIDE.md, skills/, templates/, context/company/, context/my.template/, MY_PROFILE.template.md, setup scripts, docs/
-- **Personal (gitignored)** — Per-PM, never conflicts on pull: MY_PROFILE.md, context/my/ (career goals, impact journal, promotion packet, frameworks)
+- **Shared (committed)** — Admin-managed, flows to all PMs: CLAUDE.md, INDEX.md, GUIDE.md, skills/, templates/, context/company.template/, context/my.template/, MY_PROFILE.template.md, setup scripts, docs/
+- **Personal (gitignored)** — Per-PM, never conflicts on pull: MY_PROFILE.md, context/my/ (career goals, impact journal, promotion packet, frameworks), context/company/ (product overview, tool stack, team norms)
 - **Confidential (gitignored)** — Company-specific, local only: context/team/, context/strategy/, context/users/, context/competitors/, context/metrics/, context/decisions/, context/cross-org/, tracking/, artifacts/, research/, inbox/
 
 ---
@@ -522,12 +523,17 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 |----------|---------|
 | `context/my.template/*.md` | Blank versions of all 11 personal context files. Copied to `context/my/` by setup script |
 
-### Shared Company Context (3 files — committed, admin-managed)
+### Company Context (3 files — gitignored, per-PM)
 | File | Purpose |
 |------|---------|
-| `context/company/product-overview.md` | Shared product overview for the team |
+| `context/company/product-overview.md` | Product overview for your company |
 | `context/company/tool-stack.md` | Team tool inventory reference |
 | `context/company/pm-team-norms.md` | PM team practices and cadences |
+
+### Company Context Templates (3 files — committed, copied on setup)
+| Location | Purpose |
+|----------|---------|
+| `context/company.template/*.md` | Blank versions of all 3 company context files. Copied to `context/company/` by setup script |
 
 ### Cross-Org Context (2 files — gitignored)
 | File | Purpose |

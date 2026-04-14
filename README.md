@@ -47,7 +47,7 @@ See `docs/INTEGRATIONS.md` for setup. Priority order:
 ### Pushing updates
 When you update skills, templates, or shared context:
 ```bash
-git add skills/ templates/ context/company/ context/my.template/ CLAUDE.md GUIDE.md INDEX.md
+git add skills/ templates/ context/company.template/ context/my.template/ CLAUDE.md GUIDE.md INDEX.md
 git commit -m "Update: [description]"
 git push origin main
 ```
@@ -61,13 +61,14 @@ PMs pull updates with zero conflicts — all personal files are gitignored.
 - `GUIDE.md` — Complete user manual
 - `skills/` — 13 automated workflow definitions
 - `templates/` — 19 PM document templates
-- `context/company/` — Shared product/team context
+- `context/company.template/` — Blank company context templates
 - `context/my.template/` — Blank personal context templates
 - `docs/` — Integration guide, architecture, patterns
 
 ### What's personal (gitignored, per-PM)
 - `MY_PROFILE.md` — Each PM's identity, style, preferences
 - `context/my/` — Personal context (career goals, impact journal, promotion packet)
+- `context/company/` — Company context (product overview, tool stack, team norms)
 - Company-specific context (team, strategy, users, metrics, competitors)
 - Operational tracking (action items, sprint, risks)
 - Generated artifacts (meeting notes, PRDs, reports)
@@ -85,7 +86,7 @@ Only shared files update. Your `MY_PROFILE.md` and `context/my/` are untouched.
 | Skills | Automated PM workflows | 13 |
 | Templates | Document structures | 19 |
 | Personal context templates | Career, frameworks, methodology | 11 |
-| Shared company context | Product overview, tool stack, norms | 3 |
+| Company context templates | Product overview, tool stack, norms | 3 |
 
 ## Daily Usage
 - `"morning briefing"` — Situational awareness digest

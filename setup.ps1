@@ -30,7 +30,22 @@ Get-ChildItem "context/my.template/*.md" | ForEach-Object {
     }
 }
 
-# 3. Create gitignored directories
+# 3. Copy context/company.template/* → context/company/ (if not exists)
+if (-not (Test-Path "context/company")) {
+    New-Item -ItemType Directory -Path "context/company" -Force | Out-Null
+}
+
+Get-ChildItem "context/company.template/*.md" | ForEach-Object {
+    $dest = "context/company/$($_.Name)"
+    if (Test-Path $dest) {
+        Write-Host "[skip] $dest already exists" -ForegroundColor Yellow
+    } else {
+        Copy-Item $_.FullName $dest
+        Write-Host "[created] $dest" -ForegroundColor Green
+    }
+}
+
+# 4. Create gitignored directories
 $directories = @(
     "context/team",
     "context/strategy",
@@ -65,7 +80,7 @@ foreach ($dir in $directories) {
     }
 }
 
-# 4. Create placeholder files in gitignored directories (if missing)
+# 5. Create placeholder files in gitignored directories (if missing)
 $placeholders = @(
     "context/product-overview.md",
     "context/team/directory.md",

@@ -28,4 +28,4 @@ Shared practices and expectations for the PM team. Maintained by the team lead.
 - All PMs use the PM Command Center for meeting processing, action tracking, and decision logging
 - Skills and templates are maintained by the team lead — pull updates via `git pull upstream main`
 - Personal context (career goals, impact journal, etc.) is private to each PM
-- Company context in `context/company/` is shared — suggest updates to team lead
+- Company context in `context/company/` is local — populate from `context/company.template/` during setup
