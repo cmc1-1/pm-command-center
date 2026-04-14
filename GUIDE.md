@@ -411,7 +411,7 @@ When a new tool needs to be connected to the PM Command Center:
 3. **Verify the connection**: Run `claude mcp list` to confirm it's active
 4. **Identify which skills benefit**: Determine which skills should use the new tool (reference `docs/INTEGRATIONS.md` for the pattern)
 5. **Update affected skills**: Add a `**[Tool Name]** (if connected):` block to the "Tool Integrations" section of each relevant skill file. Gate all steps with "(if connected)" checks so skills still work without it
-6. **Update `CLAUDE.md`**: Add the tool to the MCP Connections checklist under the appropriate tier
+6. **Update `MY_PROFILE.md`**: Add the tool to your MCP Connections checklist under the appropriate tier
 7. **Update `docs/INTEGRATIONS.md`**: Add the tool to the tool stack table, connection details, and any context auto-population mappings
 8. **Update this GUIDE.md**: Add to Section 3 (Tool Integrations), Section 4 (skill descriptions if capabilities change), and Section 12 (if new files are created)
 9. **Test end-to-end**: Run a skill that uses the new tool and verify the integration works
@@ -541,10 +541,9 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 | `context/cross-org/initiative-tracker.md` | Cross-team visibility map |
 | `context/cross-org/synergy-log.md` | Cross-org connections spotted & realized |
 
-### Company Context Placeholders (14 files — gitignored, populate during onboarding)
+### Company Context Placeholders (13 files — gitignored, populate during onboarding)
 | File | Purpose |
 |------|---------|
-| `context/company/product-overview.md` | Product vision, users, business model |
 | `context/team/directory.md` | Team members, roles, reporting |
 | `context/team/stakeholder-map.md` | Stakeholder relationships and preferences |
 | `context/team/org-context.md` | Org culture and dynamics |
@@ -575,10 +574,12 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 | File | Purpose |
 |------|---------|
 | `docs/INTEGRATIONS.md` | Tool stack integration guide (MCP setup, tiers, automation) |
-| `docs/AI_PM_Assistant_Blueprint.md` | Original system design blueprint |
-| `docs/PM_Command_Center_Implementation_Plan.md` | Build plan and implementation log |
-| `docs/PM_Command_Center_Systems_Architecture.md` | System architecture documentation |
-| `docs/PM_Command_Center_Unified_Blueprint_v2.md` | Unified blueprint v2 |
+| `docs/AI_PM_Assistant_Blueprint.md` | Historical: original system design blueprint |
+| `docs/PM_Command_Center_Implementation_Plan.md` | Historical: build plan and implementation log |
+| `docs/PM_Command_Center_Systems_Architecture.md` | Historical: system architecture documentation |
+| `docs/PM_Command_Center_Unified_Blueprint_v2.md` | Historical: unified blueprint v2 |
+
+> **Note**: Historical docs reflect the original architecture, not current. See this GUIDE.md for the current system reference.
 
 ---
 

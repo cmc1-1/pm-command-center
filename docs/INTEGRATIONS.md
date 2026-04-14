@@ -94,7 +94,7 @@ The PM Command Center integrates with Evisort's product team tools via MCP (Mode
 - Decision log syncs to shared Confluence decision log page
 - Knowledge search before generating output (check if something already exists)
 **Skills enhanced**: onboarding-accelerator, prd-generator, meeting-summarizer, decision-logger
-**Context auto-populated**: `context/product-overview.md`, `context/strategy/current-priorities.md`, `context/strategy/okrs.md`, `context/team/org-context.md`
+**Context auto-populated**: `context/company/product-overview.md`, `context/strategy/current-priorities.md`, `context/strategy/okrs.md`, `context/team/org-context.md`
 
 ---
 
@@ -183,7 +183,7 @@ With MCPs connected, these context files populate automatically instead of requi
 | `context/strategy/current-priorities.md` | You type it | Productboard roadmap + Confluence | On onboarding + monthly |
 | `tracking/risks-and-blockers.md` | You type it | Jira blocked items + Sentry alerts | Daily via morning briefing |
 | `context/team/directory.md` | You type it | Slack profiles + Jira assignees | On onboarding accelerator |
-| `context/product-overview.md` | You type it | Confluence product docs | On onboarding accelerator |
+| `context/company/product-overview.md` | You type it | Confluence product docs | On onboarding accelerator |
 | `context/strategy/okrs.md` | You type it | Confluence OKR pages | On onboarding accelerator |
 | `context/users/feedback-themes.md` | You type it | Productboard feature requests | On onboarding + monthly |
 

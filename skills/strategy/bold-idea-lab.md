@@ -167,7 +167,7 @@ After generating the report:
 ## Output Format
 Save to: `artifacts/reports/YYYY-MM-DD-bold-idea-lab-{topic}.md`
 
-Where `{topic}` is a kebab-case summary of the session focus (e.g., `open-exploration`, `ai-contract-review`, `competitive-response-icertis`).
+Where `{topic}` is a kebab-case summary of the session focus (e.g., `open-exploration`, `ai-personalization`, `competitive-response-acme`).
 
 ## What Makes This Skill Different
 This is the **upstream creative engine** in the skill ecosystem. While other skills refine, validate, and execute ideas, Bold Idea Lab generates them. It uses divergent thinking (Step 2: generate many) followed by convergent thinking (Steps 3-5: filter and rank). The output feeds into:

@@ -122,7 +122,7 @@ Tracker updated: tracking/action-items.md
 **Jira** (if connected):
 - After extracting items, offer: "Create Jira tickets for these [N] items?"
 - Auto-populate: Summary (action text), Assignee (owner), Priority, Due date, Description (source context + meeting link)
-- Store Jira ticket key (e.g., EVIS-1234) alongside the AI-NNN ID in the tracker
+- Store Jira ticket key (e.g., PROJ-1234) alongside the AI-NNN ID in the tracker
 - When updating existing items, sync status back to Jira
 
 **Slack** (if connected):

@@ -38,8 +38,8 @@ Search across these categories, prioritizing actionable intelligence:
 |----------|---------|-----------------|
 | **Competitor announcements** | Key competitors from `context/competitors/matrix.md` — press releases, blogs, product updates | New features, partnerships, customer wins, pricing changes, leadership changes |
 | **Analyst reports** | Gartner (Magic Quadrant, Market Guide), Forrester (Wave), IDC MarketScape | Positioning changes, emerging categories, vendor evaluations |
-| **Industry news** | Legaltech News, Artificial Lawyer, Law.com, Above the Law, Legal IT Insider | Market trends, buyer sentiment, technology adoption stories |
-| **Market signals** | Legal ops conferences (CLOC, ACC), enterprise procurement trends, RFP patterns | Buyer priorities shifting, new table-stakes expectations, consolidation signals |
+| **Industry news** | Industry publications relevant to your market (identify from `context/company/product-overview.md` and `context/my/domain-expertise.md`) | Market trends, buyer sentiment, technology adoption stories |
+| **Market signals** | Industry conferences, enterprise procurement trends, RFP patterns | Buyer priorities shifting, new table-stakes expectations, consolidation signals |
 | **M&A and funding** | Crunchbase, PitchBook coverage, TechCrunch | Acquisitions, funding rounds, valuation signals, market consolidation |
 | **Customer signals** | G2, Gartner Peer Insights, TrustRadius reviews | User satisfaction trends, feature gaps mentioned, switching signals |
 
@@ -52,7 +52,7 @@ For each significant finding, analyze what it means for your product:
 
 ### Step 4: Identify market trends
 Step back from individual moves and identify patterns:
-- **Buyer behavior shifts**: Are legal teams prioritizing different capabilities than 6 months ago? Are procurement processes changing?
+- **Buyer behavior shifts**: Are target buyers prioritizing different capabilities than 6 months ago? Are procurement processes changing?
 - **Table-stakes evolution**: What capabilities are moving from "differentiator" to "must-have"? What's the new baseline?
 - **12-24 month direction**: Where is the market heading? What new categories are emerging? What capabilities are becoming expected?
 - **Consolidation signals**: Are platforms converging? Is the category being absorbed into larger suites?

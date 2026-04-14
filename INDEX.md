@@ -151,7 +151,7 @@ Track your progress populating the knowledge base:
 - [ ] Run onboarding accelerator to pull Confluence docs → context files
 - [ ] Start impact journal (`context/my/impact-journal.md`)
 - [ ] Identify cross-org stakeholders and log in initiative tracker
-- [ ] Run first AI research scan (`skills/discovery/ai-research-scout`)
+- [ ] Run first AI research scan (`skills/discovery/ai-research-scout.md`)
 
 ### Week 2 (Important)
 - [ ] OKRs documented (`context/strategy/okrs.md`)
