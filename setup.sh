@@ -79,7 +79,7 @@ done
 
 # 5. Create placeholder files in gitignored directories (if missing)
 placeholders=(
-  "context/product-overview.md"
+  "context/company/product-overview.md"
   "context/team/directory.md"
   "context/team/stakeholder-map.md"
   "context/team/org-context.md"

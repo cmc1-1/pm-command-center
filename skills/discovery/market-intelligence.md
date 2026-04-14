@@ -8,7 +8,7 @@
 - category: discovery
 
 ## Purpose
-Track the competitive landscape in your product's market to keep product strategy informed by real market dynamics. Produces structured intelligence on competitor moves, market trends, buyer behavior shifts, and strategic implications — not just news aggregation, but assessed intelligence with a point of view. Reads `context/product-overview.md` and `context/competitors/matrix.md` to tailor research to your specific market and competitors.
+Track the competitive landscape in your product's market to keep product strategy informed by real market dynamics. Produces structured intelligence on competitor moves, market trends, buyer behavior shifts, and strategic implications — not just news aggregation, but assessed intelligence with a point of view. Reads `context/company/product-overview.md` and `context/competitors/matrix.md` to tailor research to your specific market and competitors.
 
 ## Inputs
 - **Required**: None for full market scan; competitor name or topic for focused deep-dive
@@ -19,7 +19,7 @@ Track the competitive landscape in your product's market to keep product strateg
 - **Auto-loaded context** (read before processing):
   - `context/my/domain-expertise.md` — industry and market landscape knowledge
   - `context/competitors/matrix.md` — current competitive positioning data
-  - `context/product-overview.md` — product context and differentiators
+  - `context/company/product-overview.md` — product context and differentiators
   - `context/strategy/current-priorities.md` — strategic priorities for relevance weighting
 
 ## Process

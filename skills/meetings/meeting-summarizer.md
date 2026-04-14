@@ -139,7 +139,7 @@ After generating the summary, automatically update these files:
 | Stakeholder sentiment captured | `context/team/stakeholder-map.md` | Updated sentiment + date |
 | Customer feedback discussed | `context/users/feedback-themes.md` | New or reinforced themes |
 | Strategy/priority changes | `context/strategy/current-priorities.md` | Updated priorities if changed |
-| New information about product | `context/product-overview.md` | Only if significant new context |
+| New information about product | `context/company/product-overview.md` | Only if significant new context |
 | Cross-org signals detected | `context/cross-org/initiative-tracker.md` | New initiative entries or updates to existing ones |
 
 ### Step 7: Offer follow-up actions

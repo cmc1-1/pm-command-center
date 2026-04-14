@@ -18,7 +18,7 @@ Generate comprehensive, context-aware Product Requirements Documents through a S
   - Urgency / strategic context
   - Known constraints
 - **Auto-loaded context** (read silently before starting):
-  - `context/product-overview.md` — product scope and business model
+  - `context/company/product-overview.md` — product scope and business model
   - `context/users/personas.md` — existing personas and JTBD
   - `context/users/feedback-themes.md` — recurring user pain points
   - `context/strategy/current-priorities.md` — current quarter focus

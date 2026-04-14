@@ -250,7 +250,7 @@ These files get richer with every skill you run — no manual effort needed:
 ### You Populate During Onboarding (Week 1-2)
 One-time effort that makes every skill dramatically smarter:
 - `MY_PROFILE.md` — Your identity, product context, team context, preferences
-- `context/product-overview.md` — What you build, for whom, why
+- `context/company/product-overview.md` — What you build, for whom, why
 - `context/team/directory.md` — Names, roles, reporting lines
 - `context/team/stakeholder-map.md` — Relationships, preferences, influence
 - `context/strategy/current-priorities.md` — This quarter's focus
@@ -432,7 +432,7 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 
 | Problem | Solution |
 |---------|----------|
-| Claude doesn't know my product | Populate `context/product-overview.md` and the Product Context section in `MY_PROFILE.md` |
+| Claude doesn't know my product | Populate `context/company/product-overview.md` and the Product Context section in `MY_PROFILE.md` |
 | Meeting summaries missing speaker names | Populate `context/team/directory.md` with names and roles |
 | System feels overwhelming | Start with just 3 things: morning briefing, meeting summarizer, impact journal |
 | Worried about confidential info | Company-specific data is gitignored. Only shared framework files are committed — personal data stays local |
@@ -544,7 +544,7 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 ### Company Context Placeholders (14 files — gitignored, populate during onboarding)
 | File | Purpose |
 |------|---------|
-| `context/product-overview.md` | Product vision, users, business model |
+| `context/company/product-overview.md` | Product vision, users, business model |
 | `context/team/directory.md` | Team members, roles, reporting |
 | `context/team/stakeholder-map.md` | Stakeholder relationships and preferences |
 | `context/team/org-context.md` | Org culture and dynamics |

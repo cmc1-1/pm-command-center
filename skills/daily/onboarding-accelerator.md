@@ -42,7 +42,7 @@ Search for and extract key documents:
 
 | Search For | Target Context File | Search Strategy |
 |-----------|-------------------|----------------|
-| Product overview, vision, mission docs | `context/product-overview.md` | Search: "product overview", "product vision", "about [product name]" |
+| Product overview, vision, mission docs | `context/company/product-overview.md` | Search: "product overview", "product vision", "about [product name]" |
 | Strategic priorities, quarterly plans | `context/strategy/current-priorities.md` | Search: "priorities", "Q[N] plan", "strategic plan", "roadmap" |
 | OKRs, goals, objectives | `context/strategy/okrs.md` | Search: "OKR", "objectives", "key results", "goals" |
 | Org structure, team pages | `context/team/org-context.md` | Search: "org chart", "team structure", "org context" |
@@ -72,7 +72,7 @@ Extract product context:
 |------|-------------------|-----|
 | Current roadmap items | `context/strategy/current-priorities.md` (supplement) | Read "Now" and "Next" columns |
 | Top feature requests | `context/users/feedback-themes.md` (seed) | Read highest-voted features with request counts |
-| Company/product info | `context/product-overview.md` (supplement) | Read product descriptions and positioning |
+| Company/product info | `context/company/product-overview.md` (supplement) | Read product descriptions and positioning |
 
 ### Step 5: Pull from Slack (if connected)
 Extract team and org context:

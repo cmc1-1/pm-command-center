@@ -46,7 +46,6 @@ This is the routing table for the PM Command Center. Claude reads this file firs
 ### Product & Strategy
 | Topic | File | Status |
 |-------|------|--------|
-| Product overview & vision | `context/product-overview.md` | ⬜ Needs onboarding |
 | Current priorities | `context/strategy/current-priorities.md` | ⬜ Needs onboarding |
 | OKRs | `context/strategy/okrs.md` | ⬜ Needs onboarding |
 | Active PRDs | `context/strategy/active-prds/` | ⬜ Empty |
@@ -139,7 +138,7 @@ _No changes yet — system initialized._
 Track your progress populating the knowledge base:
 
 ### Week 1 (Critical)
-- [ ] Product overview populated (`context/product-overview.md`)
+- [ ] Product overview populated (`context/company/product-overview.md`)
 - [ ] Team directory built (`context/team/directory.md`)
 - [ ] Stakeholder map started (`context/team/stakeholder-map.md`)
 - [ ] Current priorities defined (`context/strategy/current-priorities.md`)

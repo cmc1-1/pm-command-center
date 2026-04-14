@@ -18,7 +18,7 @@ Stay current on AI developments that matter for product strategy, competitive po
   - Depth: quick scan (headlines + relevance) or deep dive (full analysis + implications)
 - **Auto-loaded context** (read before processing):
   - `context/my/domain-expertise.md` — current AI knowledge base and areas of focus
-  - `context/product-overview.md` — product context for relevance filtering
+  - `context/company/product-overview.md` — product context for relevance filtering
   - `context/strategy/current-priorities.md` — to prioritize findings by strategic relevance
 
 ## Process

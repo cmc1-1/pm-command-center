@@ -17,7 +17,7 @@ Creative brainstorming engine that generates bold, grounded product ideas throug
   - Constraints ("must work with current architecture", "needs to ship in Q3", "enterprise-only")
   - Inspiration sources ("I saw [competitor] launch X", "a customer asked about Y")
 - **Auto-loaded context** (read ALL before processing):
-  - `context/product-overview.md` — current product capabilities and architecture
+  - `context/company/product-overview.md` — current product capabilities and architecture
   - `context/users/personas.md` — user segments, needs, and pain points
   - `context/users/feedback-themes.md` — aggregated user feedback and request patterns
   - `context/competitors/matrix.md` — competitive landscape and positioning gaps
