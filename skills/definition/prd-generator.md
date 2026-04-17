@@ -30,6 +30,16 @@ Generate comprehensive, context-aware Product Requirements Documents through a S
 
 ## Process
 
+### Phase 0: PR/FAQ Gate (narrative-first check)
+
+Before asking PRD-scoping questions, check whether a PR/FAQ exists for this feature. Look in `artifacts/prfaqs/` for a file matching the feature name.
+
+- **If a PR/FAQ exists**: Read it. Use it as the authoritative statement of customer benefit, positioning, and out-of-scope. The PRD then becomes the *how*, with the PR/FAQ as the *why*. Skip customer-framing questions already answered in the PR/FAQ.
+- **If no PR/FAQ exists**: Before proceeding, offer:
+  > "No PR/FAQ found for this feature. Amazon's Working Backwards method recommends drafting the press release + customer FAQ *before* the PRD — it's the cheapest way to test whether the idea deserves to be built. Want to run `pr-faq-generator` first? (You can also proceed directly to PRD if this is a small feature, internal tool, or follow-on work where the customer narrative is already clear.)"
+
+If the user chooses to skip the PR/FAQ, proceed to Phase 1. If they choose to run it first, hand off to `pr-faq-generator` and return here with its output as input to Phase 1.
+
 ### Phase 1: Socratic Questioning (interactive — 3-4 rounds)
 
 Do NOT generate the PRD immediately. First, ask questions to scope the feature properly. Questions should demonstrate that you've read the context — reference specific personas, feedback themes, competitors, or prior decisions.
@@ -46,6 +56,7 @@ Draw from context to make questions specific, not generic. Examples:
 **Round 2 — Success criteria & constraints (ask 2-3 questions)**
 
 - "What does success look like in numbers? Which metric from your north star set does this move?"
+- "Which HEART category does this feature target most — Happiness, Engagement, Adoption, Retention, or Task Success? (If unclear, we'll run `hearts-gsm-builder` after the PRD to formalize the measurement plan.)"
 - "Are there technical dependencies or infrastructure constraints I should know about?"
 - "Who needs to approve this before development starts?"
 
@@ -69,6 +80,7 @@ Using the Socratic answers + all auto-loaded context, generate a complete PRD fo
 - **User stories must follow INVEST**: Independent, Negotiable, Valuable, Estimable, Small, Testable
 - **Acceptance criteria must be testable**: Use Given/When/Then format
 - **Metrics must have baselines**: If baseline is unknown, flag it as "Baseline TBD — measure before launch"
+- **Success metrics section uses HEART/GSM structure**: Organize metrics into a HEART category (Happiness / Engagement / Adoption / Retention / Task Success), state the Goal → Signal → Metric chain for each, and name at least one counter-metric. If the mapping is non-obvious, note "See `hearts-gsm-builder` for full measurement plan" and link to the HEART/GSM artifact when authored.
 - **Out of scope must be explicit**: Better to over-exclude than under-exclude
 - **Assumptions must be listed**: Every unstated belief that could invalidate the approach
 - **Reference prior decisions**: Link to relevant D-[NNN] entries when they constrain or inform the feature
@@ -96,6 +108,10 @@ Present critiques as actionable feedback, not a wall of text. Format:
 2. Add a summary entry to `context/strategy/active-prds/` directory
 3. Offer follow-up actions:
    - "Generate user stories as Jira/Linear tickets?"
+   - "Formalize the measurement plan via `hearts-gsm-builder`?"
+   - "Run `pre-mortem-runner` on this PRD before engineering investment?"
+   - "Design assumption tests via `assumption-test-designer` for risky requirements?"
+   - "Create a storyboard via `storyboard-generator` to visualize the journey this PRD enables?"
    - "Create a stakeholder FAQ for this feature?"
    - "Draft a one-pager summary for leadership?"
    - "Build a prototype from the P0 requirements?"
@@ -123,6 +139,8 @@ Present critiques as actionable feedback, not a wall of text. Format:
 - [ ] Problem statement is grounded in data or research, not assumption
 - [ ] Every P0 user story has testable acceptance criteria
 - [ ] Success metrics have baselines (or baselines are flagged as TBD)
+- [ ] Success metrics are structured by HEART category with Goal → Signal → Metric chain
+- [ ] At least one counter-metric is named (what should NOT move in the wrong direction)
 - [ ] Out of scope section is populated (not empty)
 - [ ] At least 2 assumptions are listed for validation
 - [ ] Technical dependencies are identified
@@ -141,8 +159,17 @@ Present critiques as actionable feedback, not a wall of text. Format:
 - It gets better over time as your context files grow richer
 
 ## Integration Points
-- **Interview Synthesis**: Feeds user research that grounds the PRD
+- **PR/FAQ Generator (H1)**: Runs upstream — the PR/FAQ is the customer-facing narrative; this PRD is the implementation spec
+- **Discovery Cadence (H3)**: Validated OST opportunities become PRD candidates
+- **Assumption Test Designer (H4)**: Pre-build validation reduces PRD risk — link test outcomes to PRD assumptions
+- **Pre-Mortem Runner (H2)**: Pre-mortem the PRD before engineering mobilizes
+- **Storyboard Generator (M5)**: Visualizes the journey the PRD enables; capability map bridges storyboard → PRD
+- **HEART/GSM Builder (M9)**: Formalizes the success-metrics section's measurement structure
+- **Eval & Model Spec Author (H8)**: For AI features, the PRD references a Model Spec + Eval Set instead of feature requirements text
+- **Experiment Designer (H5)**: If rollout is behind an A/B, experiment-designer operationalizes the PRD's success metrics
+- **Launch Orchestrator (M7)**: PRD feeds the launch brief's scope and readiness tracks
 - **Strategy Critique**: Can review the PRD's strategic alignment
 - **Decision Logger**: PRD decisions get logged automatically
+- **Product Strategy Memo (H7)**: PRDs reference the parent strategy memo's guiding policy
 - **Ticket Generator**: Can break P0 requirements into Jira/Linear stories
 - **Prototype Builder**: Can generate functional HTML from P0 user flows

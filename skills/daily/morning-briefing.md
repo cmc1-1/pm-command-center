@@ -23,6 +23,9 @@ Generate a daily situational awareness digest that surfaces what needs attention
   - `tracking/risks-and-blockers.md` — active risks and blockers
   - `context/metrics/north-star.md` — metric targets and recent performance
   - `context/my/impact-journal.md` — recent entries and logging gaps
+  - `context/my/opportunity-solution-tree.md` — active opportunities and assumption-test status (discovery signal)
+  - `artifacts/launches/` — active launches and their current phase (for phase-gate awareness)
+  - `artifacts/reports/*lno-week*` — this week's LNO plan if one exists (surface the L-task to protect)
 
 ## Process
 
@@ -71,7 +74,10 @@ Within each tier, order by impact — items tied to current priorities or north-
 Go beyond operational status and add strategic context:
 - **Cross-org signals**: Review recent meeting notes and decision log for anything that affects other teams or requires cross-functional coordination. Flag upcoming meetings where cross-org dynamics are in play.
 - **Strategic implications**: Does anything on today's schedule connect to a larger strategic bet? Are there decisions being made elsewhere that affect our roadmap?
-- **Impact logging opportunities**: Check if yesterday had accomplishments worth logging. Review today's schedule for potential impact moments (launches, key meetings, stakeholder presentations, decisions that demonstrate competency).
+- **LNO leverage check**: If a weekly LNO plan exists, surface today's L-task to protect. If no LNO plan exists and it's Monday, offer to run `lno-prioritizer` before starting the day.
+- **Discovery signal**: Any OST nodes with running assumption tests due to complete this week? Surface them.
+- **Launch phase awareness**: For each active launch in `artifacts/launches/`, name the current phase and the next gate decision.
+- **Impact logging opportunities**: Check if yesterday had accomplishments worth logging. Review today's schedule for potential impact moments (launches, key meetings, stakeholder presentations, decisions that demonstrate competency). Note if yesterday's entries lack artifact links or are rated "Thin" evidence.
 
 ### Step 4: Generate structured briefing
 Assemble the briefing in the following sections:
@@ -99,11 +105,13 @@ Assemble the briefing in the following sections:
 
 ---
 
-### Today's Focus
-Based on priorities and calendar, the top 3 things to focus on today:
-1. [Focus item with rationale]
-2. [Focus item with rationale]
-3. [Focus item with rationale]
+### Today's Focus (LNO-tiered)
+Based on priorities, calendar, and this week's LNO plan:
+- **L-task to protect today**: [The single highest-leverage item — block time for it]
+- **N-tasks to execute cleanly**: [1-2 solid-execution items]
+- **O-tasks to batch / cut corners on**: [Items to do "well enough" — no polish]
+
+⚠️ Leverage-drift risk today: [Any O-task being treated as L, if visible from calendar]
 
 ---
 
@@ -150,7 +158,11 @@ Displayed directly in conversation (not saved to file unless requested). If the 
 
 ## Integration Points
 - **Action Item Extractor**: Reads tracker state for overdue and due-today items
-- **Impact Journal**: Checks for logging gaps and surfaces opportunities
+- **LNO Prioritizer (M2)**: Today's Focus section surfaces this week's LNO plan; offers to run LNO if missing on Monday
+- **Discovery Cadence (H3)**: OST assumption-test signals appear in the discovery portion of the briefing
+- **Launch Orchestrator (M7)**: Active launches surface with current phase and next gate
+- **Impact Journal**: Checks for logging gaps, thin-evidence entries, and surfaces opportunities
 - **Meeting Summarizer**: References recent meeting outputs for cross-org signals
 - **End of Day Rollup**: Morning briefing sets up what EOD rollup will close out
+- **Team Health Monitor (M3)**: Quarterly cadence reminder fires in morning briefing when due
 - **Strategy Critique**: Flags strategic items that may need deeper review

@@ -1,6 +1,10 @@
 # Action Items Tracker
 Last updated: [auto-update timestamp]
 
+> **Purpose**: Single source of truth for every commitment — yours, others', and team's — with owner, due date, status, and source.
+> **When to use**: Every meeting summary, every decision logged, and every skill that produces a follow-up should write here. Never leave action items only in meeting notes.
+> **Audience**: You (daily). Surfaced in `morning-briefing` and `end-of-day-rollup`.
+
 ---
 
 ## Dashboard

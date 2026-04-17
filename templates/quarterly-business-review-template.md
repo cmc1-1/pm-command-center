@@ -1,5 +1,9 @@
 # Quarterly Business Review: [Team/Product Name]
 
+> **Purpose**: Quarter-end narrative — what we shipped, metric movement, what we learned, and what's next.
+> **When to use**: End of each quarter. Pull from `context/metrics/weekly-snapshots/`, `context/decisions/decision-log.md`, and `context/my/impact-journal.md`.
+> **Audience**: Leadership team, cross-functional exec peers, and board-level readers.
+
 **Quarter:** [e.g., Q1 2026]
 **Presenter:** [Your name]
 **Date:** [Presentation date]

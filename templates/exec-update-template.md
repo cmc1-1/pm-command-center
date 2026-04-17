@@ -1,5 +1,9 @@
 # Product Update — [Period: Week of MM/DD or Month/Quarter]
 
+> **Purpose**: Executive-altitude status update — outcomes first, activities second, risks and asks called out.
+> **When to use**: Weekly or biweekly cadence to leadership. Driven by `email-drafter` (exec-update mode) or authored directly.
+> **Audience**: VPs, directors, cross-functional exec peers — readers who skim in 60 seconds.
+
 **To**: [Leadership distribution]
 **From**: [Your name]
 **Date**: YYYY-MM-DD

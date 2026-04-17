@@ -110,13 +110,17 @@ Scan for mentions of other teams' projects, shared platform dependencies, parall
 - Flag items that need escalation or follow-up
 
 **Customer / user interview:**
-- Switch to interview synthesis mode:
-  - Extract pain points with verbatim quotes
-  - Capture current workflow description
-  - Note feature requests (explicit and implied)
-  - Assess emotional intensity (frustration level)
+- Switch to interview synthesis mode (Teresa Torres continuous-discovery pattern):
+  - Extract **opportunities** (unmet needs, pain points, desires) — each becomes a candidate OST-0XX node
+  - Extract **stories** (specific past experiences, not hypotheticals) — these are the evidence for opportunities
+  - Capture current workflow description verbatim where possible
+  - Note feature requests (explicit and implied) — treat as *solutions*, track separately from opportunities
+  - Assess emotional intensity (frustration level) as a priority signal
   - Tag willingness-to-pay or switching signals
+  - Flag assumptions the user or PM made in the conversation — candidates for `assumption-test-designer`
 - Update `context/users/feedback-themes.md` with new patterns
+- Update `context/my/opportunity-solution-tree.md` — add new opportunity nodes OST-0XX with this interview cited as evidence
+- Offer to run `discovery-cadence` synthesis mode for deeper processing
 
 **Design review:**
 - Capture design decisions and their rationale
@@ -133,11 +137,14 @@ After generating the summary, automatically update these files:
 
 | Condition | Update Target | What to Append |
 |---|---|---|
-| Any decisions made | `context/decisions/decision-log.md` | Decision record with ID, date, rationale |
-| Any action items found | `tracking/action-items.md` | New items with IDs in the Open section |
+| Any decisions made | `context/decisions/decision-log.md` | Decision record with ID, date, rationale, kill conditions (if strategic) |
+| Any action items found | `tracking/action-items.md` | New items with IDs **and LNO tier** (L/N/O) in the Open section |
 | Discussed carryover items | `tracking/action-items.md` | Status updates on existing items |
 | Stakeholder sentiment captured | `context/team/stakeholder-map.md` | Updated sentiment + date |
 | Customer feedback discussed | `context/users/feedback-themes.md` | New or reinforced themes |
+| Customer interview opportunities surfaced | `context/my/opportunity-solution-tree.md` | New OST-0XX opportunity nodes with this interview as evidence |
+| CAB / advisory board session | `artifacts/cab/YYYY-QN-cab-notes.md` | Full synthesis (see `skills/discovery/cab-runner.md`) |
+| Launch phase-gate decision | `artifacts/launches/[launch-slug].md` | Phase-gate log entry + decision log reference |
 | Strategy/priority changes | `context/strategy/current-priorities.md` | Updated priorities if changed |
 | New information about product | `context/company/product-overview.md` | Only if significant new context |
 | Cross-org signals detected | `context/cross-org/initiative-tracker.md` | New initiative entries or updates to existing ones |

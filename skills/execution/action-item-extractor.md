@@ -61,6 +61,7 @@ For each extracted item, determine:
 | **Action** | Rewrite as a clear, specific, actionable task. Start with a verb. Short enough to scan in a table (aim for <15 words) |
 | **Deadline** | Use explicit deadline if stated ("by Friday", "end of sprint", "before the board meeting"). If none stated, mark "TBD — confirm deadline" |
 | **Priority** | P0 = blocking others or time-critical; P1 = important, this sprint; P2 = should do, flexible timing. Infer from urgency language and context |
+| **LNO tier** | Tag each item with **[L]**, **[N]**, or **[O]** per Shreyas Doshi's framework. L = leverage (would move a priority / OKR / compounds); N = neutral (important but linear execution); O = overhead (must happen, no polish needed). Use heuristics from `skills/daily/lno-prioritizer.md`. If unclear, default to N and flag for confirmation. |
 | **Source** | Meeting name and date, email subject and date, or other source identifier |
 | **Status** | Default: 🔵 Open. Use ⏳ Waiting if it depends on someone else's action first |
 | **Notes** | Brief context: why this matters or what discussion led to it (one line) |
@@ -99,10 +100,10 @@ Show the user:
 ## Action Items Extracted from [Source]
 
 ### New Items Added
-| ID | Owner | Action | Deadline | Priority |
-|----|-------|--------|----------|----------|
-| AI-042 | PM Name | Draft customer impact analysis for API v2 delay | Apr 17 | P0 |
-| AI-043 | Mike | Share contractor onboarding requirements | Apr 16 | P1 |
+| ID | Owner | Action | Deadline | Priority | LNO |
+|----|-------|--------|----------|----------|-----|
+| AI-042 | PM Name | Draft customer impact analysis for API v2 delay | Apr 17 | P0 | L |
+| AI-043 | Mike | Share contractor onboarding requirements | Apr 16 | P1 | O |
 
 ### Duplicates Skipped
 - "Update timeline for leadership" — already tracked as AI-034
@@ -145,6 +146,9 @@ When triggered by "action item cleanup" or "weekly tracker maintenance":
 
 ## Integration Points
 - **Meeting Summarizer**: Calls this skill automatically in Step 6 (auto-update)
-- **Morning Briefing**: Reads the tracker to surface overdue and due-today items
+- **LNO Prioritizer (M2)**: LNO tiering on extraction feeds directly into the weekly LNO plan; any item tagged L increments the protected-work list
+- **Morning Briefing**: Reads the tracker to surface overdue and due-today items; LNO tags enable the "L-task to protect today" surfacing
+- **Discovery Cadence (H3)**: Action items tagged as discovery work (interviews, assumption tests) feed the weekly discovery plan
 - **Status Report**: Pulls completion data for the weekly update
 - **Email Drafter**: Can generate nudge emails for overdue items owned by others
+- **Decision Logger**: If extracted items reference a decision that's not logged yet, flag for decision-logger

@@ -1,5 +1,9 @@
 # Competitive Teardown: [Competitor Name]
 
+> **Purpose**: Deep-dive on a single competitor — positioning, product, pricing, strengths, weaknesses, and strategic response.
+> **When to use**: Quarterly refresh per key competitor, or ad-hoc when a competitor ships something notable. Feeds `context/competitors/matrix.md`.
+> **Audience**: You, your team, product leadership, and sales/marketing partners who position against this competitor.
+
 ## Metadata
 - **Date**: YYYY-MM-DD
 - **Analyst**: [Your name]

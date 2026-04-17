@@ -33,7 +33,7 @@ Read the full document before critiquing. Understand the author's intent, not ju
 - The key bets (what assumptions is it making?)
 - The intended outcome (what does success look like?)
 
-### Step 2: Score on six dimensions
+### Step 2: Score on eight dimensions
 
 | Dimension | What to Evaluate | Score 1-10 |
 |---|---|---|
@@ -44,6 +44,7 @@ Read the full document before critiquing. Understand the author's intent, not ju
 | **Feasibility** | Can the team actually execute this with available resources and timeline? | |
 | **Ambition** | Is this bold enough to matter? Is it solving a big enough problem? | |
 | **Business Impact Clarity** | Is the business case quantified? Can you tie this to revenue, cost, or competitive advantage with numbers? | |
+| **Strategy Structure Integrity** | Does it have Rumelt's kernel — Diagnosis, Guiding Policy, Coherent Actions — or is it a goal list dressed up as strategy? Flag "bad strategy" red flags: fluff, goals mistaken for strategy, dog's dinner of independent objectives, wishful timelines. | |
 
 ### Step 3: Identify strengths (2-3)
 Start with what works. Specific, not generic:
@@ -96,7 +97,8 @@ Flag anything that should be in the document but isn't:
 | Feasibility | X/10 | [One line] |
 | Ambition | X/10 | [One line] |
 | Business Impact Clarity | X/10 | [One line] |
-| **Overall** | **X/10** | *7 dimensions* |
+| Strategy Structure Integrity | X/10 | [One line — flag Rumelt red flags if found] |
+| **Overall** | **X/10** | *8 dimensions* |
 
 ### Top 3 Fixes (do these before presenting)
 1. [Most impactful improvement]
@@ -126,7 +128,10 @@ Flag anything that should be in the document but isn't:
 - It's not infallible. The critique is only as good as the context files. If competitor data or user research is thin, the critique will be shallower.
 
 ## Integration Points
+- **Product Strategy Memo (H7)**: Primary upstream — critiques Rumelt-style memos authored by that skill. Structure Integrity dimension is especially relevant here.
+- **PR/FAQ Generator (H1)**: Can critique PR/FAQs before they gate a PRD build
 - **PRD Generator**: Can critique PRDs immediately after generation (Phase 3 of that skill)
+- **Pre-Mortem Runner (H2)**: After critique, offer to run a pre-mortem on the strategy to stress-test the bets
 - **Decision Logger**: Strategy decisions can be logged after critique review
 - **Roadmap Narrative**: Can critique roadmap presentations before stakeholder delivery
 - **Meeting Prep**: Critique output feeds into stakeholder meeting preparation

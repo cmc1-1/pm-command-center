@@ -1,6 +1,10 @@
 # Decision Log
 Last updated: [auto-update timestamp]
 
+> **Purpose**: Append-only record of every product decision with context, options, rationale, and decider — the institutional memory of "why did we do X?"
+> **When to use**: Every decision gets one entry. `decision-logger` and `meeting-summarizer` append here automatically. Add manually for async decisions.
+> **Audience**: You, your team, future onboarding PMs, and anyone revisiting a past choice.
+
 ---
 
 ## How to Use This Log

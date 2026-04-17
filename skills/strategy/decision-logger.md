@@ -31,6 +31,8 @@ If the user provides a casual statement ("We decided to push the launch to May 1
 - Who made or approved this? (decided by)
 - Can this be reversed, and at what cost? (reversibility)
 - Should this be revisited at a specific date? (review date)
+- **Underlying strategy memo**: Is this decision an application of an existing strategy memo? If yes, link to the file in `artifacts/strategy-memos/`. If no — and this is a strategic decision — flag: "This looks strategic but isn't grounded in a written strategy. Want to run `product-strategy-memo` first?"
+- **Kill conditions**: Under what evidence would we reverse this decision? (Rumelt's discipline — if you can't name a disconfirming signal, the decision is untestable.)
 
 If the decision was extracted by the Meeting Summarizer, most of this context will already be available from the meeting notes — don't re-ask what's already known.
 
@@ -81,7 +83,9 @@ Show the user:
 - If the decision affects a timeline, update related Jira epic/story due dates
 
 ## Integration Points
+- **Product Strategy Memo (H7)**: Strategic decisions get linked to the memo that authored the guiding policy
 - **Meeting Summarizer**: Calls this skill automatically when decisions are extracted
 - **Strategy Critique**: References the decision log when evaluating strategy coherence
+- **Pre-Mortem Runner (H2)**: Kill conditions captured here feed into pre-mortem failure-mode analysis
 - **Status Report**: Pulls recent decisions for the weekly update
 - **PRD Generator**: References relevant past decisions when drafting requirements

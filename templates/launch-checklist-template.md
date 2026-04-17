@@ -1,5 +1,9 @@
 # Launch Checklist: [Feature / Product Name]
 
+> **Purpose**: End-to-end readiness checklist covering product, GTM, support, legal, and analytics for a single launch.
+> **When to use**: 4-6 weeks before launch. Pair with `launch-orchestrator` for phase-gated rollout (fishfood → teamfood → dogfood → beta → GA).
+> **Audience**: Launch DRI (you), cross-functional launch team, exec go/no-go approvers.
+
 ## Launch Metadata
 - **Feature**: [Name]
 - **PRD**: [Link to PRD]

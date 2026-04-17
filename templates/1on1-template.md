@@ -1,5 +1,9 @@
 # 1:1 Notes: [Person Name]
 
+> **Purpose**: Structured notes for a single 1:1 meeting — relationship context, discussion, commitments, and follow-ups.
+> **When to use**: Before/during/after any 1:1 (manager, report, peer, skip-level, cross-functional). Pair with `meeting-summarizer` for post-meeting cleanup.
+> **Audience**: You (primary). Shared excerpts may go to the other person as a recap.
+
 ## Relationship Context
 - **Name**: [Full name]
 - **Role**: [Title]

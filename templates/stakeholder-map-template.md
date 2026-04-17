@@ -2,6 +2,10 @@
 
 Last updated: YYYY-MM-DD
 
+> **Purpose**: Map every stakeholder by power and interest with engagement strategy, known positions, and communication preferences.
+> **When to use**: Week 1 of any new role or large initiative, then refreshed quarterly. Referenced by `email-drafter` and `exec-update` skills for altitude calibration.
+> **Audience**: You (primary). Confidential — never shared.
+
 ---
 
 ## Power / Interest Grid

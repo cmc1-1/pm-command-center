@@ -31,9 +31,11 @@ claude
 ```
 
 ### 5. First commands
-- `"morning briefing"` — daily situational awareness
+- `"morning briefing"` — daily situational awareness (LNO-tiered)
 - `"summarize this meeting"` — paste any transcript
-- `"log impact: [what you did]"` — build promotion evidence
+- `"log impact: [what you did]"` — build promotion evidence (STAR-framed)
+- `"LNO prioritize my week"` — tier your week by leverage
+- `"weekly discovery"` — Teresa Torres cadence with OST updates
 - `"onboarding accelerator"` — auto-populate context from connected tools
 
 ### 6. Connect your tools (MCP)
@@ -59,8 +61,8 @@ PMs pull updates with zero conflicts — all personal files are gitignored.
 - `MY_PROFILE.template.md` — Blank profile for new PMs
 - `INDEX.md` — Knowledge base router
 - `GUIDE.md` — Complete user manual
-- `skills/` — 13 automated workflow definitions
-- `templates/` — 19 PM document templates
+- `skills/` — 26 automated workflow definitions
+- `templates/` — 22 PM document templates
 - `context/company.template/` — Blank company context templates
 - `context/my.template/` — Blank personal context templates
 - `docs/` — Integration guide, architecture, patterns
@@ -83,21 +85,38 @@ Only shared files update. Your `MY_PROFILE.md` and `context/my/` are untouched.
 
 | Layer | Contents | Count |
 |-------|----------|-------|
-| Skills | Automated PM workflows | 13 |
-| Templates | Document structures | 19 |
-| Personal context templates | Career, frameworks, methodology | 11 |
+| Skills | Automated PM workflows | 26 |
+| Templates | Document structures | 22 |
+| Personal context templates | Career, frameworks, methodology, OST | 12 |
 | Company context templates | Product overview, tool stack, norms | 3 |
 
 ## Daily Usage
-- `"morning briefing"` — Situational awareness digest
-- `"summarize this meeting"` — Process any transcript
-- `"create a PRD for [feature]"` — Context-aware PRD generation
-- `"critique this strategy"` — 7-dimension strategy scoring
-- `"log impact: [outcome]"` — Promotion evidence pipeline
-- `"end of day"` — EOD summary + tomorrow prep
+- `"morning briefing"` — Situational awareness digest (LNO-tiered)
+- `"summarize this meeting"` — Process any transcript (auto-updates OST + LNO tags)
+- `"create a PRD for [feature]"` — Context-aware PRD (PR/FAQ gate + HEART/GSM)
+- `"draft a PR/FAQ"` — Amazon Working Backwards narrative before build
+- `"critique this strategy"` — 8-dimension strategy scoring (incl. Rumelt structure)
+- `"log impact: [outcome]"` — STAR-framed promotion evidence pipeline
+- `"LNO prioritize"` — Tier your week by leverage (weekly + daily retro)
+- `"end of day"` — EOD summary + LNO retro + tomorrow prep
 - `"AI research scan"` — Stay on top of AI developments
 - `"market intel"` — Competitive landscape intelligence
-- `"bold idea lab"` — Generate and stress-test product ideas
+- `"bold idea lab"` — Generate and stress-test product ideas (5-axis filter)
 - `"onboarding accelerator"` — Bootstrap context from connected tools
+
+## Weekly / Per-Initiative
+- `"weekly discovery"` — Teresa Torres discovery cadence (plan / synthesize / reflect)
+- `"design an assumption test"` — Cheapest test for the highest-risk assumption
+- `"run a pre-mortem"` — Failed-future simulation before you ship
+- `"draft a strategy memo"` — Rumelt kernel (diagnosis → policy → actions)
+- `"generate storyboard"` — Before/after journey with capability map
+- `"design an experiment"` — Rigorous A/B (MDE + sample size + guardrails)
+- `"build HEART"` — HEART × GSM measurement plan for a feature
+- `"author an eval and model spec"` — AI behavior contract + eval set
+- `"orchestrate launch"` — Phase-gated launch with rollback plan
+- `"plan a CAB"` — Customer Advisory Board design + synthesis
+
+## Quarterly
+- `"team health check"` — Atlassian 8-attribute team self-assessment
 
 Full guide: [GUIDE.md](GUIDE.md)

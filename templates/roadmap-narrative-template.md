@@ -1,5 +1,9 @@
 # Roadmap Narrative: [Product/Team Name]
 
+> **Purpose**: Prose version of a roadmap — what bets we're making, why, in what sequence, and what we're explicitly not doing.
+> **When to use**: Half-year or annual planning. Pair with `product-strategy-memo` (upstream) and `storyboard-generator` (downstream narrative).
+> **Audience**: Leadership approving the roadmap, cross-functional partners aligning their own plans, and team members who want the "why."
+
 **Author:** [Your name]
 **Period:** [e.g., H2 2026 / FY2027]
 **Last Updated:** [Date]

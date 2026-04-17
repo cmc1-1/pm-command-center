@@ -1,5 +1,9 @@
 # User Story: [Short Title]
 
+> **Purpose**: Single user story in As-a / I-want / So-that format with acceptance criteria and INVEST check.
+> **When to use**: Breaking a PRD into engineering-ready units. Referenced from `prd-generator` output; written into Jira or equivalent.
+> **Audience**: Engineering, design, QA — and anyone reviewing scope.
+
 ## Story
 **As a** [specific persona from context/users/personas.md],
 **I want to** [action — what the user is trying to do],

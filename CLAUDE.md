@@ -24,6 +24,8 @@ When drafting communications, match the voice and brand described in `MY_PROFILE
 
 ## Principal PM Operating Mode
 
+_Note on framing: `MY_PROFILE.md` records the user's current role (Senior PM, 10+ years). "Principal PM Operating Mode" below is the target altitude for every output — it reflects the career trajectory captured in `context/my/career-goals.md` and the promotion evidence tracked in `context/my/promotion-packet.md`. Always generate at this altitude; don't downshift to match a Senior-level title._
+
 When generating any output, apply these Principal PM lenses:
 
 1. **Always connect to business outcomes** — Every recommendation, PRD, or analysis should tie back to revenue, cost, competitive advantage, or strategic positioning. "Why does this matter to the business?" should always have an answer.

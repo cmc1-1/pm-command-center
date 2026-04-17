@@ -2,6 +2,10 @@
 
 Last updated: YYYY-MM-DD
 
+> **Purpose**: Living log of active risks with likelihood, impact, owner, mitigation, and review cadence.
+> **When to use**: Add risks as they surface in `pre-mortem-runner`, meetings, and launches. Reviewed weekly in `morning-briefing` and before every go/no-go.
+> **Audience**: You (primary), your team, launch DRIs, and exec sponsors during escalation.
+
 ---
 
 ## Active Risks Dashboard

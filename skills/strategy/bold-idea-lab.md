@@ -61,17 +61,20 @@ For each idea, provide:
 
 Push for diversity across the idea set — different user segments, different technical approaches, different value propositions. Avoid generating 5 variations of the same idea.
 
-### Step 3: First-pass filtering
-Score each idea on three axes:
+### Step 3: First-pass filtering (5-axis, per Teresa Torres)
+Score each idea on five axes. The classic three (desirability/feasibility/viability) miss two risks that kill real products: usability and ethics.
 
 | Axis | Question | Score |
 |------|----------|-------|
 | **Desirability** | Is there evidence that users want or need this? (feedback data, research, market signals) | 0-3 |
 | **Feasibility** | Can we realistically build this? (technical capability, team skills, timeline) | 0-3 |
 | **Viability** | Does this make business sense? (revenue potential, strategic alignment, defensibility) | 0-3 |
+| **Usability** | Can users actually accomplish the task? (cognitive load, accessibility, workflow fit) | 0-3 |
+| **Ethical** | Are there harms to users, society, or trust? (misuse, bias, privacy, consent) | 0-3 |
 
-**Kill zero-scorers**: Any idea scoring 0 on any axis is eliminated with a brief explanation.
+**Kill zero-scorers**: Any idea scoring 0 on any axis is eliminated with a brief explanation. (An ethical 0 is an automatic kill, regardless of other scores.)
 **Keep 3-5 survivors** for deeper evaluation.
+**Flag low-confidence scores**: If you can't score an axis honestly because evidence is missing, that's an assumption to hand off to `assumption-test-designer`.
 
 ### Step 4: Stress-test survivors
 For each surviving idea, apply these lenses:
@@ -201,9 +204,13 @@ It is not a substitute for those downstream skills. Its job is to produce the ra
 - [ ] The top idea's insight (pain + enabler + timing) is compelling and non-obvious
 
 ## Integration Points
+- **Assumption Test Designer (H4)**: Downstream — surviving ideas with uncertain axes (especially desirability or feasibility) hand off to this skill to design cheap validation tests
+- **PR/FAQ Generator (H1)**: When an idea is bold enough to warrant a narrative gate, run PR/FAQ before PRD
 - **PRD Generator**: Top ideas from Bold Idea Lab flow into PRD definition as validated concepts
 - **Strategy Critique**: Ideas with strategic narratives can be stress-tested further
+- **Pre-Mortem Runner (H2)**: For the top idea, run a pre-mortem to surface failure modes
 - **AI Research Scout**: AI developments and technology trends seed the Trend-Riding mode
 - **Market Intelligence**: Competitive landscape gaps seed the Competitive Flanking mode
+- **Opportunity Solution Tree**: Surviving ideas become solution nodes (OST-10X) linked to the opportunity they address
 - **Impact Journal**: Running a Bold Idea Lab session and having ideas adopted is a loggable INNOVATION/STRATEGY event
 - **Decision Logger**: If the session produces a strategic direction decision, log it

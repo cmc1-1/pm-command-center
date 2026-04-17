@@ -10,7 +10,7 @@
 ## Purpose
 Turbocharge Week 1 onboarding by pulling existing documentation and data from connected tools (Confluence, Jira, Productboard, Slack, Amplitude) into the PM Command Center's context files. What normally takes 2 weeks of manual population can be done in 2-3 days with this skill.
 
-**Run this once** after connecting Tier 1 and Tier 2 MCPs. It's a one-time bootstrap, not a recurring skill.
+**Run this once** after connecting Tier 1 and Tier 2 MCPs. It's a one-time bootstrap, not a recurring skill. After bootstrap, context grows organically — every meeting summary, decision logged, discovery interview, and impact entry adds to it. MCPs are optional accelerators: without them, every skill still works from whatever context exists (empty, bootstrap-only, or fully populated).
 
 ## Inputs
 - **Required**: At least one MCP connected (Tier 1: Slack, Jira, Confluence recommended)
@@ -43,9 +43,12 @@ Search for and extract key documents:
 | Search For | Target Context File | Search Strategy |
 |-----------|-------------------|----------------|
 | Product overview, vision, mission docs | `context/company/product-overview.md` | Search: "product overview", "product vision", "about [product name]" |
+| Tools & systems inventory | `context/company/tool-stack.md` | Search: "tool stack", "systems inventory", "engineering tools" — also infer from which MCPs are connected |
+| PM team norms, rituals, cadences | `context/company/pm-team-norms.md` | Search: "PM handbook", "PM norms", "team rituals", "PM cadence", "way of working" |
 | Strategic priorities, quarterly plans | `context/strategy/current-priorities.md` | Search: "priorities", "Q[N] plan", "strategic plan", "roadmap" |
 | OKRs, goals, objectives | `context/strategy/okrs.md` | Search: "OKR", "objectives", "key results", "goals" |
 | Org structure, team pages | `context/team/org-context.md` | Search: "org chart", "team structure", "org context" |
+| Cross-org initiatives | `context/cross-org/initiative-tracker.md` | Search: "cross-functional initiative", "program", multi-team epic labels |
 | Onboarding docs | General understanding | Search: "onboarding", "new hire", "getting started" |
 | Architecture docs | Technical understanding | Search: "architecture", "system design", "tech stack" |
 
@@ -110,6 +113,9 @@ After all pulls complete, present:
 - [ ] context/team/stakeholder-map.md — no automated source (build from 1:1s)
 - [ ] context/users/personas.md — needs user research review
 - [ ] context/competitors/matrix.md — partially seeded from domain-expertise.md
+- [ ] context/my/opportunity-solution-tree.md — template copied by setup; seed via `discovery-cadence` once you've done 3+ customer interviews
+- [ ] context/decisions/decision-log.md — build fresh as decisions happen (via `decision-logger`)
+- [ ] context/my/impact-journal.md — build fresh via `impact-journal` skill
 - [ ] ... 
 
 ### Recommended Next Steps

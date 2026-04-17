@@ -1,5 +1,9 @@
 # Sprint Review: Sprint [N] — [Sprint Name/Theme]
 
+> **Purpose**: End-of-sprint snapshot — what shipped vs. committed, demos, metrics, and carryover with reasons.
+> **When to use**: Every sprint close. Fed by `tracking/current-sprint.md` and Jira; archived to `tracking/archive/`.
+> **Audience**: Team (primary), stakeholders watching progress, and leadership sampling team health.
+
 ## Sprint Metadata
 - **Sprint**: [Number]
 - **Dates**: YYYY-MM-DD to YYYY-MM-DD

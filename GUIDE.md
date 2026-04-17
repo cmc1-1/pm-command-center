@@ -1,5 +1,5 @@
 # PM Command Center — Complete Guide
-Version: 2.0 | Last updated: 2026-04-05
+Version: 2.1 | Last updated: 2026-04-17
 
 ---
 
@@ -11,8 +11,8 @@ The PM Command Center is an AI-powered product management productivity system th
 
 **What it is**:
 - A structured knowledge system built on Markdown files
-- 13 automated workflow skills that read your context before acting
-- 19 templates encoding proven PM document structures
+- 26 automated workflow skills that read your context before acting
+- 22 templates encoding proven PM document structures
 - A persistent context layer that grows with every interaction
 - A career acceleration engine targeting Principal PM promotion
 
@@ -65,7 +65,7 @@ pm-command-center/
 ├── README.md              # GitHub readme + team setup instructions
 ├── setup.sh / setup.ps1   # First-time setup scripts
 │
-├── skills/                # Workflow definitions (13 skills)
+├── skills/                # Workflow definitions (26 skills)
 │   ├── daily/             # morning-briefing, impact-journal, end-of-day-rollup, onboarding-accelerator
 │   ├── meetings/          # meeting-summarizer
 │   ├── discovery/         # ai-research-scout, market-intelligence
@@ -74,7 +74,7 @@ pm-command-center/
 │   ├── execution/         # action-item-extractor
 │   └── communication/     # email-drafter
 │
-├── templates/             # Document templates (19 templates)
+├── templates/             # Document templates (22 templates)
 ├── context/               # Persistent knowledge base
 │   ├── company/           # Your company context (gitignored, per-PM)
 │   ├── company.template/  # Blank company context templates (committed)
@@ -118,50 +118,71 @@ Skills are smart because they read context first. The Meeting Summarizer reads y
 
 ## 4. Complete Capability Reference
 
-### Skills — Ready Now (13 built)
+### Skills — Ready Now (26 built)
 
 #### Daily Habits
 | Skill | Trigger Phrases | What It Does | MCP Superpowers |
 |-------|----------------|--------------|-----------------|
-| **Morning Briefing** | "morning briefing", "start my day" | Daily digest: overdue items, today's priorities, metric alerts, cross-org signals, impact opportunities | +Slack: scans channels for overnight @mentions. +Jira: pulls live sprint status. +Amplitude: shows real metric trends. +Grafana/Sentry: surfaces overnight alerts |
-| **Impact Journal** | "log impact", "record win" | Structured win/outcome entry tagged to 10 categories and 7 Principal PM competencies. Feeds promotion packet | — (local-only, no MCP needed) |
-| **End of Day Rollup** | "end of day", "EOD", "wrap up" | EOD summary: what happened, gaps identified, tomorrow's top 3 priorities | +Slack: counts today's messages/threads. +Jira: shows tickets moved today. +GitHub: lists PRs reviewed/merged |
+| **Morning Briefing** | "morning briefing", "start my day" | Daily digest: overdue items, today's LNO-tiered focus, discovery pulse, launch phase status, impact opportunities | +Slack: scans channels for overnight @mentions. +Jira: pulls live sprint status. +Amplitude: shows real metric trends. +Grafana/Sentry: surfaces overnight alerts |
+| **Impact Journal** | "log impact", "record win" | STAR-framed win/outcome entry tagged to 10 categories and 7 Principal PM competencies, with evidence-strength rating | — (local-only, no MCP needed) |
+| **End of Day Rollup** | "end of day", "EOD", "wrap up" | EOD summary: what happened, LNO daily retro, discovery pulse, thin-evidence flagging, tomorrow's top 3 (L/N/O framed) | +Slack: counts today's messages/threads. +Jira: shows tickets moved today. +GitHub: lists PRs reviewed/merged |
+| **LNO Prioritizer** ✨ | "LNO prioritize", "prioritize my week" | Shreyas Doshi L/N/O tiering with leverage-drift detection; weekly plan + daily retro modes | +Calendar: audits L-blocks. +Jira: tags tickets by tier |
 
 #### Meetings & Tracking
 | Skill | Trigger Phrases | What It Does | MCP Superpowers |
 |-------|----------------|--------------|-----------------|
-| **Meeting Summarizer** | "summarize this meeting", "process meeting notes" | Transcript → structured notes with decisions, action items, sentiment, quotes, cross-org signals. Auto-updates knowledge base | +Slack: posts summary to channel. +Jira: creates tickets from action items. +Confluence: publishes as team-visible page |
-| **Action Item Extractor** | "extract action items from..." | Any text → structured action items in tracker with IDs, owners, deadlines | +Jira: bulk-creates tickets with assignees/dates. +Slack: sends DM notifications to owners |
-| **Decision Logger** | "log this decision" | Structured decision record with conflict detection against prior decisions | +Confluence: syncs to shared decision log page. +Slack: posts decision announcement. +Jira: creates follow-up tickets |
+| **Meeting Summarizer** | "summarize this meeting", "process meeting notes" | Transcript → structured notes with decisions, action items (LNO-tagged), opportunities (OST-seeded), sentiment, cross-org signals | +Slack: posts summary to channel. +Jira: creates tickets from action items. +Confluence: publishes as team-visible page |
+| **Action Item Extractor** | "extract action items from..." | Any text → structured items in tracker with IDs, owners, deadlines, **LNO tier** | +Jira: bulk-creates tickets. +Slack: sends DM notifications |
+| **Decision Logger** | "log this decision" | Structured decision record with kill conditions, strategy-memo linkage, conflict detection | +Confluence: syncs to shared decision log page. +Slack: posts decision announcement |
 
 #### Strategy & Ideation
 | Skill | Trigger Phrases | What It Does | MCP Superpowers |
 |-------|----------------|--------------|-----------------|
-| **Strategy Critique** | "critique this strategy", "red team this" | 7-dimension scoring (including Business Impact Clarity) + devil's advocate + gaps analysis | — (local-only, context-driven) |
-| **Bold Idea Lab** | "bold idea lab", "brainstorm product ideas", "what if we..." | Generate 5-8 bold ideas, filter to 3-5, stress-test survivors, rank with validation plan | +Productboard: checks existing ideas first. +Amplitude: validates with usage data. +Confluence: publishes to innovation space |
+| **Strategy Critique** | "critique this strategy", "red team this" | 8-dimension scoring (incl. Rumelt structure integrity) + devil's advocate + gaps analysis | — (local-only, context-driven) |
+| **Bold Idea Lab** | "bold idea lab", "what if we..." | Generate 5-8 bold ideas, 5-axis filter (desirability/viability/feasibility/usability/ethical), stress-test, rank | +Productboard: checks existing ideas. +Amplitude: validates with usage data |
+| **Product Strategy Memo** ✨ | "draft strategy memo", "Rumelt memo" | Diagnosis → Guiding Policy → Coherent Actions; non-goals, kill conditions, one judgment metric | +Confluence: publishes memo. +Slack: TL;DR to leadership |
+| **Pre-Mortem Runner** ✨ | "run a pre-mortem", "what could go wrong" | Failed-future simulation across 9 categories, cluster → mitigations → kill conditions → go/no-go verdict | +Slack: TL;DR to product-leads. +Jira: mitigation tickets |
+| **Team Health Monitor** ✨ | "team health check", "quarterly team review" | Atlassian 8-attribute self-assessment with trend tracking, forces ONE 90-day intervention commitment | +Slack: micro-survey to team. +Calendar: mid-quarter + next-check |
 
 #### Discovery & Research
 | Skill | Trigger Phrases | What It Does | MCP Superpowers |
 |-------|----------------|--------------|-----------------|
-| **AI Research Scout** | "AI research scan", "what's new in AI" | Frontier scan: new models, techniques, papers, regulation → structured briefing with product implications | — (web-based research, no MCP needed) |
-| **Market Intelligence** | "market intel", "market scan" | Competitive landscape: competitor moves, market trends, analyst reports → positioning assessment | — (web-based research, no MCP needed) |
+| **AI Research Scout** | "AI research scan", "what's new in AI" | Frontier scan: new models, techniques, papers, regulation → structured briefing with product implications | — (web-based research) |
+| **Market Intelligence** | "market intel", "market scan" | Competitive landscape: competitor moves, trends, analyst reports → positioning assessment | — (web-based research) |
+| **Discovery Cadence** ✨ | "weekly discovery", "discovery plan" | Teresa Torres cadence: Plan (Mon) / Synthesize (per-interview) / Reflect (Fri) — reads + writes OST | +Gong: pulls call highlights. +Calendar: schedules interviews |
+| **Assumption Test Designer** ✨ | "design an assumption test", "validate before we build" | Torres 5-category enumeration → risk×uncertainty ranking → test-method matching → staged gates | +Typeform: draft surveys. +Amplitude: query assumptions |
+| **Storyboard Generator** ✨ | "generate storyboard", "customer journey storyboard" | 12-16 frame before/after journey with protagonist, emotional arc, capability map | +Figma: export to FigJam. +Miro: storyboard canvas |
+| **CAB Runner** ✨ | "plan a CAB", "customer advisory board" | Full CAB design: member selection, 80/20 agenda, layered prompts, pre-read, synthesis plan | +Gong: transcribe + extract quotes. +Salesforce: member metadata |
 
 #### Product Definition
 | Skill | Trigger Phrases | What It Does | MCP Superpowers |
 |-------|----------------|--------------|-----------------|
-| **PRD Generator** | "create a PRD for...", "help me spec out" | Socratic Q&A (3-4 rounds) → full PRD with business case summary, auto-critique from engineering + UX perspectives | +Confluence: publishes PRD. +Jira: creates epic + stories. +Amplitude: pulls metric baselines. +Productboard: cross-references feature requests |
+| **PRD Generator** | "create a PRD for...", "help me spec out" | Socratic Q&A → full PRD with PR/FAQ gate, business case, HEART/GSM-structured metrics, eng + UX critique | +Confluence: publishes. +Jira: creates epic. +Amplitude: pulls baselines |
+| **PR/FAQ Generator** ✨ | "draft a PR/FAQ", "working backwards" | Amazon Working Backwards: press release + Internal FAQ + External FAQ, with excite-the-customer test | +Confluence: publishes. +Slack: shares with trusted reviewers |
+| **Eval & Model Spec Author** ✨ | "author an eval", "model spec for" | AI behavior contract + 20+ eval cases (ground-truth/adversarial/regression) + 4-gate release criteria | +Braintrust/LangSmith: push eval set. +Claude/OpenAI APIs: run evals |
+
+#### Data & Measurement ✨ (new category)
+| Skill | Trigger Phrases | What It Does | MCP Superpowers |
+|-------|----------------|--------------|-----------------|
+| **Experiment Designer** ✨ | "design an experiment" | Rigorous A/B design: 4-part hypothesis → MDE → sample size → SRM & A/A sanity → pre-registered analysis plan | +Statsig/Eppo: push experiment spec. +Amplitude: pull baselines |
+| **HEART/GSM Builder** ✨ | "build HEART", "GSM for feature" | HEART category selection + Goal → Signal → Metric chains + counter-metrics + instrumentation plan | +Amplitude/Mixpanel: draft event taxonomy. +Looker: dashboard |
+
+#### Execution & Launch
+| Skill | Trigger Phrases | What It Does | MCP Superpowers |
+|-------|----------------|--------------|-----------------|
+| **Launch Orchestrator** ✨ | "orchestrate launch", "phase-gate launch" | Fishfood → teamfood → dogfood → closed beta → open beta → GA → Launch with 7 readiness tracks & rollback plan | +Jira: phase epics. +Statuspage: rollback templates |
 
 #### Communication
 | Skill | Trigger Phrases | What It Does | MCP Superpowers |
 |-------|----------------|--------------|-----------------|
-| **Email Drafter** | "draft an email to...", "write an email" | Context-aware email calibrated to recipient, with 8 types including executive narrative | +Slack: offers to send as DM or channel post instead. +Confluence: publishes longer updates as pages |
+| **Email Drafter** | "draft an email to...", "write an email" | Context-aware email; 12 types incl. CAB pre-read, launch announcement, pre-mortem summary | +Slack: send as DM or channel. +Confluence: publishes updates |
 
 #### Onboarding
 | Skill | Trigger Phrases | What It Does | MCP Superpowers |
 |-------|----------------|--------------|-----------------|
-| **Onboarding Accelerator** | "onboarding accelerator", "pull company context" | Pulls from connected tools to auto-populate context files. Cuts onboarding from 2 weeks to 2-3 days | Requires MCPs: Confluence (docs), Jira (sprint/team), Productboard (roadmap), Slack (profiles), Amplitude (metrics) |
+| **Onboarding Accelerator** | "onboarding accelerator", "pull company context" | Pulls from connected tools to auto-populate context files. Cuts onboarding 2 weeks → 2-3 days | Requires MCPs: Confluence, Jira, Productboard, Slack, Amplitude |
 
-### Skills — Build Later (9 future, documented with prerequisites)
+### Skills — Build Later (8 future, documented with prerequisites)
 
 These skills need real company context to be valuable. Build each one when its prerequisites are met.
 
@@ -172,10 +193,11 @@ These skills need real company context to be valuable. Build each one when its p
 | **Opportunity Scorer** | strategy | product-overview, personas, OKRs, competitors populated | Week 3+ |
 | **Stakeholder FAQ Generator** | communication | stakeholder-map, decision-log, priorities populated | Week 3+ |
 | **Roadmap Narrative** | strategy | priorities, OKRs, active-prds populated | Week 4+ |
-| **Interview Synthesis** | discovery | personas populated, 3+ interviews conducted | After 3 interviews |
 | **Feedback Clustering** | discovery | feedback-themes has 10+ entries | After 10 entries |
 | **Exec Narrative Writer** | communication | impact-journal has 15+ entries, OKRs set | Month 2+ |
 | **Thought Leadership Generator** | communication | domain-expertise well accumulated | Month 3+ |
+
+_Interview Synthesis has been absorbed into **Discovery Cadence** — weekly synthesis is part of the cadence now, not a standalone skill._
 
 ---
 
@@ -188,13 +210,15 @@ These skills need real company context to be valuable. Build each one when its p
 | Action Items | `action-items-template.md` | Tracker structure (auto-managed by skills) |
 | Decision Record | `decision-record-template.md` | Decision log structure (auto-managed by skills) |
 
-### Strategy & Planning (4)
+### Strategy & Planning (6)
 | Template | File | When to Use |
 |----------|------|-------------|
 | Business Case | `business-case-template.md` | Justify investments to leadership |
 | Roadmap Narrative | `roadmap-narrative-template.md` | Strategic roadmap — narrative, not feature list |
 | Opportunity Assessment | `opportunity-assessment-template.md` | Evaluate new product opportunities |
 | Quarterly Business Review | `quarterly-business-review-template.md` | QBR for leadership presentations |
+| **PLG Growth Loop Canvas** ✨ | `plg-growth-loop-canvas-template.md` | Map acquisition / activation / monetization / virality loops with four-fit check |
+| **North Star Metric Tree** ✨ | `north-star-metric-tree-template.md` | Define NSM + input metrics + outcome metrics + guardrails + decision triggers |
 
 ### Product Definition (3)
 | Template | File | When to Use |
@@ -221,11 +245,12 @@ These skills need real company context to be valuable. Build each one when its p
 | Sprint Review | `sprint-review-template.md` | Sprint review/retro documentation |
 | Risk Register | `risk-register-template.md` | Risk tracking for projects |
 
-### People & Process (2)
+### People & Process (3)
 | Template | File | When to Use |
 |----------|------|-------------|
 | Stakeholder Map | `stakeholder-map-template.md` | Map and manage stakeholder relationships |
 | Process Playbook | `process-playbook-template.md` | Document reusable processes |
+| **Product Trio Charter** ✨ | `product-trio-charter-template.md` | PM + Design + TL working agreement: decision rights, cadences, conflict protocols |
 
 ### Career & Growth (1)
 | Template | File | When to Use |
@@ -289,20 +314,24 @@ These become your unfair advantage over time:
 | When wins happen | Log impact | 1 min | "log impact: [what happened]" |
 | End of day | EOD rollup | 5 min | "end of day" |
 
-### Weekly (~60 minutes)
+### Weekly (~90 minutes)
 
 | When | What | Trigger |
 |------|------|---------|
+| Monday | **LNO plan** for the week — tier all tasks, name the one L to protect | "LNO prioritize my week" |
 | Monday | Review action items, update priorities if shifted | "check action items" |
+| Mon-Fri | **Discovery cadence** — 3 interviews, synthesize per-interview, reflect Friday | "weekly discovery" |
 | Friday | Action item cleanup — archive completed, flag stale | Manual review |
 | Friday | AI research scan — stay at the frontier | "AI research scan" |
-| Anytime | Skim impact journal entries for the week | Read `context/my/impact-journal.md` |
+| Friday | Discovery reflection — update OST, decide next week's assumption tests | "weekly discovery" (reflection mode) |
+| Anytime | Skim impact journal entries; flag thin-evidence entries | Read `context/my/impact-journal.md` |
 
 ### Monthly (~90 minutes)
 
 | What | Trigger |
 |------|---------|
-| Update promotion packet with month's strongest evidence | Edit `context/my/promotion-packet.md` |
+| Update promotion packet with month's strongest evidence (Strong-rated entries) | Edit `context/my/promotion-packet.md` |
+| OST monthly review — which opportunities are aging? which assumptions still untested? | Review `context/my/opportunity-solution-tree.md` |
 | Review innovation pipeline — promote/park/kill ideas | Edit `context/my/innovation-pipeline.md` |
 | Market intelligence — full competitive landscape scan | "market intel" |
 | Bold idea lab — creative session seeded from context | "bold idea lab" |
@@ -310,15 +339,34 @@ These become your unfair advantage over time:
 | Audit INDEX.md for accuracy | Review `INDEX.md` |
 | Review cross-org tracker for stale entries | Review `context/cross-org/initiative-tracker.md` |
 
-### Quarterly (~2 hours)
+### Quarterly (~3 hours)
 
 | What | Trigger |
 |------|---------|
+| **Team Health Monitor** — 8-attribute self-assessment + one 90-day intervention | "team health check" |
+| **Strategy memo refresh** — revisit diagnosis, guiding policy, coherent actions; update kill conditions | "draft strategy memo" (revision mode) |
+| **CAB session** (if applicable) — run the quarterly advisory board | "plan a CAB" |
+| **Product Trio Charter** revisit — especially if trio members changed | Edit `artifacts/charters/[team]-trio-charter.md` |
 | Generate QBR | Use `templates/quarterly-business-review-template.md` |
 | Career goals check-in | Review `context/my/career-goals.md` |
 | Promotion packet major refresh | Review `context/my/promotion-packet.md` |
 | Archive old tracking data | Move to `tracking/archive/` |
 | Build a new skill from a workflow you've done 3+ times | Create new skill in `skills/` |
+
+### Per-Initiative (triggered, not scheduled)
+
+| When | What | Trigger |
+|------|------|---------|
+| Before major build | **PR/FAQ** — customer narrative first | "draft a PR/FAQ" |
+| Before major build | **Assumption Test Designer** — cheapest test for highest-risk assumption | "design an assumption test" |
+| Before major build | **Pre-Mortem** — failed-future simulation | "run a pre-mortem" |
+| During definition | **PRD** — full spec with HEART/GSM metrics | "create a PRD" |
+| During definition | **Storyboard** — before/after journey with capability map | "generate storyboard" |
+| During definition | **HEART/GSM plan** — measurement structure | "build HEART" |
+| For AI features | **Model Spec + Evals** — behavior contract and eval set | "author an eval and model spec" |
+| Before rollout | **Experiment design** (if A/B gated) | "design an experiment" |
+| At GA | **Launch Orchestrator** — phase-gated rollout | "orchestrate launch" |
+| After launch | **Impact Journal** with artifact link and metric | "log impact" |
 
 ---
 
@@ -463,24 +511,37 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 | `README.md` | Team setup instructions + daily usage reference |
 | `setup.sh` / `setup.ps1` | First-time setup scripts (Mac/Linux + Windows) |
 
-### Skills (13 across 7 categories)
+### Skills (26 across 8 categories)
 | File | Purpose |
 |------|---------|
-| `skills/daily/morning-briefing.md` | Daily situational awareness digest |
-| `skills/daily/impact-journal.md` | Log wins for promotion evidence |
-| `skills/daily/end-of-day-rollup.md` | EOD summary + tomorrow prep |
+| `skills/daily/morning-briefing.md` | Daily situational awareness digest (LNO-tiered) |
+| `skills/daily/impact-journal.md` | Log wins (STAR-framed) for promotion evidence |
+| `skills/daily/end-of-day-rollup.md` | EOD summary + LNO retro + tomorrow prep |
+| `skills/daily/lno-prioritizer.md` ✨ | Shreyas Doshi L/N/O tiering + drift detection |
 | `skills/daily/onboarding-accelerator.md` | Pull connected tools → auto-populate context files |
-| `skills/meetings/meeting-summarizer.md` | Transcript → structured notes + KB updates |
+| `skills/meetings/meeting-summarizer.md` | Transcript → structured notes + KB updates + OST seeding |
 | `skills/discovery/ai-research-scout.md` | AI frontier monitoring |
 | `skills/discovery/market-intelligence.md` | Competitive landscape tracking |
-| `skills/definition/prd-generator.md` | Socratic PRD generation |
-| `skills/strategy/strategy-critique.md` | 7-dimension strategy scoring |
-| `skills/strategy/decision-logger.md` | Decision recording with conflict detection |
-| `skills/strategy/bold-idea-lab.md` | Creative brainstorming engine |
-| `skills/execution/action-item-extractor.md` | Text → structured action items |
-| `skills/communication/email-drafter.md` | Context-aware email drafting |
+| `skills/discovery/discovery-cadence.md` ✨ | Teresa Torres weekly discovery rhythm |
+| `skills/discovery/assumption-test-designer.md` ✨ | Cheapest test for highest-risk assumption |
+| `skills/discovery/storyboard-generator.md` ✨ | Before/after journey with emotional arc |
+| `skills/discovery/cab-runner.md` ✨ | Customer Advisory Board planning + synthesis |
+| `skills/definition/prd-generator.md` | Socratic PRD with PR/FAQ gate + HEART/GSM |
+| `skills/definition/pr-faq-generator.md` ✨ | Amazon Working Backwards narrative |
+| `skills/definition/eval-and-model-spec-author.md` ✨ | AI behavior contract + eval set |
+| `skills/strategy/strategy-critique.md` | 8-dimension strategy scoring (incl. Rumelt structure) |
+| `skills/strategy/decision-logger.md` | Decision recording with kill conditions |
+| `skills/strategy/bold-idea-lab.md` | Creative brainstorming (5-axis filter) |
+| `skills/strategy/product-strategy-memo.md` ✨ | Rumelt kernel: diagnosis → policy → actions |
+| `skills/strategy/pre-mortem-runner.md` ✨ | Failed-future failure-mode simulation |
+| `skills/strategy/team-health-monitor.md` ✨ | Atlassian 8-attribute quarterly health check |
+| `skills/data/experiment-designer.md` ✨ | Rigorous A/B design with MDE + guardrails |
+| `skills/data/hearts-gsm-builder.md` ✨ | HEART × GSM measurement plan |
+| `skills/execution/action-item-extractor.md` | Text → structured items with LNO tags |
+| `skills/execution/launch-orchestrator.md` ✨ | Phase-gated launch with readiness tracks + rollback |
+| `skills/communication/email-drafter.md` | Context-aware email drafting (12 types) |
 
-### Templates (19)
+### Templates (22)
 | File | Purpose |
 |------|---------|
 | `templates/meeting-summary-template.md` | Meeting notes structure |
@@ -492,7 +553,7 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 | `templates/exec-update-template.md` | Executive/stakeholder update |
 | `templates/interview-guide-template.md` | User interview preparation |
 | `templates/competitive-teardown-template.md` | Competitor deep-dive |
-| `templates/launch-checklist-template.md` | Pre-launch readiness |
+| `templates/launch-checklist-template.md` | Pre-launch readiness (legacy; see launch-orchestrator skill) |
 | `templates/sprint-review-template.md` | Sprint review documentation |
 | `templates/stakeholder-map-template.md` | Stakeholder relationship mapping |
 | `templates/risk-register-template.md` | Risk tracking |
@@ -502,8 +563,11 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 | `templates/impact-narrative-template.md` | Performance review / promotion evidence |
 | `templates/quarterly-business-review-template.md` | QBR for leadership |
 | `templates/process-playbook-template.md` | Reusable process documentation |
+| `templates/plg-growth-loop-canvas-template.md` ✨ | PLG growth loops: acquisition/activation/monetization/virality |
+| `templates/north-star-metric-tree-template.md` ✨ | NSM + inputs + outcomes + guardrails + triggers |
+| `templates/product-trio-charter-template.md` ✨ | PM/Design/TL working agreement |
 
-### Personal Context (11 files — gitignored, per-PM)
+### Personal Context (12 files — gitignored, per-PM)
 | File | Purpose |
 |------|---------|
 | `context/my/pm-frameworks.md` | PM methodology and frameworks |
@@ -517,11 +581,12 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 | `context/my/innovation-pipeline.md` | Idea inventory (kanban) |
 | `context/my/mentorship-tracker.md` | Mentorship relationships |
 | `context/my/promotion-packet.md` | 7-competency promotion evidence |
+| `context/my/opportunity-solution-tree.md` ✨ | Living OST: opportunities, solutions, assumption tests (Teresa Torres) |
 
-### Personal Context Templates (11 files — committed, copied on setup)
+### Personal Context Templates (12 files — committed, copied on setup)
 | Location | Purpose |
 |----------|---------|
-| `context/my.template/*.md` | Blank versions of all 11 personal context files. Copied to `context/my/` by setup script |
+| `context/my.template/*.md` | Blank versions of all 12 personal context files. Copied to `context/my/` by setup script |
 
 ### Company Context (3 files — gitignored, per-PM)
 | File | Purpose |
@@ -570,16 +635,13 @@ Open the `.md` file and edit directly, or say "update the [skill name] skill to 
 | `research/` | Interview transcripts, survey data |
 | `inbox/` | Raw inputs (recordings, screenshots) |
 
-### Docs (5 — committed)
+### Docs (1 live + archive folder — committed)
 | File | Purpose |
 |------|---------|
 | `docs/INTEGRATIONS.md` | Tool stack integration guide (MCP setup, tiers, automation) |
-| `docs/AI_PM_Assistant_Blueprint.md` | Historical: original system design blueprint |
-| `docs/PM_Command_Center_Implementation_Plan.md` | Historical: build plan and implementation log |
-| `docs/PM_Command_Center_Systems_Architecture.md` | Historical: system architecture documentation |
-| `docs/PM_Command_Center_Unified_Blueprint_v2.md` | Historical: unified blueprint v2 |
+| `docs/archive/` | Superseded blueprint + design docs from initial build (2026-03-28). Retained for historical rationale only; see `docs/archive/README.md` for contents and supersession notes. |
 
-> **Note**: Historical docs reflect the original architecture, not current. See this GUIDE.md for the current system reference.
+> **Note**: This GUIDE.md is the single source of truth for current system state. Archived docs reflect the original build's architecture and may reference skills/templates/counts that no longer match reality.
 
 ---
 

@@ -1,5 +1,9 @@
 # Playbook: [Process Name]
 
+> **Purpose**: Repeatable "how we do X" document — scope, steps, roles, examples, and escalation paths.
+> **When to use**: After doing a process 2-3 times and noticing you re-explain it. Lives in `artifacts/` or team wiki; referenced from skill docs when relevant.
+> **Audience**: Team members running the process, new hires learning it, cross-functional partners following it.
+
 **Author:** [Your name]
 **Created:** [Date]
 **Last Updated:** [Date]

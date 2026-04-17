@@ -20,6 +20,9 @@ Generate an end-of-day summary that reconstructs what was accomplished, identifi
   - `context/my/impact-journal.md` — today's entries (filter by today's date)
   - `artifacts/meetings/` — any meeting summaries from today (files matching today's date)
   - `context/strategy/current-priorities.md` — to anchor tomorrow's priorities
+  - `artifacts/reports/*lno-week*` — this week's LNO plan (for daily-retro comparison)
+  - `context/my/opportunity-solution-tree.md` — discovery progress today (interviews completed, tests run)
+  - `artifacts/launches/` — any launch phase-gate decisions today
 
 ## Process
 
@@ -57,8 +60,11 @@ Compare what happened today against what a complete day looks like:
 
 - **Meetings not summarized**: Were there meetings today (check references in action items or decisions) that don't have a corresponding summary in `artifacts/meetings/`? Flag them.
 - **Impact not logged**: Did today include any accomplishments, launches, key decisions, or stakeholder wins that aren't in the impact journal? Flag them with a suggestion.
+- **Thin-evidence impact entries**: If today's impact entries lack an artifact link or a quantification, flag them as "Thin" — offer to strengthen with a link or corroborator before the memory fades.
 - **Action items stale**: Are there items that should have progressed today but didn't? Items assigned to the user that are aging without updates?
 - **Follow-ups not sent**: Were there action items or decisions from today's meetings that require follow-up communication? Check if email drafts or messages were generated.
+- **LNO drift**: If a weekly LNO plan exists, compare today's actual work to the planned L-tasks. Was the L-task protected? Was an O-task over-invested? Offer to run `lno-prioritizer` in daily-retro mode if significant drift is detected.
+- **Discovery absent**: If 5+ business days have passed since the last OST update, surface this as a signal that weekly discovery is slipping (`discovery-cadence` may be overdue).
 
 ### Step 3: Generate rollup
 Assemble the end-of-day summary:
@@ -96,16 +102,33 @@ Assemble the end-of-day summary:
 ---
 
 ### Impact Logged
-- [Impact entry summary]
+- [Impact entry summary — evidence strength: Strong/Moderate/Thin]
 - (none today — consider logging: [suggested entry based on activity])
+
+**Thin-evidence entries**: [N] — offer to strengthen with artifact links or corroborators before memory fades
 
 ---
 
-### Tomorrow's Top 3 Priorities
-Based on current priorities, overdue items, and upcoming deadlines:
-1. [Priority 1 — with rationale]
-2. [Priority 2 — with rationale]
-3. [Priority 3 — with rationale]
+### LNO Daily Retro
+- L-task protected today: [Yes / No — with note]
+- O-task drift detected: [Yes / No — if yes, which one]
+- Approximate time split: L: [%] / N: [%] / O: [%]
+- Correction for tomorrow: [If O-heavy today, what's tomorrow's protected L-block]
+
+---
+
+### Discovery Pulse
+- Interviews completed today: [N]
+- Assumption tests progressed: [N]
+- OST last updated: [date — flag if >5 business days]
+
+---
+
+### Tomorrow's Top 3 Priorities (LNO-framed)
+Based on current priorities, overdue items, upcoming deadlines, and LNO drift correction:
+1. **L**: [Priority 1 — the one L-task to protect]
+2. **N**: [Priority 2 — clean execution]
+3. **O**: [Priority 3 — well-enough, time-boxed]
 ```
 
 ### Step 4: Prompt cleanup
@@ -130,6 +153,9 @@ Displayed directly in conversation (not saved to file unless requested). If the 
 ## Integration Points
 - **Morning Briefing**: Tomorrow's Top 3 from EOD rollup feeds into the next morning's briefing focus
 - **Action Item Extractor**: Reads tracker for today's item activity
-- **Impact Journal**: Detects logging gaps and offers to create entries
+- **LNO Prioritizer (M2)**: The daily-retro mode runs automatically as part of EOD rollup; flags leverage drift
+- **Discovery Cadence (H3)**: Surfaces OST staleness; triggers the Friday reflection if it's a Friday and discovery wasn't done
+- **Launch Orchestrator (M7)**: Surfaces phase-gate decisions made today for the decision log
+- **Impact Journal**: Detects logging gaps, thin-evidence entries, and offers to strengthen evidence while memory is fresh
 - **Meeting Summarizer**: Identifies unprocessed meetings from today
 - **Email Drafter**: Can generate follow-up communications for outstanding items

@@ -1,5 +1,9 @@
 # Opportunity Assessment: [Opportunity Name]
 
+> **Purpose**: Structured scoring of a single opportunity — problem, audience, sizing, fit, confidence, and pursue/park/kill recommendation.
+> **When to use**: Before committing engineering to an opportunity. Pair with `discovery-cadence` (evidence) and `assumption-test-designer` (validation).
+> **Audience**: You, your product trio, leadership approving roadmap scope.
+
 **Author:** [Your name]
 **Date:** [Date]
 **Status:** [Draft / Under Review / Scored / Decision Made]

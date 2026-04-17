@@ -29,6 +29,7 @@ This is the routing table for the PM Command Center. Claude reads this file firs
 | Innovation pipeline | `context/my/innovation-pipeline.md` | ⬜ Needs setup |
 | Mentorship tracker | `context/my/mentorship-tracker.md` | ⬜ Needs setup |
 | Promotion packet | `context/my/promotion-packet.md` | ⬜ Needs setup |
+| Opportunity Solution Tree | `context/my/opportunity-solution-tree.md` | ⬜ Template ready — seed via `discovery-cadence` |
 
 ### Company Context
 | Topic | File | Status |
@@ -40,7 +41,7 @@ This is the routing table for the PM Command Center. Claude reads this file firs
 ### Templates (for new PMs — copied by setup script)
 | Topic | File |
 |-------|------|
-| Personal context (11 templates) | `context/my.template/` → `context/my/` |
+| Personal context (12 templates, incl. opportunity-solution-tree) | `context/my.template/` → `context/my/` |
 | Company context (3 templates) | `context/company.template/` → `context/company/` |
 
 ### Product & Strategy
@@ -102,35 +103,48 @@ This is the routing table for the PM Command Center. Claude reads this file firs
 |-------|----------|
 | Meeting notes | `artifacts/meetings/` |
 | PRDs | `artifacts/prds/` |
-| Reports | `artifacts/reports/` |
+| PR/FAQs | `artifacts/prfaqs/` |
+| Strategy memos | `artifacts/strategy-memos/` |
+| Pre-mortems | `artifacts/pre-mortems/` |
+| Assumption tests | `artifacts/assumption-tests/` |
+| Experiments | `artifacts/experiments/` |
+| Model specs & evals | `artifacts/model-specs/`, `artifacts/evals/` |
+| Measurement plans (HEART/GSM) | `artifacts/measurement-plans/` |
+| Storyboards | `artifacts/storyboards/` |
+| CAB plans & notes | `artifacts/cab/` |
+| Launches | `artifacts/launches/` |
+| Team charters | `artifacts/charters/` |
+| Reports (briefings, LNO, team health) | `artifacts/reports/` |
 | Decks | `artifacts/decks/` |
 | Email drafts | `artifacts/emails/` |
 | Prototypes | `artifacts/prototypes/` |
 
-### Skills (13 built)
+### Skills (26 built)
 | Category | Location | Built Skills |
 |----------|----------|-------------|
-| Daily routines | `skills/daily/` | morning-briefing, impact-journal, end-of-day-rollup, onboarding-accelerator |
+| Daily routines | `skills/daily/` | morning-briefing, impact-journal, end-of-day-rollup, onboarding-accelerator, **lno-prioritizer** |
 | Meetings | `skills/meetings/` | meeting-summarizer |
-| Discovery | `skills/discovery/` | ai-research-scout, market-intelligence |
-| Definition | `skills/definition/` | prd-generator |
-| Strategy | `skills/strategy/` | strategy-critique, decision-logger, bold-idea-lab |
-| Execution | `skills/execution/` | action-item-extractor |
+| Discovery | `skills/discovery/` | ai-research-scout, market-intelligence, **discovery-cadence**, **assumption-test-designer**, **storyboard-generator**, **cab-runner** |
+| Definition | `skills/definition/` | prd-generator, **pr-faq-generator**, **eval-and-model-spec-author** |
+| Strategy | `skills/strategy/` | strategy-critique, decision-logger, bold-idea-lab, **product-strategy-memo**, **pre-mortem-runner**, **team-health-monitor** |
+| Data | `skills/data/` | **experiment-designer**, **hearts-gsm-builder** |
+| Execution | `skills/execution/` | action-item-extractor, **launch-orchestrator** |
 | Communication | `skills/communication/` | email-drafter |
 
-_See GUIDE.md Section 4 for 9 future skills to build as context accumulates._
+_Bold = added in the best-practices enhancement pass. See GUIDE.md Section 4 for 8 future skills to build as context accumulates._
 
-### Templates
+### Templates (22 built)
 | Template | Location |
 |----------|----------|
-| All 19 templates | `templates/` |
+| 19 original + **plg-growth-loop-canvas**, **north-star-metric-tree**, **product-trio-charter** | `templates/` |
 
 ---
 
 ## Recent Changes (Last 7 Days)
 [Auto-populated by skills as they update files]
 
-_No changes yet — system initialized._
+- **2026-04-17** — System audit pass. Skill count corrected 23→26 across INDEX/GUIDE/README. Copied `opportunity-solution-tree.md` into `context/my/`. Created 12 missing artifact output dirs (`prfaqs/`, `strategy-memos/`, `pre-mortems/`, `assumption-tests/`, `experiments/`, `model-specs/`, `evals/`, `measurement-plans/`, `storyboards/`, `cab/`, `launches/`, `charters/`). Fixed dangling "Interview Synthesis skill" reference in interview-guide-template (points to `discovery-cadence` now). Clarified Senior→Principal trajectory framing in CLAUDE.md. Archived four superseded blueprint docs to `docs/archive/`. Onboarding-accelerator augmented to target `context/company/tool-stack.md`, `context/company/pm-team-norms.md`, and `context/cross-org/initiative-tracker.md`.
+- **2026-04-17** — Standardized Purpose / When to use / Audience preamble across all 21 templates (product-trio-charter already had equivalent block). Expanded `email-drafter` from 5 steps to 9 (added audience-tier altitude calibration, writing-samples voice pass, self-critique filter for hedge words/buried leads, follow-up scheduling hook); bumped to v1.1.
 
 ---
 

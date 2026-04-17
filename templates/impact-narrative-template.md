@@ -1,5 +1,9 @@
 # Impact Narrative: [Title of Achievement/Project]
 
+> **Purpose**: Single achievement framed as Situation → Task → Action → Result with metrics and scope — ready for review, promo packet, or brag doc.
+> **When to use**: After any meaningful outcome. Fed by `impact-journal` entries; assembled into `context/my/promotion-packet.md`.
+> **Audience**: You, your manager, promotion committees, future-you preparing for interviews.
+
 **Author:** [Your name]
 **Period:** [Time period covered — e.g., Q1 2026 or Jan-Mar 2026]
 **Context:** [Performance Review / Promotion Packet / Impact Summary / Brag Doc]

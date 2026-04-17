@@ -1,5 +1,9 @@
 # Interview Guide: [Research Topic]
 
+> **Purpose**: Structured guide for a single user/customer discovery interview — research question, opening, question bank, and closing.
+> **When to use**: Before any discovery interview. Output from the interview is synthesized via `discovery-cadence` in 'synthesize' mode and feeds `context/my/opportunity-solution-tree.md`.
+> **Audience**: You (interviewer) and any research partner sitting in. Not shared externally.
+
 ## Research Context
 - **Research question**: [What are we trying to learn?]
 - **Feature/initiative**: [What product decision will this inform?]
@@ -130,7 +134,7 @@ Complete within 24 hours while memory is fresh (or run through Meeting Summarize
 - [ ] Biggest surprise (what didn't I expect to hear?)
 - [ ] One quote I need to remember
 
-### Structured synthesis (use Interview Synthesis skill for batch processing)
+### Structured synthesis (use the `discovery-cadence` skill in "synthesize" mode for weekly batch processing)
 
 **Interviewee profile:**
 - Role: [Title, company, size]

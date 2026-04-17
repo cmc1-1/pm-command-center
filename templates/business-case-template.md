@@ -1,5 +1,9 @@
 # Business Case: [Project/Initiative Name]
 
+> **Purpose**: Executive-ready justification for a proposed investment — cost, benefit, risk, ROI, and recommendation.
+> **When to use**: Before asking for funding, headcount, or a strategic bet. Pair with `product-strategy-memo` (narrative) and `pre-mortem-runner` (risk stress-test).
+> **Audience**: VP/exec approvers, finance partners, cross-functional sponsors.
+
 **Author:** [Your name]
 **Date:** [Date]
 **Status:** [Draft / In Review / Approved / Rejected]
