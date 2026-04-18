@@ -226,6 +226,7 @@ These seven habits turn the system from "useful tool" to "force multiplier":
 
 ## Critical Files to Reference
 
+- `Capability-Catalogue.md` — one-page scannable reference for every skill, template, automation, and process
 - `README.md:1-100` — install + MCP progressive connection
 - `GUIDE.md:121-199` — complete skill catalog + future skills
 - `GUIDE.md:262-370` — context population + cadence (your operating manual)

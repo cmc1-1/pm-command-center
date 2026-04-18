@@ -118,6 +118,8 @@ Skills are smart because they read context first. The Meeting Summarizer reads y
 
 ## 4. Complete Capability Reference
 
+> **Looking for a one-page scannable reference?** See [`Capability-Catalogue.md`](Capability-Catalogue.md) at the repo root — every skill, template, automation, and end-to-end process in a single document with a trigger-phrase quick index.
+
 ### Skills — Ready Now (26 built)
 
 #### Daily Habits

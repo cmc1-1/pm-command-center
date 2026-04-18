@@ -3,6 +3,7 @@
 AI-powered product management productivity system — built for teams, personalized per PM.
 
 > **New PM starting today?** Read [`New-PM-Onboarding-Playbook.md`](New-PM-Onboarding-Playbook.md) — it sequences Day 0 → Quarter 1 so you don't get overwhelmed in Week 1.
+> **Looking for a specific skill or process?** Open [`Capability-Catalogue.md`](Capability-Catalogue.md) — all 26 skills, 22 templates, automations, and end-to-end processes in one scannable reference.
 
 ## For PMs: Getting Started (5 minutes)
 
