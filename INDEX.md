@@ -1,4 +1,5 @@
 > **New here?** Start with [GUIDE.md](GUIDE.md) for the complete user manual.
+> **New PM onboarding?** Read [New-PM-Onboarding-Playbook.md](New-PM-Onboarding-Playbook.md) — sequenced Day 0 → Quarter 1 checklist.
 
 # Knowledge Base Index
 Last updated: [auto-update on each session]
@@ -145,6 +146,7 @@ _Bold = added in the best-practices enhancement pass. See GUIDE.md Section 4 for
 
 - **2026-04-17** — System audit pass. Skill count corrected 23→26 across INDEX/GUIDE/README. Copied `opportunity-solution-tree.md` into `context/my/`. Created 12 missing artifact output dirs (`prfaqs/`, `strategy-memos/`, `pre-mortems/`, `assumption-tests/`, `experiments/`, `model-specs/`, `evals/`, `measurement-plans/`, `storyboards/`, `cab/`, `launches/`, `charters/`). Fixed dangling "Interview Synthesis skill" reference in interview-guide-template (points to `discovery-cadence` now). Clarified Senior→Principal trajectory framing in CLAUDE.md. Archived four superseded blueprint docs to `docs/archive/`. Onboarding-accelerator augmented to target `context/company/tool-stack.md`, `context/company/pm-team-norms.md`, and `context/cross-org/initiative-tracker.md`.
 - **2026-04-17** — Standardized Purpose / When to use / Audience preamble across all 21 templates (product-trio-charter already had equivalent block). Expanded `email-drafter` from 5 steps to 9 (added audience-tier altitude calibration, writing-samples voice pass, self-critique filter for hedge words/buried leads, follow-up scheduling hook); bumped to v1.1.
+- **2026-04-17** — Added `New-PM-Onboarding-Playbook.md` at repo root — sequenced Day 0 → Quarter 1 setup, MCP tiering, context seeding, future-skill build order, daily/weekly/monthly/quarterly cadences, and 7 value-maximization habits. Cross-linked from `README.md` and this file.
 
 ---
 

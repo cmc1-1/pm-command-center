@@ -2,6 +2,8 @@
 
 AI-powered product management productivity system — built for teams, personalized per PM.
 
+> **New PM starting today?** Read [`New-PM-Onboarding-Playbook.md`](New-PM-Onboarding-Playbook.md) — it sequences Day 0 → Quarter 1 so you don't get overwhelmed in Week 1.
+
 ## For PMs: Getting Started (5 minutes)
 
 ### 1. Clone the repo
